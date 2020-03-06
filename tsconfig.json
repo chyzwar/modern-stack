@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2019",
+    "strict": true,
+    "composite": true,
+    "incremental": true,
+  },
+  "include": [
+    "nope"
+  ],
+  "references": [
+    {"path": "./packages/api"},
+    {"path": "./packages/claim-ui"},
+    {"path": "./packages/validate-ui"}
+  ]
+}

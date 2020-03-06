@@ -1,0 +1,17 @@
+{
+  "name": "dekra-claims",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT", 
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ], 
+  "scripts": {
+    "build": "tsc --build",
+    "build:watch": "tsc --build --watch"
+  }, 
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}
