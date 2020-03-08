@@ -1,23 +1,28 @@
 {
-  "name": "fastify-typescript-starter",
+  "name": "api",
   "version": "1.0.0",
-  "description": "Fastify TypeScript starter repository",
+  "description": "API",
   "scripts": {
-    "start": "node dist/server.js",
-    "debug": "nodemon --config nodemon-debug.json",
-    "build": "tsc"
+    "start": "env-cmd -f .env.local node-dev dist/server.js",
+    "start:prod": "env-cmd -f .env.production node dist/server.js",
+    "build": "tsc --build",
+    "build:watch": "tsc --build --watch"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "dependencies": {
     "fastify": "^2.12.0", 
-    "pino": "^5.17.0"
+    "pino": "^5.17.0",
+    "pino-pretty": "^3.6.1"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
+    "@types/jest": "^24.0.0",
     "@types/node": "^12.11.2",
+    "@types/pino": "^5.15.5",
     "node-dev": "4.0.0",
+    "jest": "^24.0.0",
     "ts-node": "^8.6.2",
-    "ts-jest": "^25.2.1",
+    "ts-jest": "^24.0.0",
     "typescript": "^3.7.5"
   }
 }
