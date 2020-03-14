@@ -1,0 +1,60 @@
+version: '3'
+
+services:
+  install:
+    image: node:12
+    volumes:
+      - .:/home/node/app
+    working_dir: '/home/node/app'
+    command: yarn install
+
+  build:
+    image: node:12
+    volumes:
+      - .:/home/node/app
+    working_dir: '/home/node/app'
+    command: yarn build:watch
+  
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+  
+  pgadmin4:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: postgres@example.pl
+      PGADMIN_DEFAULT_PASSWORD: 'postgres'
+
+  api:
+    image: node:12
+    env_file: ./packages/api/.env.local
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/home/node/app
+    working_dir: '/home/node/app/packages/api'
+    command: yarn start
+
+  ui:
+    image: node:12
+    env_file: ./packages/ui/.env.local
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/home/node/app
+    working_dir: '/home/node/app/packages/ui'
+    command: yarn start
+
+  admin-ui:
+    image: node:12
+    env_file: ./packages/admin-ui/.env.local
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/home/node/app
+    working_dir: '/home/node/app/packages/admin-ui'
+    command: yarn start

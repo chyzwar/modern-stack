@@ -8,13 +8,10 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "lerna run start --parallel",
-    "start:prod": "lerna run start:prod --parallel",
     "build": "tsc --build",
     "build:watch": "tsc --build --watch"
   },
   "dependencies": {
-    "lerna": "^3.20.2",
     "typescript": "^3.8.3"
   }
 }
