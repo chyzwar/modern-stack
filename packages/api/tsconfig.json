@@ -6,7 +6,15 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./src",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "incremental": true,
+    "composite": true,
+    "tsBuildInfoFile": "./dist/tsBuildInfoFile.json",
+    "types": [
+      "jest",
+      "pino",
+      "node"
+    ]
   },
   "include": [
     "src/**/*"

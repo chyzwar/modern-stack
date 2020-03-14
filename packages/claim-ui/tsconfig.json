@@ -16,10 +16,12 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "emitDeclarationOnly": true,
     "jsx": "react",
     "composite": true,
-    "incremental": true
+    "incremental": true,
+    "tsBuildInfoFile": "./dist/tsBuildInfoFile.json",
+    "outDir": "./dist"
   },
   "include": [
     "src"
