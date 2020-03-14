@@ -1,5 +1,5 @@
 import  fp from "fastify-plugin";
-import { FastifyServer } from "types/Server";
+import { FastifyServer } from "../types/Server";
 
 export default fp(async (server: FastifyServer, opts, next) => {
   server.route({

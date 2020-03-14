@@ -20,10 +20,8 @@
     "jsx": "react",
     "composite": true,
     "incremental": true,
-    "tsBuildInfoFile": "./dist/tsBuildInfoFile.json",
-    "outDir": "./dist"
-  },
-  "include": [
-    "src"
-  ]
+    "tsBuildInfoFile": "./build/tsBuildInfoFile.json",
+    "outDir": "./build",
+    "rootDir": "./src"
+  }
 }

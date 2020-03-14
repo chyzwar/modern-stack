@@ -5,22 +5,15 @@
     "strict": true,
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./src",
     "esModuleInterop": true,
     "incremental": true,
     "composite": true,
+    "rootDir": "src",
     "tsBuildInfoFile": "./dist/tsBuildInfoFile.json",
     "types": [
       "jest",
       "pino",
       "node"
     ]
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+  }
 }

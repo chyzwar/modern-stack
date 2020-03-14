@@ -1,5 +1,5 @@
 import { RouteShorthandOptions } from "fastify";
-import { FastifyServer } from "types/Server";
+import { FastifyServer } from "../types/Server";
 
 
 const register = async(server: FastifyServer) => {

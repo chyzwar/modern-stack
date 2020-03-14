@@ -1,10 +1,10 @@
 
-import authenticate from 'plugins/authenticate';
-import logger from 'logger';
-import register from 'routes/register';
+import authenticate from './plugins/authenticate';
+import logger from './logger';
+import register from './routes/register';
 import fastify from 'fastify';
 
-import { FastifyServer } from 'types/Server';
+import { FastifyServer } from './types/Server';
 
 const server: FastifyServer = fastify({
   logger: {
