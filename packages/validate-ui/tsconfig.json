@@ -17,12 +17,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react",
-    "composite": true,
-    "emitDeclarationOnly": true,
-    "incremental": true,
-    "outDir": "./build",
-    "rootDir": "./src",
-    "tsBuildInfoFile": "./build/tsBuildInfoFile.json"
+    "noEmit": true
   },
   "include": [
     "src"

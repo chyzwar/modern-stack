@@ -11,7 +11,7 @@
   ],
   "references": [
     {"path": "./packages/api"},
-    {"path": "./packages/claim-ui"},
-    {"path": "./packages/validate-ui"}
+    {"path": "./packages/claim-ui/tsconfig.build.json"},
+    {"path": "./packages/validate-ui/tsconfig.build.json"}
   ]
 }

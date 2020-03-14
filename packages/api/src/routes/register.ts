@@ -19,7 +19,7 @@ const register = async(server: FastifyServer) => {
     }
   }
 
-  server.post("/register", route);
+  server.get("/register", route);
 }
 
 
