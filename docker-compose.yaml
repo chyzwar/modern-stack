@@ -10,18 +10,20 @@ services:
   
   postgres:
     image: postgres
+    env_file: ./packages/api/.env.local
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
   
   pgadmin4:
     image: dpage/pgadmin4
+    env_file: ./packages/api/.env.local
     depends_on: 
       - postgres
     ports:
-      - "80:80"
+      - 81:80
     environment:
-      PGADMIN_DEFAULT_EMAIL: postgres@example.pl
+      PGADMIN_DEFAULT_EMAIL: postgres@example.com
       PGADMIN_DEFAULT_PASSWORD: 'postgres'
 
   api:
@@ -30,7 +32,8 @@ services:
     depends_on: 
       - postgres
     ports:
-      - "3000:3000"
+      - 3000:3000
+      - 9231:9231
     volumes:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/api'
@@ -39,8 +42,10 @@ services:
   ui:
     image: node:12
     env_file: ./packages/ui/.env.local
+    depends_on: 
+      - api
     ports:
-      - "4000:4000"
+      - 4000:4000
     volumes:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/ui'
@@ -49,8 +54,10 @@ services:
   admin-ui:
     image: node:12
     env_file: ./packages/admin-ui/.env.local
+    depends_on: 
+      - api
     ports:
-      - "5000:5000"
+      - 5000:5000
     volumes:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/admin-ui'

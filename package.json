@@ -20,7 +20,7 @@
     "@typescript-eslint/parser": "2.x.x",
     "@typescript-eslint/eslint-plugin": "2.x.x",
     "husky": "4.x.x",
-    "jest": "25.x.x",
+    "jest": "24.x.x",
     "lint-staged": "10.x.x",
     "typescript": "^3.8.3", 
     "eslint": "^6.8.0",
@@ -30,6 +30,6 @@
     "eslint-plugin-react-hooks": "2.x.x"
   },
   "lint-staged": {
-    "*": "yarn lint"
+    "*.{js,ts,tsx}": "yarn lint"
   }
 }
