@@ -31,8 +31,9 @@ module.exports = {
     "react-hooks"
   ],
   "extends": [
-    "plugin:@typescript-eslint/eslint-recommended",
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    'plugin:@typescript-eslint/recommended',
     "plugin:css-modules/recommended",
     "plugin:react/recommended",
     "plugin:import/errors",

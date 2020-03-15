@@ -11,17 +11,25 @@
     "lint": "eslint . --ext .ts,.js,.tsx",
     "lint:fix": "eslint . --ext .ts,.js,.tsx --fix",
     "build": "tsc --build",
-    "build:watch": "tsc --build --watch"
+    "build:watch": "tsc --build --watch",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@typescript-eslint/parser": "2.x.x",
     "@typescript-eslint/eslint-plugin": "2.x.x",
     "husky": "4.x.x",
+    "jest": "25.x.x",
+    "lint-staged": "10.x.x",
     "typescript": "^3.8.3", 
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "23.x.x",
     "eslint-plugin-react": "7.x.x",
     "eslint-plugin-import": "2.x.x",
     "eslint-plugin-react-hooks": "2.x.x"
+  },
+  "lint-staged": {
+    "*": "yarn lint"
   }
 }

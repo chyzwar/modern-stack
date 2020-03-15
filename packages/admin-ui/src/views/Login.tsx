@@ -13,7 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-function Copyright () {
+function Copyright (): React.ReactElement {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
             {"Copyright © "}
@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function Login () {
+export default function Login (): React.ReactElement {
     const classes = useStyles();
 
     return (

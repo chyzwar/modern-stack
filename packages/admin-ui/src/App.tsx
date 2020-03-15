@@ -7,7 +7,7 @@ import {
     Route,
 } from "react-router-dom";
 
-function App () {
+function App (): React.ReactElement {
     return (
         <BrowserRouter>
             <Switch>
