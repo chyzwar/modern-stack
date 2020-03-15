@@ -8,16 +8,18 @@ services:
     working_dir: '/home/node/app'
     command: yarn build:watch
   
-  pg:
+  postgres:
     image: postgres
-    restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
   
   pgadmin4:
     image: dpage/pgadmin4
-    restart: always
+    depends_on: 
+      - postgres
+    ports:
+      - "80:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: postgres@example.pl
       PGADMIN_DEFAULT_PASSWORD: 'postgres'
@@ -25,6 +27,8 @@ services:
   api:
     image: node:12
     env_file: ./packages/api/.env.local
+    depends_on: 
+      - postgres
     ports:
       - "3000:3000"
     volumes:

@@ -21,15 +21,20 @@
     "pg-hstore": "^2.3.3"
   },
   "devDependencies": {
-    "sequelize-cli": "^5.5.1",
-    "env-cmd": "^10.1.0",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.11.2",
     "@types/pino": "^5.15.5",
+    "@typescript-eslint/parser": "2.x.x",
+    "@typescript-eslint/eslint-plugin": "2.x.x",
+    "sequelize-cli": "^5.5.1",
+    "env-cmd": "^10.1.0",
     "node-dev": "4.0.0",
     "jest": "^24.0.0",
     "ts-node": "^8.6.2",
     "ts-jest": "^24.0.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.3", 
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "23.x.x",
+    "eslint-plugin-import": "2.x.x"
   }
 }

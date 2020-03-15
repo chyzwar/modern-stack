@@ -1,22 +1,22 @@
-import React from 'react';
-import './App.css';
-import Login from './views/Login'
+import React from "react";
+import "./App.css";
+import Login from "./views/Login";
 import {
-  BrowserRouter,
-  Switch,
-  Route,
+    BrowserRouter,
+    Switch,
+    Route,
 } from "react-router-dom";
 
-function App() {
-  return (
-      <BrowserRouter>
-          <Switch>
-            <Route path="/login">
-              <Login />
-            </Route>
-          </Switch>
-      </BrowserRouter>
+function App () {
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route path="/login">
+                    <Login />
+                </Route>
+            </Switch>
+        </BrowserRouter>
     );
-  }
+}
 
 export default App;
