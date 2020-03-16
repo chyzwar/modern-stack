@@ -13,7 +13,9 @@
     "types": [
       "jest",
       "pino",
-      "node"
+      "node",
+      "validator",
+      "bluebird"
     ]
   }
 }

@@ -33,4 +33,5 @@ process.on("unhandledRejection", (signal) => {
   logger.error({signal}, 'unhandledRejection');
 });
 
+console.log(process.env.PORT)
 server.listen(process.env.PORT);

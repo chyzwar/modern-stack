@@ -25,6 +25,8 @@
     "@types/jest": "24.x.x",
     "@types/node": "12.x.x",
     "@types/pino": "5.x.x",
+    "@types/validator": "12.x.x",
+    "@types/bluebird": "3.x.x",
     "@typescript-eslint/parser": "2.x.x",
     "@typescript-eslint/eslint-plugin": "2.x.x",
     "sequelize-cli": "5.x.x",
