@@ -2,6 +2,8 @@
 import authenticate from './plugins/authenticate';
 import logger from './logger';
 import register from './routes/register';
+import status from './routes/status';
+
 import fastify from 'fastify';
 
 import { FastifyServer } from './types/Server';
@@ -20,8 +22,8 @@ server.register(authenticate)
 /**
  * Register Routes
  */
-server.register(register, { prefix: '/api/v1' })
-
+server.register(register, { prefix: '/api/v1' });
+server.register(status, { prefix: '/api/v1' });
 /**
  * Handle exceptions
  */
@@ -33,5 +35,8 @@ process.on("unhandledRejection", (signal) => {
   logger.error({signal}, 'unhandledRejection');
 });
 
-console.log(process.env.PORT)
-server.listen(process.env.PORT);
+
+server.listen(
+  Number(process.env.API_PORT), 
+  process.env.API_ADDRESS
+);

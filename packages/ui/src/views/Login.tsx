@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function Login () {
+export default function Login (): React.ReactElement {
     const classes = useStyles();
 
     return (

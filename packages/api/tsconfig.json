@@ -16,6 +16,9 @@
       "node",
       "validator",
       "bluebird"
-    ]
-  }
+    ],
+  },
+  "include": [
+    "src"
+  ]
 }

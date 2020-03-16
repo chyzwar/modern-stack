@@ -12,7 +12,7 @@ services:
     image: postgres
     env_file: ./packages/api/.env.local
     ports:
-      - 5432:5432
+      - "5432:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -23,7 +23,7 @@ services:
     depends_on: 
       - postgres
     ports:
-      - 81:80
+      - "81:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: postgres@example.com
       PGADMIN_DEFAULT_PASSWORD: 'postgres'
@@ -34,8 +34,8 @@ services:
     depends_on: 
       - postgres
     ports:
-      - 3000:3000
-      - 9231:9231
+      - "3000:3000"
+      - "9231:9231"
     volumes:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/api'
@@ -47,7 +47,7 @@ services:
     depends_on: 
       - api
     ports:
-      - 4000:4000
+      - "4000:4000"
     volumes:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/ui'
@@ -59,7 +59,7 @@ services:
     depends_on: 
       - api
     ports:
-      - 5000:5000
+      - "5000:5000"
     volumes:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/admin-ui'
