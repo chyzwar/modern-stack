@@ -1,8 +1,8 @@
-import { RouteShorthandOptions } from "fastify";
-import { FastifyServer } from "../types/Server";
-import sequelize from "../sequelize";
+import { RouteShorthandOptions } from 'fastify';
+import { FastifyServer } from '../types/Server';
+import sequelize from '../sequelize';
 
-const status = async(server: FastifyServer): Promise<void> => {
+const status = async (server: FastifyServer): Promise<void> => {
   const route: RouteShorthandOptions = {
     schema: {
       response: {
@@ -11,36 +11,35 @@ const status = async(server: FastifyServer): Promise<void> => {
           properties: {
             uptime: { type: 'number' },
             db: {
-              type: "object",
+              type: 'object',
               properties: {
-                connected: { 
-                  type: 'boolean'
-                }
-              }
-            }
-          }
-        }
-      }
+                connected: {
+                  type: 'boolean',
+                },
+              },
+            },
+          },
+        },
+      },
     },
     handler: async (request, reply) => {
-      let connected: boolean | string = false
+      let connected: boolean | string = false;
       try {
         await sequelize.authenticate();
-      } catch(error) {
+      } catch (error) {
         connected = error.message;
       }
 
-      return reply.send({ 
+      return reply.send({
         uptime: process.uptime(),
         db: {
           connected,
         },
       });
-    }
-  }
-  server.get("/status", route);
-}
-
+    },
+  };
+  server.get('/status', route);
+};
 
 
 export default status;

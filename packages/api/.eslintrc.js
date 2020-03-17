@@ -1,5 +1,6 @@
 
 module.exports = {
+  "extends": ['airbnb-typescript/base'],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2019,
@@ -14,19 +15,6 @@ module.exports = {
     "node": true,
     "jest": true
   },
-  "plugins": [
-    "@typescript-eslint",
-    "import",
-    "jest"
-  ],
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    'plugin:@typescript-eslint/recommended',
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
-  ],
   "overrides": [
     {
       "files": ["*.js"],

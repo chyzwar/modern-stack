@@ -15,6 +15,7 @@
   "dependencies": {
     "fastify": "2.x.x", 
     "fastify-jwt": "1.x.x",
+    "fastify-plugin": "1.x.x",
     "pino": "5.x.x",
     "pino-pretty": "3.x.x",
     "sequelize": "5.x.x",
@@ -37,6 +38,7 @@
     "ts-jest": "24.x.x",
     "typescript": "3.8.x", 
     "eslint": "6.x.x",
+    "eslint-config-airbnb-typescript": "7.x.x",
     "eslint-plugin-jest": "23.x.x",
     "eslint-plugin-import": "2.x.x"
   }

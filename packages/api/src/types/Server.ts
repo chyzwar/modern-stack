@@ -1,11 +1,11 @@
 import {
-  FastifyInstance
-} from 'fastify'
+  FastifyInstance,
+} from 'fastify';
 
-import { 
-  Server, 
-  IncomingMessage, 
-  ServerResponse 
-} from 'http'
+import {
+  Server,
+  IncomingMessage,
+  ServerResponse,
+} from 'http';
 
-export type FastifyServer = FastifyInstance<Server, IncomingMessage, ServerResponse>
+export type FastifyServer = FastifyInstance<Server, IncomingMessage, ServerResponse>;

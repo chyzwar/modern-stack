@@ -1,16 +1,19 @@
-import sequelize from '../sequelize'
-import { 
-  Model, 
-  DataTypes
+import {
+  Model,
+  DataTypes,
 } from 'sequelize';
+import sequelize from '../sequelize';
 
 
 class User extends Model {
-  public id!: number; 
+  public id!: number;
+
   public name!: string;
+
   public preferredName!: string | null;
 
   public readonly createdAt!: Date;
+
   public readonly updatedAt!: Date;
 }
 
@@ -26,8 +29,8 @@ User.init({
   },
   preferredName: {
     type: new DataTypes.STRING(128),
-    allowNull: true
-  }
+    allowNull: true,
+  },
 }, {
   tableName: 'users',
   sequelize,

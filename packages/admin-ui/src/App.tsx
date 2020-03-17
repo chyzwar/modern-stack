@@ -1,22 +1,21 @@
-import React from "react";
-import "./App.css";
-import Login from "./views/Login";
+import React from 'react';
 import {
-    BrowserRouter,
-    Switch,
-    Route,
-} from "react-router-dom";
+  BrowserRouter,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import Login from './views/Login';
 
-function App (): React.ReactElement {
-    return (
-        <BrowserRouter>
-            <Switch>
-                <Route path="/login">
-                    <Login />
-                </Route>
-            </Switch>
-        </BrowserRouter>
-    );
+function App(): React.ReactElement {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;
