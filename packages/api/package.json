@@ -4,8 +4,8 @@
   "description": "API",
   "scripts": {
     "prestart": "yarn build && yarn db:migrate",
-    "start": "env-cmd -f .env.local nodemon dist/server.js --inspect=0.0.0.0:9231",
-    "start:prod": "env-cmd -f .env.production node dist/server.js --inspect=0.0.0.0:9231",
+    "start": "env-cmd -f .env.local nodemon build/server.js",
+    "start:prod": "env-cmd -f .env.production node build/server.js",
     "build": "tsc --build",
     "build:watch": "tsc --build --watch",
     "db:seed": "env-cmd -f .env.local sequelize db:seed",
