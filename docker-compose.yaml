@@ -29,8 +29,8 @@ services:
       - .:/home/node/app
     env_file: 
       - ./.env.local
-    working_dir: '/home/node/app'
     user: ${DOCKER_USER}:${DOCKER_GROUP}
+    working_dir: '/home/node/app'
     command: yarn build:watch
   
   api:

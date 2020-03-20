@@ -60,6 +60,7 @@ export default function Login(): React.ReactElement {
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
+        <a href="http://localhost:3000/api/v1/login/facebook"> Facebook </a>
         <form className={classes.form} noValidate>
           <TextField
             variant="outlined"

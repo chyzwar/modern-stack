@@ -22,7 +22,7 @@
       "type": "node",
       "request": "attach",
       "port": 9231,
-      "address": "localhost",
+      "address": "0.0.0.0",
       "localRoot": "${workspaceFolder}/packages/api",
       "remoteRoot": "/home/node/app/packages/api",
       "protocol": "inspector",

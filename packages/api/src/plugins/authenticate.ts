@@ -10,7 +10,6 @@ import {
   FastifyRequest,
 } from 'fastify';
 
-
 const authenticate = fp(async (fastify) => {
   fastify.register(fastifyJwt, {
     secret: 'supersecret-12345',

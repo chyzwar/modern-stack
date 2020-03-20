@@ -4,9 +4,10 @@ import authenticate from './plugins/authenticate';
 import logger from './logger';
 import register from './routes/register';
 import status from './routes/status';
-
+import facebookOAuth2 from './plugins/facebookOauth';
 
 import { FastifyServer } from './types/Server';
+
 
 const server: FastifyServer = fastify({
   logger: {
@@ -18,7 +19,7 @@ const server: FastifyServer = fastify({
  * Register plugins
  */
 server.register(authenticate);
-
+server.register(facebookOAuth2);
 /**
  * Register Routes
  */
@@ -38,5 +39,5 @@ process.on('unhandledRejection', (signal) => {
 
 server.listen(
   Number(process.env.API_PORT),
-  process.env.API_ADDRESS,
+  process.env.API_HOST,
 );

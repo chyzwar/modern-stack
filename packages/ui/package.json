@@ -2,6 +2,7 @@
   "name": "ui",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
@@ -24,7 +25,7 @@
     "@typescript-eslint/eslint-plugin": "2.x.x",
     "jest": "24.x.x",
     "typescript": "3.x.x",
-    "ts-jest": "25.x.x",
+    "ts-jest": "24.x.x",
     "eslint-config-airbnb-typescript": "7.x.x",
     "eslint-plugin-jsx-a11y": "6.x.x",
     "eslint-plugin-jest": "23.x.x",
