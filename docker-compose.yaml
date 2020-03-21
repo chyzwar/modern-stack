@@ -4,7 +4,6 @@ services:
   postgres:
     image: postgres
     env_file: 
-      - ./.env.local
       - ./packages/api/.env.local
     ports:
       - "5432:5432"
@@ -27,18 +26,15 @@ services:
     image: node:12
     volumes:
       - .:/home/node/app
-    env_file: 
-      - ./.env.local
-    user: ${DOCKER_USER}:${DOCKER_GROUP}
+    user: "${DOCKER_USER}:${DOCKER_GROUP}"
     working_dir: '/home/node/app'
     command: yarn build:watch
   
   api:
     image: node:12
     env_file: 
-      - ./.env.local
       - ./packages/api/.env.local
-    user: ${DOCKER_USER}:${DOCKER_GROUP}
+    user: "${DOCKER_USER}:${DOCKER_GROUP}"
     depends_on: 
       - postgres
       - build
@@ -53,9 +49,8 @@ services:
   ui:
     image: node:12
     env_file: 
-      - ./.env.local
       - ./packages/ui/.env.local
-    user: ${DOCKER_USER}:${DOCKER_GROUP}
+    user: "${DOCKER_USER}:${DOCKER_GROUP}"
     depends_on: 
       - api
       - build
@@ -69,9 +64,8 @@ services:
   admin-ui:
     image: node:12
     env_file: 
-      - ./.env.local
       - ./packages/admin-ui/.env.local
-    user: ${DOCKER_USER}:${DOCKER_GROUP}
+    user: "${DOCKER_USER}:${DOCKER_GROUP}"
     depends_on: 
       - api
       - build
