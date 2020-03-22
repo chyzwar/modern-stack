@@ -9,6 +9,21 @@ Create React App + Fastify API in monorepo
 
 ## What is included
 
+## Getting started
+
+Repo provide init script that will setup baseline env files, yarn install and initialize postgres container.
+It would check if user have docker and docker-compose installed.
+
+```sh
+./init.sh
+```
+
+to start application
+
+```sh
+yarn start
+```
+
 ## CI/CD
 
 - [Github Actions](https://github.com/features/actions)
