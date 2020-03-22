@@ -5,6 +5,7 @@ import logger from './logger';
 import register from './routes/register';
 import status from './routes/status';
 import facebookOAuth2 from './plugins/facebookOauth';
+import googleOAuth2 from './plugins/googleOauth';
 
 import { FastifyServer } from './types/Server';
 
@@ -20,6 +21,7 @@ const server: FastifyServer = fastify({
  */
 server.register(authenticate);
 server.register(facebookOAuth2);
+server.register(googleOAuth2);
 /**
  * Register Routes
  */

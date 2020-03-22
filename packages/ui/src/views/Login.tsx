@@ -45,10 +45,28 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  link: {
+    textDecoration: 'none',
+  },
+  facebook: {
+    margin: theme.spacing(0, 0, 2),
+    backgroundColor: '#3b5998',
+  },
+  google: {
+    margin: theme.spacing(0, 0, 2),
+    backgroundColor: '#de5246',
+  },
 }));
 
 export default function Login(): React.ReactElement {
   const classes = useStyles();
+
+  React.useEffect(() => {
+    const { searchParams } = new URL(document.location.toString());
+    if (searchParams.get('token')) {
+      console.log(searchParams.get('token'));
+    }
+  }, []);
 
   return (
     <Container component="main" maxWidth="xs">
@@ -60,7 +78,7 @@ export default function Login(): React.ReactElement {
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
-        <a href="http://localhost:3000/api/v1/login/facebook"> Facebook </a>
+
         <form className={classes.form} noValidate>
           <TextField
             variant="outlined"
@@ -97,6 +115,31 @@ export default function Login(): React.ReactElement {
           >
             Sign In
           </Button>
+          or
+
+          <a className={classes.link} href="http://localhost:3000/api/v1/login/facebook">
+            <Button
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.facebook}
+            >
+              Facebook
+            </Button>
+          </a>
+
+          <a className={classes.link} href="http://localhost:3000/api/v1/login/google">
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.google}
+            >
+              Google
+            </Button>
+          </a>
+
           <Grid container>
             <Grid item xs>
               <Link href="/password" variant="body2">

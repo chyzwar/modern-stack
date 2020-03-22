@@ -2,8 +2,9 @@
   "name": "ui",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3000",
+  "proxy": "http://api:3000",
   "dependencies": {
+    "axios": "0.19.X",
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
     "react": "^16.13.0",

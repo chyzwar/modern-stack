@@ -13,6 +13,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "axios": "0.19.x",
     "fastify": "2.x.x", 
     "fastify-jwt": "1.x.x",
     "fastify-plugin": "1.x.x",
