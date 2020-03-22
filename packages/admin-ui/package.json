@@ -4,17 +4,17 @@
   "private": true,
   "proxy": "http://api:3000",
   "dependencies": {
-    "axios": "0.19.X",
+    "axios": "0.19.x",
     "@material-ui/core": "4.x.x",
     "@material-ui/icons": "4.x.x",
     "react": "16.x.x",
     "react-dom": "16.x.x",
     "react-router-dom": "5.x.x",
-    "react-scripts": "3.4.x"
+    "react-scripts": "3.4.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.x.x",
-    "@testing-library/react": "9.x.x",
+    "@testing-library/react": "10.x.x",
     "@testing-library/dom": "6.x.x",
     "@testing-library/user-event": "10.x.x",
     "@types/react-router-dom": "5.x.x",

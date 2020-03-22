@@ -41,20 +41,20 @@ services:
     working_dir: '/home/node/app/packages/api'
     command: yarn start
 
-  # ui:
-  #   image: node:12
-  #   env_file: 
-  #     - ./packages/ui/.env.local
-  #   user: "${DOCKER_USER}:${DOCKER_GROUP}"
-  #   depends_on: 
-  #     - api
-  #     - build
-  #   ports:
-  #     - "4000:4000"
-  #   volumes:
-  #     - .:/home/node/app
-  #   working_dir: '/home/node/app/packages/ui'
-  #   command: yarn start
+  ui:
+    image: node:12
+    env_file: 
+      - ./packages/ui/.env.local
+    user: "${DOCKER_USER}:${DOCKER_GROUP}"
+    depends_on: 
+      - api
+      - build
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/home/node/app
+    working_dir: '/home/node/app/packages/ui'
+    command: yarn start
 
   admin-ui:
     image: node:12
