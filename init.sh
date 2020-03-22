@@ -1,8 +1,9 @@
 #!/bin/bash
 
-echo "DOCKER_USER=$(id -u)" >> .env
-echo "DOCKER_GROUP=$(id -g)" >> .env
-
+if [ ! -f .env ]; then
+  echo "DOCKER_USER=$(id -u)" >> .env
+  echo "DOCKER_GROUP=$(id -g)" >> .env
+fi
 
 cd ./packages/api || exit
 if [ ! -f .env.local ]; then
@@ -38,7 +39,6 @@ if ! [ -x "$(command -v docker-compose)" ]; then
 fi
 
 yarn install
-yarn start
 
 
  

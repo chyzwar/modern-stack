@@ -3,7 +3,7 @@
 
 # Modern Stack
 
-Create React App + Fastify API in monorepo
+Typescript Create React App + Fastify API in monorepo
 
 ## Install docker and docker compose
 
@@ -11,14 +11,14 @@ Create React App + Fastify API in monorepo
 
 ## Getting started
 
-Repo provide init script that will setup baseline env files, yarn install and initialize postgres container.
+Repo provide init script that will setup baseline env files, yarn install start application.
 It would check if user have docker and docker-compose installed.
 
 ```sh
-./init.sh
+yarn init
 ```
 
-to start application
+Once project is initialized:
 
 ```sh
 yarn start
