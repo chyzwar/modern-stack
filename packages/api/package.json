@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "API",
   "scripts": {
-    "prestart": "yarn build && yarn db:migrate",
+    "postgres": "wait-port postgres:5432",
+    "prestart": "yarn build && yarn postgres && yarn db:migrate",
     "start": "env-cmd -f .env.local nodemon build/server.js",
     "start:prod": "env-cmd -f .env.production node build/server.js",
     "build": "tsc --build",
@@ -34,6 +35,7 @@
     "@typescript-eslint/eslint-plugin": "2.x.x",
     "sequelize-cli": "5.x.x",
     "env-cmd": "10.x.x",
+    "wait-port": "0.x.x",
     "nodemon": "2.x.x",
     "jest": "24.x.x",
     "ts-node": "8.6.2",

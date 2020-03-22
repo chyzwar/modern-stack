@@ -7,20 +7,15 @@ services:
       - ./packages/api/.env.local
     ports:
       - "5432:5432"
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-  
+
   pgadmin4:
     image: dpage/pgadmin4
-    env_file: ./packages/api/.env.local
     depends_on: 
       - postgres
+    env_file: 
+      - ./packages/api/.env.local
     ports:
-      - "81:80"
-    environment:
-      PGADMIN_DEFAULT_EMAIL: postgres@example.com
-      PGADMIN_DEFAULT_PASSWORD: 'postgres'
+      - "81:80"     
 
   build:
     image: node:12
@@ -29,7 +24,7 @@ services:
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
     working_dir: '/home/node/app'
     command: yarn build:watch
-  
+    
   api:
     image: node:12
     env_file: 
@@ -46,20 +41,20 @@ services:
     working_dir: '/home/node/app/packages/api'
     command: yarn start
 
-  ui:
-    image: node:12
-    env_file: 
-      - ./packages/ui/.env.local
-    user: "${DOCKER_USER}:${DOCKER_GROUP}"
-    depends_on: 
-      - api
-      - build
-    ports:
-      - "4000:4000"
-    volumes:
-      - .:/home/node/app
-    working_dir: '/home/node/app/packages/ui'
-    command: yarn start
+  # ui:
+  #   image: node:12
+  #   env_file: 
+  #     - ./packages/ui/.env.local
+  #   user: "${DOCKER_USER}:${DOCKER_GROUP}"
+  #   depends_on: 
+  #     - api
+  #     - build
+  #   ports:
+  #     - "4000:4000"
+  #   volumes:
+  #     - .:/home/node/app
+  #   working_dir: '/home/node/app/packages/ui'
+  #   command: yarn start
 
   admin-ui:
     image: node:12

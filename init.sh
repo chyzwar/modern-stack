@@ -37,11 +37,6 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-# It is required to initilize postgres container 
-# as docker-compose depend_on do not verify rediness of program in container
-# api will run 
-docker-compose run postgres
-
 yarn install
 yarn start
 
