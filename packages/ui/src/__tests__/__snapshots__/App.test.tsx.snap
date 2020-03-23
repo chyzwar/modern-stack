@@ -197,7 +197,7 @@ exports[`renders learn react link 1`] = `
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-google-7 MuiButton-containedPrimary MuiButton-fullWidth"
             tabindex="0"
-            type="submit"
+            type="button"
           >
             <span
               class="MuiButton-label"
