@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "@project/api",
   "version": "1.0.0",
   "description": "API",
   "scripts": {
@@ -30,6 +30,7 @@
     "@types/jest": "24.x.x",
     "@types/node": "12.x.x",
     "@types/pino": "5.x.x",
+    "@project/types": "1.x.x",
     "@types/validator": "12.x.x",
     "@types/bluebird": "3.x.x",
     "@typescript-eslint/parser": "2.x.x",

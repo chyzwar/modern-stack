@@ -1,11 +1,12 @@
 {
-  "name": "ui",
+  "name": "@project/ui",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://api:3000",
   "dependencies": {
     "axios": "0.19.x",
     "axios-hooks": "1.x.x",
+    "@project/types": "1.x.x",
     "@material-ui/core": "4.x.x",
     "@material-ui/icons": "4.x.x",
     "react": "16.x.x",

@@ -145,7 +145,6 @@ export default function Login(): React.ReactElement {
 
           <a className={classes.link} href="http://localhost:3000/api/v1/login/google">
             <Button
-              type="submit"
               fullWidth
               variant="contained"
               color="primary"

@@ -19,7 +19,7 @@ const {
 const googleOAuth2 = fp(async (fastify) => {
   fastify.register(oauthPlugin, {
     name: 'googleOAuth2',
-    scope: ['email'],
+    scope: ['email profile openid'],
     credentials: {
       client: {
         id: GOOGLE_ID,
@@ -32,23 +32,30 @@ const googleOAuth2 = fp(async (fastify) => {
   });
 
   fastify.get('/api/v1/login/google/callback', async function handler(request, reply) {
-    const token = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
+    const accessToken = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
 
     const { data } = await axios.get<GoogleProfile>('https://www.googleapis.com/oauth2/v3/userinfo', {
       headers: {
-        Authorization: `Bearer ${token.access_token}`,
+        Authorization: `Bearer ${accessToken.access_token}`,
       },
     });
 
     const user = await User.createFromOAuth({
       provider: Provider.Google,
-      providerId: data.id,
+      providerId: data.sub,
       name: data.name,
       email: data.email,
     });
 
+    const {
+      origin,
+      pathname,
+    } = new URL(request.headers.referer);
+
+    const token = this.jwt.sign(user.toJwt());
+
     reply
-      .redirect(`${request.headers.referer}?token=${this.jwt.sign(user)}`);
+      .redirect(`${origin}${pathname}?token=${token}`);
   });
 });
 

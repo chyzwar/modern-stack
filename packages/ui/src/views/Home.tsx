@@ -1,9 +1,6 @@
 import React from 'react';
 import useAxios from 'axios-hooks';
-
-interface Stuff{
-  name: string
-}
+import { Stuff } from '@project/types';
 
 function Home(): React.ReactElement {
   const [{ data, error }] = useAxios<Stuff[]>(

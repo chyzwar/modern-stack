@@ -1,0 +1,23 @@
+{
+  "name": "@project/types",
+  "version": "1.0.0",
+  "description": "Shared types",
+  "main": "./build",
+  "scripts": {
+    "build": "tsc --build",
+    "build:watch": "tsc --build --watch"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/parser": "2.x.x",
+    "@typescript-eslint/eslint-plugin": "2.x.x",
+    "ts-node": "8.6.2",
+    "ts-jest": "24.x.x",
+    "typescript": "3.8.x", 
+    "eslint": "6.x.x",
+    "eslint-config-airbnb-typescript": "7.x.x",
+    "eslint-plugin-jest": "23.x.x",
+    "eslint-plugin-import": "2.x.x"
+  }
+}

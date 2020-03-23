@@ -15,7 +15,7 @@ export interface Profile{
 export interface GoogleProfile{
   name: string,
   email: string;
-  id: string
+  sub: string
 }
 
 

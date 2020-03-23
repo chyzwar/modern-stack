@@ -11,6 +11,7 @@
   ],
   "references": [
     {"path": "./packages/api"},
+    {"path": "./packages/types"},
     {"path": "./packages/ui/tsconfig.build.json"},
     {"path": "./packages/admin-ui/tsconfig.build.json"}
   ]

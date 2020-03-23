@@ -1,23 +1,10 @@
-# Fastify & Typescript App
-
-## Description
-
-Fastify & TypeScript starter repository.
-
-## Installation
-
-```bash
-$ git clone https://github.com/Matschik/fastify-typescript-starter.git
-$ cd fastify-typescript-starter
-$ npm install
-$ rm -rf .git # Remove repository's git directory
-```
+# Fastify API
 
 ## Usage
 
 ```bash
 # development: hot reload with nodemon
-$ npm run dev
+$ npm run start
 
 # debug
 $ npm run debug
