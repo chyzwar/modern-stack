@@ -1,7 +1,6 @@
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -12,6 +11,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { useHistory } from 'react-router-dom';
 
 function Copyright(): React.ReactElement {
   return (
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
+    width: '100%',
     marginTop: theme.spacing(1),
   },
   submit: {
@@ -60,17 +60,32 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Login(): React.ReactElement {
   const classes = useStyles();
+  const history = useHistory();
 
   React.useEffect(() => {
     const { searchParams } = new URL(document.location.toString());
-    if (searchParams.get('token')) {
-      console.log(searchParams.get('token'));
+
+    const token = searchParams.get('token') ?? false;
+    const maxAge = searchParams.get('maxAge') ?? 3600;
+
+    if (token) {
+      const cookie = [
+        `Token=${token}`,
+        'SameSite=Strict',
+        `Max-Age=${maxAge}`,
+      ];
+      if (process.env.NODE_ENV === 'production') {
+        cookie.push('Secure');
+        cookie.push('HttpOnly');
+      }
+      document.cookie = cookie.join('; ');
+      history.push('/');
     }
-  }, []);
+  });
 
   return (
     <Container component="main" maxWidth="xs">
-      <CssBaseline />
+
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />

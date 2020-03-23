@@ -6,8 +6,10 @@ import register from './routes/register';
 import status from './routes/status';
 import facebookOAuth2 from './plugins/facebookOauth';
 import googleOAuth2 from './plugins/googleOauth';
+import cookie from './plugins/cookie';
 
 import { FastifyServer } from './types/Server';
+import stuff from './routes/stuff';
 
 
 const server: FastifyServer = fastify({
@@ -19,6 +21,7 @@ const server: FastifyServer = fastify({
 /**
  * Register plugins
  */
+server.register(cookie);
 server.register(authenticate);
 server.register(facebookOAuth2);
 server.register(googleOAuth2);
@@ -27,6 +30,8 @@ server.register(googleOAuth2);
  */
 server.register(register, { prefix: '/api/v1' });
 server.register(status, { prefix: '/api/v1' });
+server.register(stuff, { prefix: '/api/v1' });
+
 /**
  * Handle exceptions
  */

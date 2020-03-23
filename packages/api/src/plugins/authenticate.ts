@@ -13,6 +13,9 @@ import {
 const authenticate = fp(async (fastify) => {
   fastify.register(fastifyJwt, {
     secret: 'supersecret-12345',
+    cookie: {
+      cookieName: 'Token',
+    },
   });
 
   fastify.decorate('authenticate', async (request: FastifyRequest, reply: FastifyReply<ServerResponse>) => {
