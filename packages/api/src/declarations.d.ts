@@ -1,6 +1,7 @@
 import { OAuth2Namespace } from 'fastify-oauth2';
 import { FastifyMiddleware } from 'fastify';
 
+
 declare module 'fastify' {
   interface FastifyInstance {
     authenticate: FastifyMiddleware;
@@ -18,6 +19,14 @@ declare global {
       API_PROTOCOL: string;
       API_HOST: string;
       API_COOKIE_SECRET: string;
+      API_LOG_LEVEL:
+      |'fatal'
+      | 'error'
+      | 'warn'
+      | 'info'
+      | 'debug'
+      | 'trace'
+      | 'silent';
 
       FACEBOOK_ID: string;
       FACEBOOK_SECRET: string;

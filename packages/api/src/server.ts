@@ -14,6 +14,7 @@ import stuff from './routes/stuff';
 
 const server: FastifyServer = fastify({
   logger: {
+    level: process.env.API_LOG_LEVEL,
     prettyPrint: process.env.NODE_ENV === 'development',
   },
 });
@@ -48,3 +49,5 @@ server.listen(
   Number(process.env.API_PORT),
   process.env.API_HOST,
 );
+
+export default server;
