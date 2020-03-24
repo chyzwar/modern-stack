@@ -6,7 +6,7 @@ import { GoogleProfile, Provider } from '../types/Oauth';
 
 const {
   env: {
-    // API_HOST,
+    API_HOST,
     API_PORT,
     API_PROTOCOL,
 
@@ -28,7 +28,7 @@ const googleOAuth2 = fp(async (fastify) => {
       auth: oauthPlugin.GOOGLE_CONFIGURATION,
     },
     startRedirectPath: '/api/v1/login/google',
-    callbackUri: `${API_PROTOCOL}://localhost:${API_PORT}/api/v1/login/google/callback`,
+    callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/google/callback`,
   });
 
   fastify.get('/api/v1/login/google/callback', async function handler(request, reply) {

@@ -3,8 +3,10 @@
     "module": "commonjs",
     "target": "ES2019",
     "strict": true,
+    "pretty": true,
     "composite": true,
     "incremental": true,
+    "skipLibCheck": true
   },
   "include": [],
   "references": [

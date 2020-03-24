@@ -7,16 +7,12 @@ import status from './routes/status';
 import facebookOAuth2 from './plugins/facebookOauth';
 import googleOAuth2 from './plugins/googleOauth';
 import cookie from './plugins/cookie';
-
-import { FastifyServer } from './types/Server';
 import stuff from './routes/stuff';
 
+import { FastifyServer } from './types/Server';
 
 const server: FastifyServer = fastify({
-  logger: {
-    level: process.env.API_LOG_LEVEL,
-    prettyPrint: process.env.NODE_ENV === 'development',
-  },
+  logger,
 });
 
 /**
@@ -45,9 +41,9 @@ process.on('unhandledRejection', (signal) => {
 });
 
 
-server.listen(
-  Number(process.env.API_PORT),
-  process.env.API_HOST,
-);
+server.listen({
+  port: Number(process.env.API_PORT),
+  host: '0.0.0.0',
+});
 
 export default server;

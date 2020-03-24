@@ -15,10 +15,12 @@ declare global {
     interface ProcessEnv {
       NODE_ENV: 'development' | 'production' | 'test';
 
+
       API_PORT: string;
       API_PROTOCOL: string;
       API_HOST: string;
       API_COOKIE_SECRET: string;
+      API_LOG_PRETTY: 'true' | 'false';
       API_LOG_LEVEL:
       |'fatal'
       | 'error'

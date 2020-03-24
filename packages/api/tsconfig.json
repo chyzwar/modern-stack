@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "incremental": true,
     "composite": true,
+    "pretty": true,
     "rootDir": "src",
     "tsBuildInfoFile": "./build/tsBuildInfoFile.json",
     "types": [

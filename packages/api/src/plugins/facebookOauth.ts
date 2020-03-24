@@ -6,7 +6,7 @@ import { FacebookProfile, Provider } from '../types/Oauth';
 
 const {
   env: {
-    // API_HOST,
+    API_HOST,
     API_PORT,
     API_PROTOCOL,
 
@@ -28,7 +28,7 @@ const facebookOAuth2 = fp(async (fastify) => {
       auth: oauthPlugin.FACEBOOK_CONFIGURATION,
     },
     startRedirectPath: '/api/v1/login/facebook',
-    callbackUri: `${API_PROTOCOL}://localhost:${API_PORT}/api/v1/login/facebook/callback`,
+    callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/facebook/callback`,
   });
 
   fastify.get('/api/v1/login/facebook/callback', async function handler(request, reply) {
