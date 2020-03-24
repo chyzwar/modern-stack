@@ -18,12 +18,22 @@ This project require number of tools available.
 
 Repo provides an init script that will bootstrap baseline env files
 It will check if the user has docker and docker-compose installed.
+For OAuth to work, google and facebook configs need to update in API .env.local
+
+Clone repository
+
+```sh
+git clone https://github.com/chyzwar/modern-stack.git my-project
+cd my-project
+```
+
+Initialize env
 
 ```sh
 yarn init
 ```
 
-Once the project is initialized:
+Start project
 
 ```sh
 yarn start
@@ -53,7 +63,7 @@ There is also a secondary UI application admin-ui. There is not much done beside
 
 ### Testing
 
-Unit testing is provided by Jest. There few test examples (not enough). For API test there are an example of testing leveraging fastify[http injection](https://github.com/fastify/fastify/blob/master/docs/Testing.md)
+Unit testing is provided by Jest. There few test examples (not enough). For API test there are an example of testing leveraging fastify [http injection](https://github.com/fastify/fastify/blob/master/docs/Testing.md)
 
 - [Jest](https://github.com/facebook/jest)
 

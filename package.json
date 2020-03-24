@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "init": "./init.sh",
+    "prestart": "yarn install",
     "start": "docker-compose up",
     "lint": "eslint . --ext .ts,.js,.tsx",
     "lint:fix": "eslint . --ext .ts,.js,.tsx --fix",
