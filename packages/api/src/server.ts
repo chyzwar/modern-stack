@@ -40,7 +40,6 @@ process.on('unhandledRejection', (signal) => {
   logger.error({ signal }, 'unhandledRejection');
 });
 
-
 server.listen({
   port: Number(process.env.API_PORT),
   host: '0.0.0.0',

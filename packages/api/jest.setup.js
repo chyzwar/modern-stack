@@ -1,4 +1,7 @@
+const path = require('path');
+
 require('dotenv')
-  .config({ path: './.env.default' })
+  .config({ path: path.join(__dirname, '.env.default') });
 
 process.env.API_LOG_LEVEL = 'silent';
+process.env.API_PORT = 7000;
