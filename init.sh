@@ -6,20 +6,20 @@ if [ ! -f .env ]; then
 fi
 
 cd ./packages/api || exit
-if [ ! -f .env.local ]; then
-  cp .env.default .env.local
+if [ ! -f .env ]; then
+  cp .env.default .env
 fi
 cd - || exit
 
 cd ./packages/ui || exit
-if [ ! -f .env.local ]; then
-  cp .env.default .env.local
+if [ ! -f .env ]; then
+  cp .env.default .env
 fi
 cd - || exit
 
 cd ./packages/admin-ui || exit
-if [ ! -f .env.local ]; then
-  cp .env.default .env.local
+if [ ! -f .env ]; then
+  cp .env.default .env
 fi
 cd - || exit
 

@@ -5,12 +5,12 @@
   "scripts": {
     "postgres": "wait-port postgres:5432",
     "prestart": "yarn build && yarn postgres && yarn db:migrate",
-    "start": "env-cmd -f .env.local nodemon build/server.js",
-    "start:prod": "env-cmd -f .env.production node build/server.js",
+    "start": "env-cmd nodemon build/server.js",
+    "start:prod": "env-cmd node build/server.js",
     "build": "tsc --build",
     "build:watch": "tsc --build --watch",
-    "db:seed": "env-cmd -f .env.local sequelize db:seed",
-    "db:migrate": "env-cmd -f .env.local sequelize db:migrate"
+    "db:seed": "env-cmd sequelize db:seed",
+    "db:migrate": "env-cmd sequelize db:migrate"
   },
   "license": "UNLICENSED",
   "dependencies": {

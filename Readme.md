@@ -18,7 +18,7 @@ This project require number of tools available.
 
 Repo provides an init script that will bootstrap baseline env files
 It will check if the user has docker and docker-compose installed.
-For OAuth to work, google and facebook configs need to update in API .env.local
+For OAuth to work, google and facebook configs need to update in API .env
 
 Clone repository
 

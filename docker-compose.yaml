@@ -4,7 +4,7 @@ services:
   postgres:
     image: postgres
     env_file: 
-      - ./packages/api/.env.local
+      - ./packages/api/.env
     ports:
       - "5432:5432"
 
@@ -13,7 +13,7 @@ services:
     depends_on: 
       - postgres
     env_file: 
-      - ./packages/api/.env.local
+      - ./packages/api/.env
     ports:
       - "81:80"     
 
@@ -28,7 +28,7 @@ services:
   api:
     image: node:12
     env_file: 
-      - ./packages/api/.env.local
+      - ./packages/api/.env
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
     depends_on: 
       - postgres
@@ -44,7 +44,7 @@ services:
   ui:
     image: node:12
     env_file: 
-      - ./packages/ui/.env.local
+      - ./packages/ui/.env
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
     depends_on: 
       - api
@@ -59,7 +59,7 @@ services:
   admin-ui:
     image: node:12
     env_file: 
-      - ./packages/admin-ui/.env.local
+      - ./packages/admin-ui/.env
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
     depends_on: 
       - api
