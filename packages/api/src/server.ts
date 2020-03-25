@@ -36,9 +36,6 @@ process.on('uncaughtException', (error) => {
   logger.error({ error }, 'uncaughtException');
 });
 
-process.on('unhandledRejection', (signal) => {
-  logger.error({ signal }, 'unhandledRejection');
-});
 
 server.listen({
   port: Number(process.env.API_PORT),
