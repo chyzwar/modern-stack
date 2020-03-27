@@ -84,6 +84,8 @@ Project use yarn workspaces to support hoisting dependencies and managing packag
 
 ## TODO
 
-- [ ] Deployment story AWS ECS/Fargate
-- [ ] Audit security settings
+- [ ] Add classic auth (login + password)
+- [ ] E2E tests setup using cypress
+- [ ] Deployment strategy AWS ECS/Fargate/Zeit
+- [ ] Audit security settings JWT/Cookies/Headers
 - [ ] Create an basic admin application
