@@ -39,6 +39,13 @@ Start project
 yarn start
 ```
 
+Setup auth provider(optional)
+
+- [Facebook](https://developers.facebook.com/docs/facebook-login/web/)
+- [Google](https://developers.google.com/identity/sign-in/web/sign-in)
+
+Update packages/api/.env with client id and client secrets
+
 ## What is included
 
 ### API
