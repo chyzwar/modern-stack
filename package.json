@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "init": "./init.sh",
+    "initialize": "./init.sh",
     "prestart": "yarn install",
     "start": "docker-compose up",
     "lint": "eslint . --ext .ts,.js,.tsx",

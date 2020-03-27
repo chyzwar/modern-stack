@@ -30,7 +30,7 @@ cd my-project
 Initialize env
 
 ```sh
-yarn init
+yarn initialize
 ```
 
 Start project
