@@ -4,9 +4,8 @@
     "target": "ES2019",
     "strict": true,
     "pretty": true,
-    "composite": true,
-    "incremental": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "preserveWatchOutput": true
   },
   "include": [],
   "references": [
