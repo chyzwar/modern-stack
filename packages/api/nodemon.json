@@ -1,9 +1,6 @@
 {
   "verbose": true,
   "ext": "js",
-  "args": [
-    "--inspect=0.0.0.0:9231"
-  ],
   "ignore": [
     "*.test.js",
     "*.map",
@@ -12,5 +9,8 @@
   ],
   "watch": [
     "build"
-  ]
+  ],
+  "env": {
+    "NODE_OPTIONS": "--inspect=0.0.0.0:9231"
+  }
 }
