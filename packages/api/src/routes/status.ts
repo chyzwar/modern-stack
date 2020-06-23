@@ -1,6 +1,7 @@
 import { RouteShorthandOptions } from 'fastify';
 import { FastifyServer } from '../types/Server';
 import sequelize from '../sequelize';
+import logger from '../logger';
 
 const status = async (server: FastifyServer): Promise<void> => {
   const route: RouteShorthandOptions = {
@@ -23,11 +24,12 @@ const status = async (server: FastifyServer): Promise<void> => {
       },
     },
     handler: async (request, reply) => {
-      let connected: boolean | string = false;
+      let connected: boolean | string = true;
       try {
         await sequelize.authenticate();
       } catch (error) {
-        connected = error.message;
+        logger.error(error, 'Failed to connect db');
+        connected = false;
       }
 
       return reply.send({
