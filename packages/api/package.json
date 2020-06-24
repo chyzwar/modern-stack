@@ -29,7 +29,7 @@
   "devDependencies": {
     "@types/jest": "24.x.x",
     "@types/node": "12.x.x",
-    "@types/pino": "5.x.x",
+    "@types/pino": "6.x.x",
     "@project/types": "1.x.x",
     "@types/validator": "12.x.x",
     "@types/bluebird": "3.x.x",
