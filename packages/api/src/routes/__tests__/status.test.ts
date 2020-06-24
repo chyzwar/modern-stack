@@ -1,7 +1,6 @@
 import fastify from '../../server';
 import sequelize from '../../sequelize';
 
-
 describe('GET `/status` route', () => {
   afterAll(() => fastify.close());
 

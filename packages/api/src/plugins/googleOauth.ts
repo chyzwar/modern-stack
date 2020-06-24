@@ -15,7 +15,6 @@ const {
   },
 } = process;
 
-
 const googleOAuth2 = fp(async (fastify) => {
   fastify.register(oauthPlugin, {
     name: 'googleOAuth2',

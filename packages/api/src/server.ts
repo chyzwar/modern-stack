@@ -1,4 +1,3 @@
-
 import fastify from 'fastify';
 import authenticate from './plugins/authenticate';
 import logger from './logger';
@@ -35,7 +34,6 @@ server.register(stuff, { prefix: '/api/v1' });
 process.on('uncaughtException', (error) => {
   logger.error({ error }, 'uncaughtException');
 });
-
 
 server.listen({
   port: Number(process.env.API_PORT),

@@ -8,3 +8,4 @@ packages/api/migrations
 jest.setup.js
 jest.config.js
 husky.config.js
+commitlint.config.js

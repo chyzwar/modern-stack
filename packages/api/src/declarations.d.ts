@@ -1,7 +1,6 @@
 import { OAuth2Namespace } from 'fastify-oauth2';
 import { FastifyMiddleware } from 'fastify';
 
-
 declare module 'fastify' {
   interface FastifyInstance {
     authenticate: FastifyMiddleware;
@@ -14,7 +13,6 @@ declare global {
   namespace NodeJS {
     interface ProcessEnv {
       NODE_ENV: 'development' | 'production' | 'test';
-
 
       API_PORT: string;
       API_PROTOCOL: string;

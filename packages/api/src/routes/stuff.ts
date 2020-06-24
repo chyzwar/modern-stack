@@ -28,5 +28,4 @@ const stuff = async (fastify: FastifyServer): Promise<void> => {
   fastify.get('/stuff', route);
 };
 
-
 export default stuff;

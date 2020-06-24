@@ -15,7 +15,6 @@ exports[`renders learn react link 1`] = `
           aria-hidden="true"
           class="MuiSvgIcon-root"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -43,6 +42,7 @@ exports[`renders learn react link 1`] = `
           >
             Email Address
             <span
+              aria-hidden="true"
               class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
             >
                *
@@ -63,10 +63,10 @@ exports[`renders learn react link 1`] = `
             />
             <fieldset
               aria-hidden="true"
-              class="PrivateNotchedOutline-root-120 MuiOutlinedInput-notchedOutline"
+              class="PrivateNotchedOutline-root-8 MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="PrivateNotchedOutline-legendLabelled-122 PrivateNotchedOutline-legendNotched-123"
+                class="PrivateNotchedOutline-legendLabelled-10 PrivateNotchedOutline-legendNotched-11"
               >
                 <span>
                   Email Address *
@@ -86,6 +86,7 @@ exports[`renders learn react link 1`] = `
           >
             Password
             <span
+              aria-hidden="true"
               class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
             >
                *
@@ -106,10 +107,10 @@ exports[`renders learn react link 1`] = `
             />
             <fieldset
               aria-hidden="true"
-              class="PrivateNotchedOutline-root-120 MuiOutlinedInput-notchedOutline"
+              class="PrivateNotchedOutline-root-8 MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="PrivateNotchedOutline-legendLabelled-122"
+                class="PrivateNotchedOutline-legendLabelled-10"
               >
                 <span>
                   Password *
@@ -123,13 +124,13 @@ exports[`renders learn react link 1`] = `
         >
           <span
             aria-disabled="false"
-            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-136 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-12 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
           >
             <span
               class="MuiIconButton-label"
             >
               <input
-                class="PrivateSwitchBase-input-139"
+                class="PrivateSwitchBase-input-15"
                 data-indeterminate="false"
                 type="checkbox"
                 value="remember"
@@ -138,7 +139,6 @@ exports[`renders learn react link 1`] = `
                 aria-hidden="true"
                 class="MuiSvgIcon-root"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -236,7 +236,7 @@ exports[`renders learn react link 1`] = `
       </form>
     </div>
     <div
-      class="MuiBox-root MuiBox-root-291"
+      class="MuiBox-root MuiBox-root-16"
     >
       <p
         class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter"

@@ -15,7 +15,6 @@ import {
   JWTPayload,
 } from '../types/Jwt';
 
-
 class User extends Model {
   public id!: number;
 
@@ -30,7 +29,6 @@ class User extends Model {
   public readonly createdAt!: Date;
 
   public readonly updatedAt!: Date;
-
 
   public toJwt(): JWTPayload {
     return {
@@ -97,6 +95,5 @@ User.init({
   tableName: 'users',
   sequelize,
 });
-
 
 export default User;

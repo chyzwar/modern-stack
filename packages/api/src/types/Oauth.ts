@@ -1,4 +1,3 @@
-
 export enum Provider {
   Google = 'Google',
   Facebook = 'Facebook',
@@ -17,7 +16,6 @@ export interface GoogleProfile{
   email: string;
   sub: string
 }
-
 
 export interface FacebookProfile {
   name: string,

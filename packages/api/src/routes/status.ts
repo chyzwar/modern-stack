@@ -43,5 +43,4 @@ const status = async (server: FastifyServer): Promise<void> => {
   server.get('/status', route);
 };
 
-
 export default status;

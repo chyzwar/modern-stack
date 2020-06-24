@@ -10,13 +10,13 @@
     "react": "16.x.x",
     "react-dom": "16.x.x",
     "react-router-dom": "5.x.x",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.x.x",
     "@testing-library/react": "10.x.x",
     "@testing-library/dom": "6.x.x",
-    "@testing-library/user-event": "12.x.x",
+    "@testing-library/user-event": "10.x.x",
     "@types/react-router-dom": "5.x.x",
     "@types/jest": "24.x.x",
     "@types/node": "12.x.x",
@@ -24,7 +24,7 @@
     "@types/react-dom": "16.x.x",
     "@typescript-eslint/parser": "2.x.x",
     "@typescript-eslint/eslint-plugin": "2.x.x",
-    "jest": "26.x.x",
+    "jest": "24.x.x",
     "typescript": "3.x.x",
     "ts-jest": "24.x.x",
     "eslint-config-airbnb-typescript": "7.x.x",

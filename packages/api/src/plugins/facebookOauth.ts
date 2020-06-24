@@ -15,7 +15,6 @@ const {
   },
 } = process;
 
-
 const facebookOAuth2 = fp(async (fastify) => {
   fastify.register(oauthPlugin, {
     name: 'facebookOAuth2',

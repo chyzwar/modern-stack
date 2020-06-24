@@ -21,5 +21,4 @@ const register = async (server: FastifyServer): Promise<void> => {
   server.get('/register', route);
 };
 
-
 export default register;
