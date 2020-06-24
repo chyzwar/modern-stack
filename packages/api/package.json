@@ -23,7 +23,7 @@
     "pino": "5.x.x",
     "pino-pretty": "3.x.x",
     "sequelize": "5.x.x",
-    "pg": "7.x.x",
+    "pg": "8.x.x",
     "pg-hstore": "2.x.x"
   },
   "devDependencies": {
