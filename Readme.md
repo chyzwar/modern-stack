@@ -88,6 +88,7 @@ Project use yarn workspaces to support hoisting dependencies and managing packag
 - [Husky](https://www.npmjs.com/package/husky)
 - [Lint Staged](https://github.com/okonet/lint-staged)
 - [Eslint](https://github.com/eslint/eslint)
+- [Commitlint](https://github.com/conventional-changelog/commitlint)
 
 ## TODO
 
