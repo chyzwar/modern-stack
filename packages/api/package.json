@@ -41,10 +41,10 @@
     "wait-port": "0.x.x",
     "nodemon": "2.x.x",
     "jest": "26.x.x",
-    "ts-node": "8.10.2",
+    "ts-node": "8.x.x",
     "ts-jest": "26.x.x",
     "typescript": "3.8.x", 
-    "eslint": "6.x.x",
+    "eslint": "7.x.x",
     "eslint-config-airbnb-typescript": "7.x.x",
     "eslint-plugin-jest": "23.x.x",
     "eslint-plugin-import": "2.x.x"
