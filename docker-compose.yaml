@@ -55,6 +55,7 @@ services:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/ui'
     command: yarn start
+    stdin_open: true
 
   admin-ui:
     image: node:12
@@ -70,3 +71,4 @@ services:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/admin-ui'
     command: yarn start
+    stdin_open: true
