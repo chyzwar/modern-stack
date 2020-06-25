@@ -32,7 +32,7 @@
     "eslint-plugin-jest": "23.x.x",
     "eslint-plugin-react": "7.x.x",
     "eslint-plugin-import": "2.x.x",
-    "eslint-plugin-react-hooks": "2.x.x",
+    "eslint-plugin-react-hooks": "4.x.x",
     "eslint-plugin-css-modules":"2.x.x"
   },
   "scripts": {
