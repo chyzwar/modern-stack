@@ -12525,9 +12525,9 @@ send@0.17.1:
     statuses "~1.5.0"
 
 sequelize-cli@6.x.x:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/sequelize-cli/-/sequelize-cli-6.0.0.tgz#2dc960459ae64d8555f258bf3cc6aa9876377e07"
-  integrity sha512-DhZ6QwBJR5VXjM5VFt49H+SbNCdJhfjW5seQyqvJA92te+w19lZBIRlKC42LtUnhLf3rBDn8Be3CSuT6reonbg==
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/sequelize-cli/-/sequelize-cli-6.1.0.tgz#aa03e48988f1943734286277e4b5af7ce6ce3445"
+  integrity sha512-Bb49bdnd3K+YycGh+nYtTj6Zp4+6/cxlf8UJi8toQ28ff2b7mnqzjFPvNCuHB3frdimT8X1PeTU9Z/JUtRnEaA==
   dependencies:
     cli-color "^1.4.0"
     fs-extra "^7.0.1"
