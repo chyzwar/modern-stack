@@ -28,7 +28,7 @@
     "eslint-plugin-import": "2.x.x",
     "eslint-plugin-jest": "23.x.x",
     "eslint-plugin-react": "7.x.x",
-    "eslint-plugin-react-hooks": "2.x.x",
+    "eslint-plugin-react-hooks": "4.x.x",
     "husky": "4.x.x",
     "jest": "26.x.x",
     "lint-staged": "10.x.x",
