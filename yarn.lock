@@ -5939,7 +5939,14 @@ fastify-oauth2@3.x.x:
     fastify-plugin "^1.0.1"
     simple-oauth2 "^1.6.0"
 
-fastify-plugin@1.x.x, fastify-plugin@^1.0.1, fastify-plugin@^1.2.0, fastify-plugin@^1.4.0:
+fastify-plugin@2.x.x:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-2.0.2.tgz#0cbc341074c436d8e30341437e25e76ed1ff57cc"
+  integrity sha512-Ak+QUuJB6U/Tbw3CJHGD8SrO4T8L9AIe5NMSOyT9EhQIxXAZPYvm/gUmeBrgGR/jkiT/2eHIFvAKx8DFg7XXhQ==
+  dependencies:
+    semver "^7.3.2"
+
+fastify-plugin@^1.0.1, fastify-plugin@^1.2.0, fastify-plugin@^1.4.0:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-1.6.1.tgz#122f5a5eeb630d55c301713145a9d188e6d5dd5b"
   integrity sha512-APBcb27s+MjaBIerFirYmBLatoPCgmHZM6XP0K+nDL9k0yX8NJPWDY1RAC3bh6z+AB5ULS2j31BUfLMT3uaZ4A==
