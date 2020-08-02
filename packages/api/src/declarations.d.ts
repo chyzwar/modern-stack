@@ -1,9 +1,9 @@
 import { OAuth2Namespace } from 'fastify-oauth2';
-import { FastifyMiddleware } from 'fastify';
+import { preValidationHookHandler } from 'fastify';
 
 declare module 'fastify' {
   interface FastifyInstance {
-    authenticate: FastifyMiddleware;
+    authenticate: preValidationHookHandler;
     facebookOAuth2: OAuth2Namespace;
     googleOAuth2: OAuth2Namespace;
   }

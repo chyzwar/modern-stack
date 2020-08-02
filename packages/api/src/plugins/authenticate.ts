@@ -2,10 +2,6 @@ import fp from 'fastify-plugin';
 import fastifyJwt from 'fastify-jwt';
 
 import {
-  ServerResponse,
-} from 'http';
-
-import {
   FastifyReply,
   FastifyRequest,
 } from 'fastify';
@@ -18,7 +14,7 @@ const authenticate = fp(async (fastify) => {
     },
   });
 
-  fastify.decorate('authenticate', async (request: FastifyRequest, reply: FastifyReply<ServerResponse>) => {
+  fastify.decorate('authenticate', async (request: FastifyRequest, reply: FastifyReply) => {
     try {
       await request.jwtVerify();
     } catch (err) {

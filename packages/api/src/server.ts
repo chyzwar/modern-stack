@@ -35,9 +35,14 @@ process.on('uncaughtException', (error) => {
   logger.error({ error }, 'uncaughtException');
 });
 
-server.listen({
-  port: Number(process.env.API_PORT),
-  host: '0.0.0.0',
-});
+server.listen(
+  Number(process.env.API_PORT),
+  '0.0.0.0',
+  (error: Error) => {
+    if (error) {
+      logger.error({ error }, 'Failed to start server');
+    }
+  },
+);
 
 export default server;

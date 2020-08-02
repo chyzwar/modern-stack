@@ -4,8 +4,6 @@ import {
 
 import {
   Server,
-  IncomingMessage,
-  ServerResponse,
 } from 'http';
 
-export type FastifyServer = FastifyInstance<Server, IncomingMessage, ServerResponse>;
+export type FastifyServer = FastifyInstance<Server>;

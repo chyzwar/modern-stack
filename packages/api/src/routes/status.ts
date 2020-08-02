@@ -1,10 +1,10 @@
-import { RouteShorthandOptions } from 'fastify';
+import { RouteShorthandOptionsWithHandler } from 'fastify';
 import { FastifyServer } from '../types/Server';
 import sequelize from '../sequelize';
 import logger from '../logger';
 
 const status = async (server: FastifyServer): Promise<void> => {
-  const route: RouteShorthandOptions = {
+  const route: RouteShorthandOptionsWithHandler = {
     schema: {
       response: {
         200: {

@@ -49,7 +49,7 @@ const googleOAuth2 = fp(async (fastify) => {
     const {
       origin,
       pathname,
-    } = new URL(request.headers.referer);
+    } = new URL(request.headers.referer ?? '');
 
     const token = this.jwt.sign(user.toJwt());
 
