@@ -40,7 +40,7 @@ server.listen(
   '0.0.0.0',
   (error: Error) => {
     if (error) {
-      logger.error({ error }, 'Failed to start server');
+      logger.error(error, 'Failed to start server');
     }
   },
 );

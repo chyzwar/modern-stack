@@ -1,8 +1,23 @@
 import axios from 'axios';
 import fp from 'fastify-plugin';
 import oauthPlugin from 'fastify-oauth2';
+import { randomBytes } from 'crypto';
+import { FastifyRequest } from 'fastify';
+
 import User from '../models/User';
 import { FacebookProfile, Provider } from '../types/Oauth';
+
+const defaultState = randomBytes(10).toString('hex');
+
+function generateStateFunction(request: FastifyRequest) {
+  return `${request.headers.referer}_${defaultState}`;
+}
+
+function checkStateFunction(state: string, callback: Function) {
+  return state.endsWith(defaultState)
+    ? callback()
+    : callback(new Error('Invalid state'));
+}
 
 const {
   env: {
@@ -28,6 +43,8 @@ const facebookOAuth2 = fp(async (fastify) => {
     },
     startRedirectPath: '/api/v1/login/facebook',
     callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/facebook/callback`,
+    checkStateFunction,
+    generateStateFunction,
   });
 
   fastify.get('/api/v1/login/facebook/callback', async function handler(request, reply) {
@@ -52,7 +69,7 @@ const facebookOAuth2 = fp(async (fastify) => {
     const {
       origin,
       pathname,
-    } = new URL(request.headers.referer ?? '');
+    } = new URL((request.query as any)?.state.split('_').shift());
 
     const token = this.jwt.sign(user.toJwt());
 
