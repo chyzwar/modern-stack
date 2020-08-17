@@ -6048,9 +6048,9 @@ fastify-jwt@2.x.x:
     steed "^1.1.3"
 
 fastify-oauth2@4.x.x:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/fastify-oauth2/-/fastify-oauth2-4.0.0.tgz#ad67f3d6e73c6d02547fa601d2e3e5498a41a7d0"
-  integrity sha512-EH3tHqYNYLq6Rt9AmS2zstajsHlUXP5hXVvBqnK9MWFokW/5EubIYZ7ASSphnMN2/vTjD1PDSJP2HZkkCMPGOQ==
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/fastify-oauth2/-/fastify-oauth2-4.1.0.tgz#41659a7a43cedbab7d94cfe0523f40de4db0a82d"
+  integrity sha512-Xdyto58RGTASozc3kF+VJWGtZzPMo6pRU2/WZyRQvDgBdRaVWF2J91u9wyETM2B+SQtqfhfgBSZzg8ikUpkvEg==
   dependencies:
     es6-promisify "^6.0.0"
     fastify-plugin "^2.0.1"
