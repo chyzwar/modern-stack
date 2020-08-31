@@ -41,7 +41,7 @@
     "wait-port": "0.x.x",
     "nodemon": "2.x.x",
     "jest": "26.x.x",
-    "ts-node": "8.x.x",
+    "ts-node": "9.x.x",
     "ts-jest": "26.x.x",
     "typescript": "3.8.x", 
     "eslint": "7.x.x",
