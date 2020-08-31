@@ -4,7 +4,7 @@
   "private": true,
   "proxy": "http://api:3000",
   "dependencies": {
-    "axios": "0.19.x",
+    "axios": "0.20.x",
     "axios-hooks": "2.x.x",
     "@project/types": "1.x.x",
     "@material-ui/core": "4.x.x",
