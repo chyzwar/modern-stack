@@ -5,6 +5,9 @@ module.exports = {
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
   },
+  env: {
+    browser: true
+  },
   overrides: [
     {
       "files": ["*.js"],

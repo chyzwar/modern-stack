@@ -10,13 +10,13 @@
   "license": "UNLICENSED",
   "dependencies": {},
   "devDependencies": {
-    "@typescript-eslint/parser": "3.x.x",
-    "@typescript-eslint/eslint-plugin": "3.x.x",
+    "@typescript-eslint/parser": "4.x.x",
+    "@typescript-eslint/eslint-plugin": "4.x.x",
     "ts-node": "9.0.0",
     "ts-jest": "26.x.x",
-    "typescript": "3.8.x", 
+    "typescript": "4.x.x", 
     "eslint": "7.x.x",
-    "eslint-config-airbnb-typescript": "9.x.x",
+    "eslint-config-airbnb-typescript": "10.x.x",
     "eslint-plugin-jest": "23.x.x",
     "eslint-plugin-import": "2.x.x"
   }
