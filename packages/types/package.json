@@ -11,7 +11,7 @@
   "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/parser": "3.x.x",
-    "@typescript-eslint/eslint-plugin": "3.x.x",
+    "@typescript-eslint/eslint-plugin": "4.x.x",
     "ts-node": "9.0.0",
     "ts-jest": "26.x.x",
     "typescript": "3.8.x", 
