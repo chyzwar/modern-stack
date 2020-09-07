@@ -33,7 +33,7 @@
     "@project/types": "1.x.x",
     "@types/validator": "13.x.x",
     "@types/bluebird": "3.x.x",
-    "@typescript-eslint/parser": "3.x.x",
+    "@typescript-eslint/parser": "4.x.x",
     "@typescript-eslint/eslint-plugin": "3.x.x",
     "sequelize-cli": "6.x.x",
     "env-cmd": "10.x.x",
