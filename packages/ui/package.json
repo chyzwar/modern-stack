@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.x.x",
-    "@testing-library/react": "10.x.x",
+    "@testing-library/react": "11.x.x",
     "@testing-library/dom": "7.x.x",
     "@testing-library/user-event": "12.x.x",
     "@types/react-router-dom": "5.x.x",
