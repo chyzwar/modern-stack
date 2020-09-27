@@ -29,7 +29,7 @@
     "ts-jest": "26.x.x",
     "eslint-config-airbnb-typescript": "10.x.x",
     "eslint-plugin-jsx-a11y": "6.x.x",
-    "eslint-plugin-jest": "23.x.x",
+    "eslint-plugin-jest": "24.x.x",
     "eslint-plugin-react": "7.x.x",
     "eslint-plugin-import": "2.x.x",
     "eslint-plugin-react-hooks": "4.x.x",
