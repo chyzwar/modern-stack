@@ -35,6 +35,6 @@
     "typescript": "4.x.x"
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": "yarn lint"
+    "*.{js,ts,tsx}": "yarn lint:fix"
   }
 }

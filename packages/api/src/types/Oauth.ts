@@ -1,7 +1,7 @@
 export enum Provider {
   Google = 'Google',
   Facebook = 'Facebook',
-  Custom = 'Custom'
+  Custom = 'Custom',
 }
 
 export interface Profile{
