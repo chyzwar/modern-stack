@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "API",
   "scripts": {
-    "postgres": "wait-port postgres:5432",
+    "postgres": "wait-port postgres:5433",
     "prestart": "yarn build && yarn postgres && yarn db:migrate",
     "start": "env-cmd nodemon build/server.js",
     "start:prod": "env-cmd node build/server.js",
