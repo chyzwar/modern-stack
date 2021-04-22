@@ -1,6 +1,10 @@
 {
   "name": "@project/root",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x.x",
+    "yarn": "1.x.x"
+  },
   "main": "index.js",
   "license": "MIT",
   "private": true,

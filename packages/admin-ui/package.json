@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://api:3000",
+  "engines": {
+    "node": "16.x.x",
+    "yarn": "1.x.x"
+  },
   "dependencies": {
     "axios": "0.21.x",
     "@material-ui/core": "4.x.x",

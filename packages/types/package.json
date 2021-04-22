@@ -2,6 +2,10 @@
   "name": "@project/types",
   "version": "1.0.0",
   "description": "Shared types",
+  "engines": {
+    "node": "16.x.x",
+    "yarn": "1.x.x"
+  },
   "main": "./build",
   "scripts": {
     "build": "tsc --build",

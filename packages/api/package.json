@@ -2,6 +2,10 @@
   "name": "@project/api",
   "version": "1.0.0",
   "description": "API",
+  "engines": {
+    "node": "16.x.x",
+    "yarn": "1.x.x"
+  },
   "scripts": {
     "postgres": "wait-port postgres:5433",
     "prestart": "yarn build && yarn postgres && yarn db:migrate",
