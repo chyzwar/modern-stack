@@ -23,7 +23,7 @@
     "fastify-jwt": "2.x.x",
     "fastify-plugin": "2.x.x",
     "fastify-oauth2": "4.x.x",
-    "fastify-cookie": "4.x.x",
+    "fastify-cookie": "5.x.x",
     "pino": "6.x.x",
     "pino-pretty": "4.x.x",
     "sequelize": "6.x.x",
