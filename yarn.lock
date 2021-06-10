@@ -5822,10 +5822,10 @@ fastfall@^1.5.0:
   dependencies:
     reusify "^1.0.0"
 
-fastify-cookie@4.x.x:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/fastify-cookie/-/fastify-cookie-4.2.0.tgz#c9d7f9c16a25f23ef1451f38e53ae7650e210b2e"
-  integrity sha512-BZjgIA143YevEjAwJmqfnJJ5hIonkl49nLBjRLbErFKor/Rd8DZ0xnHnmxSk8xUhnr5g5vxKHnH3/dQt+11cpg==
+fastify-cookie@5.x.x:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/fastify-cookie/-/fastify-cookie-5.3.1.tgz#97b17f3f297b06ffc8e27fe7a0398aefa9df74f0"
+  integrity sha512-ubiC5ydvgqaXOydeg3G+SFEiTJtsyNPde6ForXi+UG66aDbsHlWNLJTQZg4BopXv+MJ0SzlShGVCWv26mgAwpw==
   dependencies:
     cookie "^0.4.0"
     cookie-signature "^1.1.0"
