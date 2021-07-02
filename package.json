@@ -21,7 +21,8 @@
     "build:watch": "tsc --build --watch",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@commitlint/cli": "12.x.x",
@@ -33,9 +34,9 @@
     "eslint-plugin-jest": "24.x.x",
     "eslint-plugin-react": "7.x.x",
     "eslint-plugin-react-hooks": "4.x.x",
-    "husky": "4.x.x",
+    "husky": "7.x.x",
     "jest": "26.x.x",
-    "lint-staged": "10.x.x",
+    "lint-staged": "11.x.x",
     "typescript": "4.x.x"
   },
   "lint-staged": {
