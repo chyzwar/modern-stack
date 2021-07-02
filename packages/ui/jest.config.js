@@ -6,6 +6,7 @@
  * @see https://kulshekhar.github.io/ts-jest/user/config/
  */
 module.exports = {
+  testEnvironment: "jsdom",
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },

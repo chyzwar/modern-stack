@@ -35,11 +35,14 @@
     "eslint-plugin-react": "7.x.x",
     "eslint-plugin-react-hooks": "4.x.x",
     "husky": "7.x.x",
-    "jest": "26.x.x",
+    "jest": "27.x.x",
     "lint-staged": "11.x.x",
     "typescript": "4.x.x"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": "yarn lint:fix"
+  },
+  "resolutions": {
+    "jest": "27.x.x"
   }
 }

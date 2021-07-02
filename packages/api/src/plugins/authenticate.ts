@@ -11,6 +11,7 @@ const authenticate = fp(async (fastify) => {
     secret: 'supersecret-12345',
     cookie: {
       cookieName: 'Token',
+      signed: false,
     },
   });
 

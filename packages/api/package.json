@@ -20,12 +20,12 @@
   "dependencies": {
     "axios": "0.21.x",
     "fastify": "3.x.x", 
-    "fastify-jwt": "2.x.x",
-    "fastify-plugin": "2.x.x",
+    "fastify-jwt": "3.x.x",
+    "fastify-plugin": "3.x.x",
     "fastify-oauth2": "4.x.x",
     "fastify-cookie": "5.x.x",
     "pino": "6.x.x",
-    "pino-pretty": "4.x.x",
+    "pino-pretty": "5.x.x",
     "sequelize": "6.x.x",
     "pg": "8.x.x",
     "pg-hstore": "2.x.x"
@@ -44,12 +44,12 @@
     "dotenv": "8.x.x",
     "wait-port": "0.x.x",
     "nodemon": "2.x.x",
-    "jest": "26.x.x",
-    "ts-node": "9.x.x",
-    "ts-jest": "26.x.x",
+    "jest": "27.x.x",
+    "ts-node": "10.x.x",
+    "ts-jest": "27.x.x",
     "typescript": "4.x.x", 
     "eslint": "7.x.x",
-    "eslint-config-airbnb-typescript": "11.x.x",
+    "eslint-config-airbnb-typescript": "12.x.x",
     "eslint-plugin-jest": "24.x.x",
     "eslint-plugin-import": "2.x.x"
   }

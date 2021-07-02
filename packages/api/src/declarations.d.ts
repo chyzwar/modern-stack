@@ -20,7 +20,7 @@ declare global {
       API_COOKIE_SECRET: string;
       API_LOG_PRETTY: 'true' | 'false';
       API_LOG_LEVEL:
-      |'fatal'
+      | 'fatal'
       | 'error'
       | 'warn'
       | 'info'
