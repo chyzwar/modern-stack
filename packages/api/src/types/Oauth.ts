@@ -1,3 +1,5 @@
+import { Role } from '@project/common';
+
 export enum Provider {
   Google = 'Google',
   Facebook = 'Facebook',
@@ -9,6 +11,7 @@ export interface Profile{
   providerId: string;
   name: string;
   email: string;
+  role: Role
 }
 
 export interface GoogleProfile{

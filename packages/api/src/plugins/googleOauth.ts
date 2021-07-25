@@ -4,6 +4,7 @@ import oauthPlugin from 'fastify-oauth2';
 import { FastifyRequest } from 'fastify';
 import { randomBytes } from 'crypto';
 
+import { Role } from '@project/common';
 import User from '../models/User';
 import { GoogleProfile, Provider } from '../types/Oauth';
 
@@ -61,6 +62,7 @@ const googleOAuth2 = fp(async (fastify) => {
       providerId: data.sub,
       name: data.name,
       email: data.email,
+      role: Role.Guest,
     });
 
     const {

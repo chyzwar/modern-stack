@@ -19,7 +19,7 @@ function App(): React.ReactElement {
           <Route path="/login">
             <Login />
           </Route>
-          <ProtectedRoute path="/">
+          <ProtectedRoute exact path="/">
             <Home />
           </ProtectedRoute>
         </Switch>

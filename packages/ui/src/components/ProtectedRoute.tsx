@@ -12,15 +12,16 @@ import useAuth from '../hooks/useAuth';
 
 interface ProtectedRouteProps{
   children: ReactElement;
-  path: string
+  path: string;
+  exact?: boolean;
 }
 
-const ProtectedRoute: FC<ProtectedRouteProps> = ({ path, children }) => {
+const ProtectedRoute: FC<ProtectedRouteProps> = ({ path, exact, children }) => {
   const { isAuthenticated } = useAuth();
 
   return isAuthenticated
     ? (
-      <Route path={path}>
+      <Route path={path} exact={exact}>
         {children}
       </Route>
     )

@@ -2,8 +2,10 @@ import {
   Model,
   DataTypes,
 } from 'sequelize';
+import {
+  Role,
+} from '@project/common';
 import logger from '../logger';
-
 import sequelize from '../sequelize';
 
 import {
@@ -61,6 +63,17 @@ User.init({
   },
   name: {
     type: new DataTypes.STRING(128),
+    allowNull: false,
+  },
+  role: {
+    type: new DataTypes.ENUM<Role>({
+      values: [
+        Role.Root,
+        Role.Admin,
+        Role.User,
+        Role.Guest,
+      ],
+    }),
     allowNull: false,
   },
   email: {

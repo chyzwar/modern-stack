@@ -7,6 +7,9 @@ const options: Options = {
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
   dialect: 'postgres',
+  retry: {
+    max: 10,
+  },
 };
 
 const sequelize = new Sequelize(options);

@@ -2,7 +2,6 @@
   "name": "@project/ui",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://api:3000",
   "engines": {
     "node": "16.x.x",
     "yarn": "1.x.x"
@@ -10,13 +9,14 @@
   "dependencies": {
     "axios": "0.21.x",
     "axios-hooks": "2.x.x",
-    "@project/types": "1.x.x",
+    "@project/common": "1.x.x",
     "@material-ui/core": "4.x.x",
     "@material-ui/icons": "4.x.x",
     "react": "17.x.x",
     "react-dom": "17.x.x",
     "react-router-dom": "5.x.x",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "http-proxy-middleware": "2.x.x"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.x.x",
@@ -25,7 +25,7 @@
     "@testing-library/user-event": "13.x.x",
     "@types/react-router-dom": "5.x.x",
     "@types/jest": "26.x.x",
-    "@types/node": "15.x.x",
+    "@types/node": "16.x.x",
     "@types/react": "17.x.x",
     "@types/react-dom": "17.x.x",
     "@typescript-eslint/parser": "4.x.x",

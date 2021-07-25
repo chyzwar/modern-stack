@@ -10,7 +10,7 @@
   "include": [],
   "references": [
     {"path": "./packages/api"},
-    {"path": "./packages/types"},
+    {"path": "./packages/common"},
     {"path": "./packages/ui/tsconfig.build.json"},
     {"path": "./packages/admin-ui/tsconfig.build.json"}
   ]

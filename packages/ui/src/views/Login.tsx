@@ -132,7 +132,7 @@ export default function Login(): React.ReactElement {
           </Button>
           or
 
-          <a className={classes.link} href="http://localhost:3000/api/v1/login/facebook">
+          <a className={classes.link} href="/api/v1/login/facebook">
             <Button
               fullWidth
               variant="contained"
@@ -143,7 +143,7 @@ export default function Login(): React.ReactElement {
             </Button>
           </a>
 
-          <a className={classes.link} href="http://localhost:3000/api/v1/login/google">
+          <a className={classes.link} href="/api/v1/login/google">
             <Button
               fullWidth
               variant="contained"

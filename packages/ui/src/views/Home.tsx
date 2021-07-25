@@ -1,6 +1,6 @@
 import React from 'react';
 import useAxios from 'axios-hooks';
-import { Stuff } from '@project/types';
+import { Stuff } from '@project/common';
 
 function Home(): React.ReactElement {
   const [{ data, error }] = useAxios<Stuff[]>(

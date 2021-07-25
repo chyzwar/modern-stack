@@ -4,6 +4,7 @@ import oauthPlugin from 'fastify-oauth2';
 import { randomBytes } from 'crypto';
 import { FastifyRequest } from 'fastify';
 
+import { Role } from '@project/common';
 import User from '../models/User';
 import { FacebookProfile, Provider } from '../types/Oauth';
 
@@ -64,6 +65,7 @@ const facebookOAuth2 = fp(async (fastify) => {
       providerId: data.id,
       name: data.name,
       email: data.email,
+      role: Role.Guest,
     });
 
     const {

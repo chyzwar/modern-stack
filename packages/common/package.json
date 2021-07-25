@@ -1,5 +1,5 @@
 {
-  "name": "@project/types",
+  "name": "@project/common",
   "version": "1.0.0",
   "description": "Shared types",
   "engines": {

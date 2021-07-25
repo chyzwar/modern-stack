@@ -7,8 +7,7 @@
     "yarn": "1.x.x"
   },
   "scripts": {
-    "postgres": "wait-port postgres:5433",
-    "prestart": "yarn build && yarn postgres && yarn db:migrate",
+    "prestart": "yarn build && yarn db:migrate",
     "start": "env-cmd nodemon build/server.js",
     "start:prod": "env-cmd node build/server.js",
     "build": "tsc --build",
@@ -18,6 +17,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "@project/common": "1.x.x",
     "axios": "0.21.x",
     "fastify": "3.x.x", 
     "fastify-jwt": "3.x.x",
@@ -32,17 +32,15 @@
   },
   "devDependencies": {
     "@types/jest": "26.x.x",
-    "@types/node": "15.x.x",
+    "@types/node": "16.x.x",
     "@types/pino": "6.x.x",
-    "@project/types": "1.x.x",
     "@types/validator": "13.x.x",
     "@types/bluebird": "3.x.x",
     "@typescript-eslint/parser": "4.x.x",
     "@typescript-eslint/eslint-plugin": "4.x.x",
     "sequelize-cli": "6.x.x",
     "env-cmd": "10.x.x",
-    "dotenv": "8.x.x",
-    "wait-port": "0.x.x",
+    "dotenv": "10.x.x",
     "nodemon": "2.x.x",
     "jest": "27.x.x",
     "ts-node": "10.x.x",
