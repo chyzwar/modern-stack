@@ -9,7 +9,7 @@ exports[`renders learn react link 1`] = `
       class="makeStyles-paper-1"
     >
       <div
-        class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-2 MuiAvatar-colorDefault"
+        class="MuiAvatar-root MuiAvatar-circular makeStyles-avatar-2 MuiAvatar-colorDefault"
       >
         <svg
           aria-hidden="true"
@@ -173,7 +173,7 @@ exports[`renders learn react link 1`] = `
         or
         <a
           class="makeStyles-link-5"
-          href="http://localhost:3000/api/v1/login/facebook"
+          href="/api/v1/login/facebook"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-facebook-6 MuiButton-containedPrimary MuiButton-fullWidth"
@@ -192,7 +192,7 @@ exports[`renders learn react link 1`] = `
         </a>
         <a
           class="makeStyles-link-5"
-          href="http://localhost:3000/api/v1/login/google"
+          href="/api/v1/login/google"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-google-7 MuiButton-containedPrimary MuiButton-fullWidth"
