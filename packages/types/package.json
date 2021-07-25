@@ -16,7 +16,7 @@
   "devDependencies": {
     "@typescript-eslint/parser": "4.x.x",
     "@typescript-eslint/eslint-plugin": "4.x.x",
-    "ts-node": "10.0.0",
+    "ts-node": "10.x.x",
     "ts-jest": "27.x.x",
     "typescript": "4.x.x", 
     "eslint": "7.x.x",
