@@ -22,10 +22,6 @@ function checkStateFunction(state: string, callback: Function) {
 
 const {
   env: {
-    API_HOST,
-    API_PORT,
-    API_PROTOCOL,
-
     FACEBOOK_ID,
     FACEBOOK_SECRET,
   },
@@ -43,7 +39,7 @@ const facebookOAuth2 = fp(async (fastify) => {
       auth: oauthPlugin.FACEBOOK_CONFIGURATION,
     },
     startRedirectPath: '/api/v1/login/facebook',
-    callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/facebook/callback`,
+    callbackUri: '/api/v1/login/facebook/callback',
     checkStateFunction,
     generateStateFunction,
   });

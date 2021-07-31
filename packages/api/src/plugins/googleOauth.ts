@@ -22,10 +22,6 @@ function checkStateFunction(state: string, callback: Function) {
 
 const {
   env: {
-    API_HOST,
-    API_PORT,
-    API_PROTOCOL,
-
     GOOGLE_ID,
     GOOGLE_SECRET,
   },
@@ -43,7 +39,7 @@ const googleOAuth2 = fp(async (fastify) => {
       auth: oauthPlugin.GOOGLE_CONFIGURATION,
     },
     startRedirectPath: '/api/v1/login/google',
-    callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/google/callback`,
+    callbackUri: '/api/v1/login/google/callback',
     checkStateFunction,
     generateStateFunction,
   });
@@ -73,6 +69,11 @@ const googleOAuth2 = fp(async (fastify) => {
     const token = this.jwt.sign(user.toJwt());
 
     reply
+      .setCookie('Token', token, {
+        httpOnly: true,
+        secure: true,
+        sameSite: true,
+      })
       .redirect(`${origin}${pathname}?token=${token}`);
   });
 });

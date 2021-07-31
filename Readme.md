@@ -39,6 +39,18 @@ Start project
 yarn start
 ```
 
+You can now visit: http://localhost:80
+
+
+Setup local domains resolution(optional)
+update /etc/host
+
+```
+127.0.0.1 project.com
+127.0.0.1 local.project.com
+127.0.0.1 admin.project.com
+```
+
 Setup auth provider(optional)
 
 - [Facebook](https://developers.facebook.com/docs/facebook-login/web/)

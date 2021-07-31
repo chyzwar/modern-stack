@@ -22,6 +22,7 @@
     "eslint": "7.x.x",
     "eslint-config-airbnb-typescript": "11.x.x",
     "eslint-plugin-jest": "24.x.x",
-    "eslint-plugin-import": "2.x.x"
+    "eslint-plugin-import": "2.x.x",
+    "eslint-plugin-jsx-a11y": "6.x.x"
   }
 }

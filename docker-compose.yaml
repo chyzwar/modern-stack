@@ -72,3 +72,16 @@ services:
     working_dir: '/home/node/app/packages/admin-ui'
     command: yarn start
     stdin_open: true
+
+  nginx:
+    image: nginx:1.13
+    depends_on: 
+      - postgres
+      - admin-ui
+      - ui
+      - api
+    ports: 
+      - "80:80"
+      - "443:443"
+    volumes:
+      - .local/nginx.conf:/etc/nginx/nginx.conf
