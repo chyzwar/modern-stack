@@ -18,7 +18,7 @@ This project require number of tools available.
 
 Repo provides an init script that will bootstrap baseline env files
 It will check if the user has docker and docker-compose installed.
-For OAuth to work, google and facebook configs need to update in API .env
+For OAuth to work, google and facebook configs need to update in packages/api .env
 
 Clone repository
 
@@ -41,9 +41,10 @@ yarn start
 
 You can now visit: http://localhost:80
 
-
 Setup local domains resolution(optional)
-update /etc/host
+This is useful for CSP and reflect prod deployment better than running on localhost
+
+Update /etc/host
 
 ```
 127.0.0.1 project.com
@@ -65,7 +66,7 @@ Update packages/api/.env with client id and client secrets
 Based on [fastify](https://www.fastify.io/). It is a modern node.js framework with a good ecosystem of plugins. Postgres is used for database and managed by [Sequelize](https://sequelize.org/) ORM.
 
 - migration and seeding with sequelize
-- authentication with JWT
+- authentication with JWT and cookies
 - integration with oauth2: Google, Facebook
 - logging with pino
 - hot reload with nodemon

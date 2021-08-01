@@ -24,6 +24,10 @@ const {
   env: {
     GOOGLE_ID,
     GOOGLE_SECRET,
+
+    API_HOST,
+    API_PORT,
+    API_PROTOCOL,
   },
 } = process;
 
@@ -39,7 +43,7 @@ const googleOAuth2 = fp(async (fastify) => {
       auth: oauthPlugin.GOOGLE_CONFIGURATION,
     },
     startRedirectPath: '/api/v1/login/google',
-    callbackUri: '/api/v1/login/google/callback',
+    callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/google/callback`,
     checkStateFunction,
     generateStateFunction,
   });

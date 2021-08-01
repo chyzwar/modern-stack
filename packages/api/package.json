@@ -8,8 +8,8 @@
   },
   "scripts": {
     "prestart": "yarn build && yarn db:migrate",
-    "start": "env-cmd nodemon build/server.js",
-    "start:prod": "env-cmd node build/server.js",
+    "start": "env-cmd nodemon build/server.js | pino-syslog",
+    "start:prod": "env-cmd node build/server.js | pino-syslog",
     "build": "tsc --build",
     "build:watch": "tsc --build --watch",
     "db:seed": "env-cmd sequelize db:seed",
@@ -25,6 +25,7 @@
     "fastify-oauth2": "4.x.x",
     "fastify-cookie": "5.x.x",
     "pino": "6.x.x",
+    "pino-syslog": "1.x.x",
     "pino-pretty": "5.x.x",
     "sequelize": "6.x.x",
     "pg": "8.x.x",

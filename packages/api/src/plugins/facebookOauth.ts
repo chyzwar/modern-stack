@@ -24,6 +24,10 @@ const {
   env: {
     FACEBOOK_ID,
     FACEBOOK_SECRET,
+
+    API_HOST,
+    API_PORT,
+    API_PROTOCOL,
   },
 } = process;
 
@@ -39,7 +43,7 @@ const facebookOAuth2 = fp(async (fastify) => {
       auth: oauthPlugin.FACEBOOK_CONFIGURATION,
     },
     startRedirectPath: '/api/v1/login/facebook',
-    callbackUri: '/api/v1/login/facebook/callback',
+    callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/facebook/callback`,
     checkStateFunction,
     generateStateFunction,
   });
