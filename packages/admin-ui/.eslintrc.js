@@ -8,6 +8,7 @@ module.exports = {
   env: {
     browser: true
   },
+  ignorePatterns: ["jest.config.ts","jest.setup.ts", "webpack.dev.ts", "webpack.prod.ts"],
   overrides: [
     {
       "files": ["*.js"],

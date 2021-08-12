@@ -1,3 +1,4 @@
+import type {Config} from '@jest/types';
 
 /**
  * Use jest with ts-jest to transform
@@ -5,18 +6,12 @@
  * @see https://facebook.github.io/jest/docs/en/configuration.html
  * @see https://kulshekhar.github.io/ts-jest/user/config/
  */
-module.exports = {
+const config: Config.InitialOptions = {
   testEnvironment: "jsdom",
-  transform: {
-    "^.+\\.tsx?$": "ts-jest",
-  },
+  rootDir: 'src',
   testMatch: ["**/__tests__/**/*.ts?(x)", "**/?(*.)+(spec|test).ts?(x)"],
-  setupFilesAfterEnv: ["./src/setupTests.ts"],
-  moduleFileExtensions: [
-    "ts",
-    "tsx",
-    "json",
-    "js",
-    "jsx",
-  ],
+  setupFilesAfterEnv: ["../jest.setup.ts"],
+  preset: 'ts-jest',
 };
+
+export default config;

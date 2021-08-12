@@ -1,6 +1,7 @@
 build
 node_modules
 dist
+lib
 
 packages/api/config
 packages/api/migrations

@@ -26,6 +26,7 @@ module.exports = {
     "plugin:import/warnings",
     "plugin:import/typescript",
   ],
+  ignorePatterns: ["jest.config.ts"],
   overrides: [
     {
       files: ["*.js"],

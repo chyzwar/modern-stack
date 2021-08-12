@@ -12,11 +12,11 @@ module.exports = {
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off"
   },
+  ignorePatterns: ["jest.config.ts", "jest.setup.ts","webpack.dev.ts", "webpack.prod.ts"],
   overrides: [
     {
       "files": ["*.js"],
-      "rules": {
-      }
+      "rules": {}
     }
   ]
 };
