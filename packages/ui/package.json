@@ -22,7 +22,7 @@
     "react-router-dom": "5.x.x"
   },
   "devDependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "0.4.x",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.5.0-rc.3",
     "@testing-library/dom": "8.x.x",
     "@testing-library/jest-dom": "5.x.x",
     "@testing-library/react": "12.x.x",
@@ -44,6 +44,8 @@
     "eslint-plugin-react": "7.x.x",
     "eslint-plugin-react-hooks": "4.x.x",
     "html-webpack-plugin": "5.x.x",
+    "favicons": "6.x.x",
+    "favicons-webpack-plugin": "^5.x.x",
     "jest": "27.x.x",
     "source-map-loader": "3.x.x",
     "ts-jest": "27.x.x",

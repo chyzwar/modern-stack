@@ -23,7 +23,8 @@ services:
       - .:/home/node/app
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
     working_dir: '/home/node/app'
-    command: yarn build:watch
+    command: yarn build:watch --preserveWatchOutput
+    tty: true
     
   api:
     image: node:16
@@ -40,6 +41,7 @@ services:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/api'
     command: yarn start
+    tty: true
 
   ui:
     image: node:16
@@ -56,6 +58,7 @@ services:
     working_dir: '/home/node/app/packages/ui'
     command: yarn start
     stdin_open: true
+    tty: true
 
   admin-ui:
     image: node:16
@@ -72,6 +75,7 @@ services:
     working_dir: '/home/node/app/packages/admin-ui'
     command: yarn start
     stdin_open: true
+    tty: true
 
   nginx:
     image: nginx:1.13

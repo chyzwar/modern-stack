@@ -1,18 +1,31 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
+import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
 import type {Configuration} from "webpack";
 import {ProvidePlugin, HotModuleReplacementPlugin} from "webpack";
 import {resolve} from "path";
 
 
-interface DevServerConfiguartion {
+interface DevServerConfiguration {
   devServer: {
-    port: number
+    port: number;
+    host: string;
     allowedHosts: string;
+    historyApiFallback: boolean;
+    client: {
+      webSocketURL: {
+        hostname: string;
+        pathname: string
+        port: number;
+      }
+    }
+    static: {
+      directory: string;
+    },
   }
 }
 
-const config: Configuration & DevServerConfiguartion= {
+const config: Configuration & DevServerConfiguration= {
   mode: "development",
   /**
    * Type of sourceMaps
@@ -57,7 +70,19 @@ const config: Configuration & DevServerConfiguartion= {
   target: "web",
   devServer: {
     port: 4000,
+    host: "0.0.0.0",
     allowedHosts: 'all',
+    historyApiFallback: true,
+    static: {
+      directory:  resolve(__dirname, "public"),
+    },
+    client: {
+      webSocketURL: {
+        hostname: "localhost",
+        pathname: "/ws",
+        port: 4000,
+      },
+    }
   },
   module: {
     rules: [
@@ -91,6 +116,14 @@ const config: Configuration & DevServerConfiguartion= {
   },
   plugins: [
     /**
+     * Create logos and favicons
+     * @see https://www.npmjs.com/package/favicons-webpack-plugin
+     */
+    new FaviconsWebpackPlugin({
+      logo: './src/logo.svg',
+      mode: 'light',
+    }),
+    /**
      * Make things global
      * @see https://webpack.js.org/plugins/provide-plugin/
      */
@@ -107,7 +140,14 @@ const config: Configuration & DevServerConfiguartion= {
      * Refresh plugin
      * @see https://github.com/pmmmwh/react-refresh-webpack-plugin
      */
-    new ReactRefreshWebpackPlugin(),
+    new ReactRefreshWebpackPlugin({
+      overlay: {
+        sockIntegration: 'wds',
+        sockHost: "localhost",
+        sockPath: "/ws",
+        sockPort: 4000,
+      }
+    }),
     /**
      * Plugin HtmlWebpackPlugin
      *

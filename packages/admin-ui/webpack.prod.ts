@@ -2,6 +2,7 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import {BundleAnalyzerPlugin} from "webpack-bundle-analyzer";
 import {CleanWebpackPlugin} from "clean-webpack-plugin";
+import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
 import type {Configuration} from "webpack";
 import {ProvidePlugin} from "webpack";
 import {resolve} from "path";
@@ -86,6 +87,13 @@ const config: Configuration = {
      * @see https://github.com/johnagan/clean-webpack-plugin
      */
     new CleanWebpackPlugin(),
+    /**
+     * Create logos and favicons
+     * @see https://www.npmjs.com/package/favicons-webpack-plugin
+     */
+     new FaviconsWebpackPlugin({
+      logo: './src/logo.svg'
+    }),
     /**
      * Make things global
      * @see https://webpack.js.org/plugins/provide-plugin/
