@@ -28,7 +28,7 @@ const status = async (server: FastifyServer): Promise<void> => {
       try {
         await sequelize.authenticate();
       } catch (error) {
-        logger.error(error, 'Failed to connect db');
+        logger.error({ error }, 'Failed to connect db');
         connected = false;
       }
 

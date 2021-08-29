@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactElement } from 'react';
 import {
   BrowserRouter,
   Switch,
@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Login from './views/Login';
 
-function App(): React.ReactElement {
+function App(): ReactElement {
   return (
     <BrowserRouter>
       <Switch>

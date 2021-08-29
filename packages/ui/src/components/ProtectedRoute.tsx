@@ -1,4 +1,4 @@
-import React, {
+import {
   FC,
   ReactElement,
 } from 'react';
@@ -16,7 +16,7 @@ interface ProtectedRouteProps{
   exact?: boolean;
 }
 
-const ProtectedRoute: FC<ProtectedRouteProps> = ({ path, exact, children }) => {
+const ProtectedRoute: FC<ProtectedRouteProps> = ({ path, children, exact = false }) => {
   const { isAuthenticated } = useAuth();
 
   return isAuthenticated
@@ -26,12 +26,13 @@ const ProtectedRoute: FC<ProtectedRouteProps> = ({ path, exact, children }) => {
       </Route>
     )
     : (
-      <Redirect to={{
-        pathname: '/login',
-        state: {
-          path,
-        },
-      }}
+      <Redirect
+        to={{
+          pathname: '/login',
+          state: {
+            path,
+          },
+        }}
       />
     );
 };
