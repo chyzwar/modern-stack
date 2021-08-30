@@ -1,4 +1,5 @@
 {
+  "schedule": ["before 2am"],
   "rangeStrategy": "replace",
   "extends": [
     "config:base"
