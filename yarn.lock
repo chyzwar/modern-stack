@@ -1621,7 +1621,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pmmmwh/react-refresh-webpack-plugin@npm:^0.5.0-rc.4":
+"@pmmmwh/react-refresh-webpack-plugin@npm:0.5.0-rc.5":
   version: 0.5.0-rc.5
   resolution: "@pmmmwh/react-refresh-webpack-plugin@npm:0.5.0-rc.5"
   dependencies:
@@ -1673,46 +1673,46 @@ __metadata:
     "@material-ui/core": ^4.12.3
     "@material-ui/icons": ^4.11.2
     "@pmmmwh/react-refresh-webpack-plugin": 0.5.0-rc.4
-    "@testing-library/dom": ^8.2.0
-    "@testing-library/jest-dom": ^5.14.1
-    "@testing-library/react": ^12.0.0
-    "@testing-library/user-event": ^13.2.1
-    "@types/jest": ^27.0.1
-    "@types/node": ^16.7.6
-    "@types/react": ^17.0.19
-    "@types/react-dom": ^17.0.9
-    "@types/react-router-dom": ^5.1.8
+    "@testing-library/dom": 8.2.0
+    "@testing-library/jest-dom": 5.14.1
+    "@testing-library/react": 12.0.0
+    "@testing-library/user-event": 13.2.1
+    "@types/jest": 27.0.1
+    "@types/node": 16.7.6
+    "@types/react": 17.0.19
+    "@types/react-dom": 17.0.9
+    "@types/react-router-dom": 5.1.8
     "@typescript-eslint/eslint-plugin": ^4.29.3
     "@typescript-eslint/parser": ^4.29.3
-    axios: ^0.21.1
+    axios: 0.21.1
     babel-loader: ^8.2.2
-    clean-webpack-plugin: ^3.0.0
-    eslint: ^7.32.0
-    eslint-config-airbnb: ^18.2.1
-    eslint-config-airbnb-typescript: ^14.0.0
-    eslint-plugin-css-modules: ^2.11.0
-    eslint-plugin-import: ^2.24.2
-    eslint-plugin-jest: ^24.4.0
-    eslint-plugin-jsx-a11y: ^6.4.1
-    eslint-plugin-react: ^7.25.0
+    clean-webpack-plugin: 3.0.0
+    eslint: 7.32.0
+    eslint-config-airbnb: 18.2.1
+    eslint-config-airbnb-typescript: 14.0.0
+    eslint-plugin-css-modules: 2.11.0
+    eslint-plugin-import: 2.24.2
+    eslint-plugin-jest: 24.4.0
+    eslint-plugin-jsx-a11y: 6.4.1
+    eslint-plugin-react: 7.25.0
     eslint-plugin-react-hooks: ^4.2.0
-    favicons: ^6.2.2
-    favicons-webpack-plugin: ^5.0.2
-    html-webpack-plugin: ^5.3.2
+    favicons: 6.2.2
+    favicons-webpack-plugin: 5.0.2
+    html-webpack-plugin: 5.3.2
     jest: ^27.1.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-refresh: ^0.10.0
     react-router-dom: ^5.2.1
-    source-map-loader: ^3.0.0
-    ts-jest: ^27.0.5
-    ts-loader: ^9.2.5
-    ts-node: ^10.2.1
-    typescript: ^4.4.2
-    webpack: ^5.51.1
-    webpack-bundle-analyzer: ^4.4.2
-    webpack-cli: ^4.8.0
-    webpack-dev-server: ^4.0.0
+    source-map-loader: 3.0.0
+    ts-jest: 27.0.5
+    ts-loader: 9.2.5
+    ts-node: 10.2.1
+    typescript: 4.4.2
+    webpack: 5.51.1
+    webpack-bundle-analyzer: 4.4.2
+    webpack-cli: 4.8.0
+    webpack-dev-server: 4.0.0
   languageName: unknown
   linkType: soft
 
@@ -1721,38 +1721,38 @@ __metadata:
   resolution: "@project/api@workspace:packages/api"
   dependencies:
     "@project/common": ^1.0.0
-    "@types/bluebird": ^3.5.36
-    "@types/jest": ^27.0.1
-    "@types/node": ^16.7.6
-    "@types/pino": ^6.3.11
-    "@types/validator": ^13.6.3
+    "@types/bluebird": 3.5.36
+    "@types/jest": 27.0.1
+    "@types/node": 16.7.6
+    "@types/pino": 6.3.11
+    "@types/validator": 13.6.3
     "@typescript-eslint/eslint-plugin": ^4.29.3
     "@typescript-eslint/parser": ^4.29.3
-    axios: ^0.21.1
-    dotenv: ^10.0.0
-    env-cmd: ^10.1.0
-    eslint: ^7.32.0
-    eslint-config-airbnb-base: ^14.2.1
-    eslint-config-airbnb-typescript: ^14.0.0
-    eslint-plugin-import: ^2.24.2
-    eslint-plugin-jest: ^24.4.0
-    fastify: ^3.20.2
-    fastify-cookie: ^5.3.1
-    fastify-jwt: ^3.0.1
-    fastify-oauth2: ^4.2.3
-    fastify-plugin: ^3.0.0
+    axios: 0.21.1
+    dotenv: 10.0.0
+    env-cmd: 10.1.0
+    eslint: 7.32.0
+    eslint-config-airbnb-base: 14.2.1
+    eslint-config-airbnb-typescript: 14.0.0
+    eslint-plugin-import: 2.24.2
+    eslint-plugin-jest: 24.4.0
+    fastify: 3.20.2
+    fastify-cookie: 5.3.1
+    fastify-jwt: 3.0.1
+    fastify-oauth2: 4.2.3
+    fastify-plugin: 3.0.0
     jest: ^27.1.0
-    nodemon: ^2.0.12
-    pg: ^8.7.1
-    pg-hstore: ^2.3.4
-    pino: ^6.13.1
-    pino-pretty: ^6.0.0
-    pino-syslog: ^1.3.1
-    sequelize: ^6.6.5
-    sequelize-cli: ^6.2.0
-    ts-jest: ^27.0.5
-    ts-node: ^10.2.1
-    typescript: ^4.4.2
+    nodemon: 2.0.12
+    pg: 8.7.1
+    pg-hstore: 2.3.4
+    pino: 6.13.1
+    pino-pretty: 6.0.0
+    pino-syslog: 1.3.1
+    sequelize: 6.6.5
+    sequelize-cli: 6.2.0
+    ts-jest: 27.0.5
+    ts-node: 10.2.1
+    typescript: 4.4.2
   languageName: unknown
   linkType: soft
 
@@ -1762,15 +1762,15 @@ __metadata:
   dependencies:
     "@typescript-eslint/eslint-plugin": ^4.29.3
     "@typescript-eslint/parser": ^4.29.3
-    eslint: ^7.32.0
-    eslint-config-airbnb-base: ^14.2.1
-    eslint-config-airbnb-typescript: ^14.0.0
-    eslint-plugin-import: ^2.24.2
-    eslint-plugin-jest: ^24.4.0
-    eslint-plugin-jsx-a11y: ^6.4.1
+    eslint: 7.32.0
+    eslint-config-airbnb-base: 14.2.1
+    eslint-config-airbnb-typescript: 14.0.0
+    eslint-plugin-import: 2.24.2
+    eslint-plugin-jest: 24.4.0
+    eslint-plugin-jsx-a11y: 6.4.1
     jest: ^27.1.0
-    ts-jest: ^27.0.5
-    typescript: ^4.4.2
+    ts-jest: 27.0.5
+    typescript: 4.4.2
   languageName: unknown
   linkType: soft
 
@@ -1782,15 +1782,15 @@ __metadata:
     "@commitlint/config-conventional": ^13.1.0
     "@typescript-eslint/eslint-plugin": ^4.29.3
     "@typescript-eslint/parser": ^4.29.3
-    eslint: ^7.32.0
-    eslint-plugin-import: ^2.24.2
-    eslint-plugin-jest: ^24.4.0
-    eslint-plugin-react: ^7.25.0
+    eslint: 7.32.0
+    eslint-plugin-import: 2.24.2
+    eslint-plugin-jest: 24.4.0
+    eslint-plugin-react: 7.25.0
     eslint-plugin-react-hooks: ^4.2.0
-    husky: ^7.0.2
+    husky: 7.0.2
     jest: ^27.1.0
-    lint-staged: ^11.1.2
-    typescript: ^4.4.2
+    lint-staged: 11.1.2
+    typescript: 4.4.2
   languageName: unknown
   linkType: soft
 
@@ -1801,50 +1801,50 @@ __metadata:
     "@babel/core": ^7.15.0
     "@material-ui/core": ^4.12.3
     "@material-ui/icons": ^4.11.2
-    "@pmmmwh/react-refresh-webpack-plugin": ^0.5.0-rc.4
+    "@pmmmwh/react-refresh-webpack-plugin": 0.5.0-rc.5
     "@project/common": ^1.0.0
-    "@testing-library/dom": ^8.2.0
-    "@testing-library/jest-dom": ^5.14.1
-    "@testing-library/react": ^12.0.0
-    "@testing-library/user-event": ^13.2.1
-    "@types/jest": ^27.0.1
-    "@types/node": ^16.7.6
-    "@types/react": ^17.0.19
-    "@types/react-dom": ^17.0.9
-    "@types/react-router-dom": ^5.1.8
+    "@testing-library/dom": 8.2.0
+    "@testing-library/jest-dom": 5.14.1
+    "@testing-library/react": 12.0.0
+    "@testing-library/user-event": 13.2.1
+    "@types/jest": 27.0.1
+    "@types/node": 16.7.6
+    "@types/react": 17.0.19
+    "@types/react-dom": 17.0.9
+    "@types/react-router-dom": 5.1.8
     "@typescript-eslint/eslint-plugin": ^4.29.3
     "@typescript-eslint/parser": ^4.29.3
-    axios: ^0.21.1
-    axios-hooks: ^2.7.0
+    axios: 0.21.1
+    axios-hooks: 2.7.0
     babel-loader: ^8.2.2
-    clean-webpack-plugin: ^4.0.0-alpha.0
-    eslint: ^7.32.0
-    eslint-config-airbnb: ^18.2.1
-    eslint-config-airbnb-typescript: ^14.0.0
-    eslint-plugin-css-modules: ^2.11.0
-    eslint-plugin-import: ^2.24.2
-    eslint-plugin-jest: ^24.4.0
-    eslint-plugin-jsx-a11y: ^6.4.1
-    eslint-plugin-react: ^7.25.0
+    clean-webpack-plugin: 4.0.0-alpha.0
+    eslint: 7.32.0
+    eslint-config-airbnb: 18.2.1
+    eslint-config-airbnb-typescript: 14.0.0
+    eslint-plugin-css-modules: 2.11.0
+    eslint-plugin-import: 2.24.2
+    eslint-plugin-jest: 24.4.0
+    eslint-plugin-jsx-a11y: 6.4.1
+    eslint-plugin-react: 7.25.0
     eslint-plugin-react-hooks: ^4.2.0
-    favicons: ^6.2.2
-    favicons-webpack-plugin: ^5.0.2
-    html-webpack-plugin: ^5.3.2
+    favicons: 6.2.2
+    favicons-webpack-plugin: 5.0.2
+    html-webpack-plugin: 5.3.2
     jest: ^27.1.0
-    lint-staged: ^11.1.2
+    lint-staged: 11.1.2
     react: ^17.0.2
     react-dom: ^17.0.2
     react-refresh: ^0.10.0
     react-router-dom: ^5.2.1
-    source-map-loader: ^3.0.0
-    ts-jest: ^27.0.5
-    ts-loader: ^9.2.5
-    ts-node: ^10.2.1
-    typescript: ^4.4.2
-    webpack: ^5.51.1
-    webpack-bundle-analyzer: ^4.4.2
-    webpack-cli: ^4.8.0
-    webpack-dev-server: ^4.0.0
+    source-map-loader: 3.0.0
+    ts-jest: 27.0.5
+    ts-loader: 9.2.5
+    ts-node: 10.2.1
+    typescript: 4.4.2
+    webpack: 5.51.1
+    webpack-bundle-analyzer: 4.4.2
+    webpack-cli: 4.8.0
+    webpack-dev-server: 4.0.0
   languageName: unknown
   linkType: soft
 
@@ -1882,6 +1882,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@testing-library/dom@npm:8.2.0":
+  version: 8.2.0
+  resolution: "@testing-library/dom@npm:8.2.0"
+  dependencies:
+    "@babel/code-frame": ^7.10.4
+    "@babel/runtime": ^7.12.5
+    "@types/aria-query": ^4.2.0
+    aria-query: ^4.2.2
+    chalk: ^4.1.0
+    dom-accessibility-api: ^0.5.6
+    lz-string: ^1.4.4
+    pretty-format: ^27.0.2
+  checksum: e631d2fe0490dd7ed193ea631541708656f9b4e6054a7ec0c6617f7fb0bf01b414dac63821f04bc9cd4eb3f573a2be69a4dd493b64db725962c9f1c1858f204d
+  languageName: node
+  linkType: hard
+
 "@testing-library/dom@npm:^8.0.0":
   version: 8.1.0
   resolution: "@testing-library/dom@npm:8.1.0"
@@ -1898,23 +1914,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "@testing-library/dom@npm:8.2.0"
-  dependencies:
-    "@babel/code-frame": ^7.10.4
-    "@babel/runtime": ^7.12.5
-    "@types/aria-query": ^4.2.0
-    aria-query: ^4.2.2
-    chalk: ^4.1.0
-    dom-accessibility-api: ^0.5.6
-    lz-string: ^1.4.4
-    pretty-format: ^27.0.2
-  checksum: e631d2fe0490dd7ed193ea631541708656f9b4e6054a7ec0c6617f7fb0bf01b414dac63821f04bc9cd4eb3f573a2be69a4dd493b64db725962c9f1c1858f204d
-  languageName: node
-  linkType: hard
-
-"@testing-library/jest-dom@npm:^5.14.1":
+"@testing-library/jest-dom@npm:5.14.1":
   version: 5.14.1
   resolution: "@testing-library/jest-dom@npm:5.14.1"
   dependencies:
@@ -1931,7 +1931,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^12.0.0":
+"@testing-library/react@npm:12.0.0":
   version: 12.0.0
   resolution: "@testing-library/react@npm:12.0.0"
   dependencies:
@@ -1944,7 +1944,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^13.2.1":
+"@testing-library/user-event@npm:13.2.1":
   version: 13.2.1
   resolution: "@testing-library/user-event@npm:13.2.1"
   dependencies:
@@ -2038,7 +2038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/bluebird@npm:^3.5.36":
+"@types/bluebird@npm:3.5.36":
   version: 3.5.36
   resolution: "@types/bluebird@npm:3.5.36"
   checksum: efe7484e1f6c3443c083f052efb7688b461a9f43899b1891c10b1faf92e4932d686265d10c3e02b8c8fe0c8c371774e6a55ff6eec5e79525390a1ddeee7eb41b
@@ -2148,7 +2148,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:^27.0.1":
+"@types/jest@npm:*, @types/jest@npm:27.0.1":
   version: 27.0.1
   resolution: "@types/jest@npm:27.0.1"
   dependencies:
@@ -2211,7 +2211,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.7.6":
+"@types/node@npm:16.7.6":
   version: 16.7.6
   resolution: "@types/node@npm:16.7.6"
   checksum: a8533386a1d4ca0ed67885413001af8789c63948df288f3d36e31bd8fccffacf5dffb95e190c8cd57bb40385f010fb9a30f596bad6bb26b2bb88737d54d8ed95
@@ -2250,7 +2250,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pino@npm:*, @types/pino@npm:^6.3.11":
+"@types/pino@npm:*, @types/pino@npm:6.3.11":
   version: 6.3.11
   resolution: "@types/pino@npm:6.3.11"
   dependencies:
@@ -2276,7 +2276,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.9":
+"@types/react-dom@npm:17.0.9":
   version: 17.0.9
   resolution: "@types/react-dom@npm:17.0.9"
   dependencies:
@@ -2285,7 +2285,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-router-dom@npm:^5.1.8":
+"@types/react-router-dom@npm:5.1.8":
   version: 5.1.8
   resolution: "@types/react-router-dom@npm:5.1.8"
   dependencies:
@@ -2326,7 +2326,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^17.0.19":
+"@types/react@npm:17.0.19":
   version: 17.0.19
   resolution: "@types/react@npm:17.0.19"
   dependencies:
@@ -2399,7 +2399,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/validator@npm:^13.6.3":
+"@types/validator@npm:13.6.3":
   version: 13.6.3
   resolution: "@types/validator@npm:13.6.3"
   checksum: b06b684d4d1ff4b59449a974cb8cdd96ccde4660958e541acf66711c8f60026912202e4d924ccd2016ec8bdd4e1f71e8122e5c568deefcdecffc04a73acff460
@@ -3340,7 +3340,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios-hooks@npm:^2.7.0":
+"axios-hooks@npm:2.7.0":
   version: 2.7.0
   resolution: "axios-hooks@npm:2.7.0"
   dependencies:
@@ -3354,7 +3354,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.21.1":
+"axios@npm:0.21.1":
   version: 0.21.1
   resolution: "axios@npm:0.21.1"
   dependencies:
@@ -3977,7 +3977,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clean-webpack-plugin@npm:^3.0.0":
+"clean-webpack-plugin@npm:3.0.0":
   version: 3.0.0
   resolution: "clean-webpack-plugin@npm:3.0.0"
   dependencies:
@@ -3989,7 +3989,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clean-webpack-plugin@npm:^4.0.0-alpha.0":
+"clean-webpack-plugin@npm:4.0.0-alpha.0":
   version: 4.0.0-alpha.0
   resolution: "clean-webpack-plugin@npm:4.0.0-alpha.0"
   dependencies:
@@ -5039,7 +5039,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^10.0.0":
+"dotenv@npm:10.0.0":
   version: 10.0.0
   resolution: "dotenv@npm:10.0.0"
   checksum: f412c5fe8c24fbe313d302d2500e247ba8a1946492db405a4de4d30dd0eb186a88a43f13c958c5a7de303938949c4231c56994f97d05c4bc1f22478d631b4005
@@ -5200,7 +5200,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"env-cmd@npm:^10.1.0":
+"env-cmd@npm:10.1.0":
   version: 10.1.0
   resolution: "env-cmd@npm:10.1.0"
   dependencies:
@@ -5408,7 +5408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb-base@npm:^14.2.1":
+"eslint-config-airbnb-base@npm:14.2.1, eslint-config-airbnb-base@npm:^14.2.1":
   version: 14.2.1
   resolution: "eslint-config-airbnb-base@npm:14.2.1"
   dependencies:
@@ -5422,7 +5422,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb-typescript@npm:^14.0.0":
+"eslint-config-airbnb-typescript@npm:14.0.0":
   version: 14.0.0
   resolution: "eslint-config-airbnb-typescript@npm:14.0.0"
   peerDependencies:
@@ -5432,7 +5432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb@npm:^18.2.1":
+"eslint-config-airbnb@npm:18.2.1":
   version: 18.2.1
   resolution: "eslint-config-airbnb@npm:18.2.1"
   dependencies:
@@ -5469,7 +5469,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-css-modules@npm:^2.11.0":
+"eslint-plugin-css-modules@npm:2.11.0":
   version: 2.11.0
   resolution: "eslint-plugin-css-modules@npm:2.11.0"
   dependencies:
@@ -5481,7 +5481,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.24.2":
+"eslint-plugin-import@npm:2.24.2":
   version: 2.24.2
   resolution: "eslint-plugin-import@npm:2.24.2"
   dependencies:
@@ -5506,7 +5506,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^24.4.0":
+"eslint-plugin-jest@npm:24.4.0":
   version: 24.4.0
   resolution: "eslint-plugin-jest@npm:24.4.0"
   dependencies:
@@ -5521,7 +5521,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:^6.4.1":
+"eslint-plugin-jsx-a11y@npm:6.4.1":
   version: 6.4.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.4.1"
   dependencies:
@@ -5551,7 +5551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.25.0":
+"eslint-plugin-react@npm:7.25.0":
   version: 7.25.0
   resolution: "eslint-plugin-react@npm:7.25.0"
   dependencies:
@@ -5618,7 +5618,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.32.0":
+"eslint@npm:7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -5969,7 +5969,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify-cookie@npm:^5.3.1":
+"fastify-cookie@npm:5.3.1":
   version: 5.3.1
   resolution: "fastify-cookie@npm:5.3.1"
   dependencies:
@@ -5987,7 +5987,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify-jwt@npm:^3.0.1":
+"fastify-jwt@npm:3.0.1":
   version: 3.0.1
   resolution: "fastify-jwt@npm:3.0.1"
   dependencies:
@@ -6000,7 +6000,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify-oauth2@npm:^4.2.3":
+"fastify-oauth2@npm:4.2.3":
   version: 4.2.3
   resolution: "fastify-oauth2@npm:4.2.3"
   dependencies:
@@ -6010,7 +6010,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify-plugin@npm:^3.0.0":
+"fastify-plugin@npm:3.0.0, fastify-plugin@npm:^3.0.0":
   version: 3.0.0
   resolution: "fastify-plugin@npm:3.0.0"
   checksum: 00324690789ee02f977ab58ba70d937e2e420a6813a6aa7ae3ba47e34022dc8ac40e15a36ab14a67d94474de984398b1c8b30279fb51d92966f5d3d3ebd1b6fa
@@ -6024,7 +6024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify@npm:^3.20.2":
+"fastify@npm:3.20.2":
   version: 3.20.2
   resolution: "fastify@npm:3.20.2"
   dependencies:
@@ -6077,7 +6077,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"favicons-webpack-plugin@npm:^5.0.2":
+"favicons-webpack-plugin@npm:5.0.2":
   version: 5.0.2
   resolution: "favicons-webpack-plugin@npm:5.0.2"
   dependencies:
@@ -6096,7 +6096,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"favicons@npm:^6.2.2":
+"favicons@npm:6.2.2":
   version: 6.2.2
   resolution: "favicons@npm:6.2.2"
   dependencies:
@@ -6880,7 +6880,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-webpack-plugin@npm:>=5.0.0, html-webpack-plugin@npm:^5.3.2":
+"html-webpack-plugin@npm:5.3.2, html-webpack-plugin@npm:>=5.0.0":
   version: 5.3.2
   resolution: "html-webpack-plugin@npm:5.3.2"
   dependencies:
@@ -7051,7 +7051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^7.0.2":
+"husky@npm:7.0.2":
   version: 7.0.2
   resolution: "husky@npm:7.0.2"
   bin:
@@ -8844,7 +8844,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^11.1.2":
+"lint-staged@npm:11.1.2":
   version: 11.1.2
   resolution: "lint-staged@npm:11.1.2"
   dependencies:
@@ -9755,7 +9755,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:^2.0.12":
+"nodemon@npm:2.0.12":
   version: 2.0.12
   resolution: "nodemon@npm:2.0.12"
   dependencies:
@@ -10472,7 +10472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pg-hstore@npm:^2.3.4":
+"pg-hstore@npm:2.3.4":
   version: 2.3.4
   resolution: "pg-hstore@npm:2.3.4"
   dependencies:
@@ -10517,7 +10517,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pg@npm:^8.7.1":
+"pg@npm:8.7.1":
   version: 8.7.1
   resolution: "pg@npm:8.7.1"
   dependencies:
@@ -10597,7 +10597,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino-pretty@npm:^6.0.0":
+"pino-pretty@npm:6.0.0":
   version: 6.0.0
   resolution: "pino-pretty@npm:6.0.0"
   dependencies:
@@ -10626,7 +10626,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino-syslog@npm:^1.3.1":
+"pino-syslog@npm:1.3.1":
   version: 1.3.1
   resolution: "pino-syslog@npm:1.3.1"
   dependencies:
@@ -10643,23 +10643,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino@npm:^6.13.0":
-  version: 6.13.0
-  resolution: "pino@npm:6.13.0"
-  dependencies:
-    fast-redact: ^3.0.0
-    fast-safe-stringify: ^2.0.8
-    flatstr: ^1.0.12
-    pino-std-serializers: ^3.1.0
-    quick-format-unescaped: ^4.0.3
-    sonic-boom: ^1.0.2
-  bin:
-    pino: bin.js
-  checksum: 7145de4287f03bc3f7ff4de0cdacfcfea9d843e5759c90f95f6a245b6898964387f6bd24813749333c23684186bc79d91a2d03f28512f2c4a3f8bc6773316a1c
-  languageName: node
-  linkType: hard
-
-"pino@npm:^6.13.1":
+"pino@npm:6.13.1":
   version: 6.13.1
   resolution: "pino@npm:6.13.1"
   dependencies:
@@ -10673,6 +10657,22 @@ __metadata:
   bin:
     pino: bin.js
   checksum: 8124217b9fd9f44f00126bf38eaf183c659d47d6e030cb614a988bb8adbae710a5f3184fa4d8323dcb3b6aa79ece199fbaed61e484b0b621629a5f3c369d8302
+  languageName: node
+  linkType: hard
+
+"pino@npm:^6.13.0":
+  version: 6.13.0
+  resolution: "pino@npm:6.13.0"
+  dependencies:
+    fast-redact: ^3.0.0
+    fast-safe-stringify: ^2.0.8
+    flatstr: ^1.0.12
+    pino-std-serializers: ^3.1.0
+    quick-format-unescaped: ^4.0.3
+    sonic-boom: ^1.0.2
+  bin:
+    pino: bin.js
+  checksum: 7145de4287f03bc3f7ff4de0cdacfcfea9d843e5759c90f95f6a245b6898964387f6bd24813749333c23684186bc79d91a2d03f28512f2c4a3f8bc6773316a1c
   languageName: node
   linkType: hard
 
@@ -11808,7 +11808,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sequelize-cli@npm:^6.2.0":
+"sequelize-cli@npm:6.2.0":
   version: 6.2.0
   resolution: "sequelize-cli@npm:6.2.0"
   dependencies:
@@ -11833,7 +11833,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sequelize@npm:^6.6.5":
+"sequelize@npm:6.6.5":
   version: 6.6.5
   resolution: "sequelize@npm:6.6.5"
   dependencies:
@@ -12157,7 +12157,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"source-map-loader@npm:^3.0.0":
+"source-map-loader@npm:3.0.0":
   version: 3.0.0
   resolution: "source-map-loader@npm:3.0.0"
   dependencies:
@@ -12992,7 +12992,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^27.0.5":
+"ts-jest@npm:27.0.5":
   version: 27.0.5
   resolution: "ts-jest@npm:27.0.5"
   dependencies:
@@ -13023,7 +13023,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"ts-loader@npm:^9.2.5":
+"ts-loader@npm:9.2.5":
   version: 9.2.5
   resolution: "ts-loader@npm:9.2.5"
   dependencies:
@@ -13038,7 +13038,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.2.1":
+"ts-node@npm:10.2.1":
   version: 10.2.1
   resolution: "ts-node@npm:10.2.1"
   dependencies:
@@ -13220,7 +13220,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-typescript@^4.4.2:
+typescript@4.4.2:
   version: 4.4.2
   resolution: "typescript@npm:4.4.2"
   bin:
@@ -13230,7 +13230,7 @@ typescript@^4.4.2:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.4.2#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.4.2#~builtin<compat/typescript>":
   version: 4.4.2
   resolution: "typescript@patch:typescript@npm%3A4.4.2#~builtin<compat/typescript>::version=4.4.2&hash=d8b4e7"
   bin:
@@ -13565,7 +13565,7 @@ typescript@^4.4.2:
   languageName: node
   linkType: hard
 
-"webpack-bundle-analyzer@npm:^4.4.2":
+"webpack-bundle-analyzer@npm:4.4.2":
   version: 4.4.2
   resolution: "webpack-bundle-analyzer@npm:4.4.2"
   dependencies:
@@ -13584,7 +13584,7 @@ typescript@^4.4.2:
   languageName: node
   linkType: hard
 
-"webpack-cli@npm:^4.8.0":
+"webpack-cli@npm:4.8.0":
   version: 4.8.0
   resolution: "webpack-cli@npm:4.8.0"
   dependencies:
@@ -13634,7 +13634,7 @@ typescript@^4.4.2:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:^4.0.0":
+"webpack-dev-server@npm:4.0.0":
   version: 4.0.0
   resolution: "webpack-dev-server@npm:4.0.0"
   dependencies:
@@ -13691,7 +13691,7 @@ typescript@^4.4.2:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.51.1":
+"webpack@npm:5.51.1":
   version: 5.51.1
   resolution: "webpack@npm:5.51.1"
   dependencies:
