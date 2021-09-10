@@ -11879,16 +11879,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sonic-boom@npm:^2.1.0":
-  version: 2.2.3
-  resolution: "sonic-boom@npm:2.2.3"
-  dependencies:
-    atomic-sleep: ^1.0.0
-  checksum: c86daf128ea6a431121356f33c46cc69e6430c85f98f524432e750085c3572934075db6dfa123446f5f498541e3c234cd90755f9903c02921c749b03e832b6c4
-  languageName: node
-  linkType: hard
-
-"sonic-boom@npm:^2.2.0":
+"sonic-boom@npm:^2.1.0, sonic-boom@npm:^2.2.0":
   version: 2.2.3
   resolution: "sonic-boom@npm:2.2.3"
   dependencies:
