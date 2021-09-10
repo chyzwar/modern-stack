@@ -92,7 +92,7 @@ Unit testing is provided by Jest. There few test examples (not enough). For API 
 The project provides basic automation pipeline using Github actions. Dependabot scan weekly for outdated packages and creates automatic PRs.
 
 - [Github Actions](https://github.com/features/actions)
-- [Dependabot](https://dependabot.com/)
+- [Renovate](https://docs.renovatebot.com/)
 
 ### Tools
 

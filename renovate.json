@@ -1,6 +1,6 @@
 {
   "schedule": ["before 2am"],
-  "rangeStrategy": "replace",
+  "rangeStrategy": "bump",
   "extends": [
     "config:base"
   ]
