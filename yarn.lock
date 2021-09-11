@@ -1644,7 +1644,7 @@ __metadata:
     "@material-ui/core": ^4.12.3
     "@material-ui/icons": ^4.11.2
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.0-rc.5
-    "@testing-library/dom": ^8.2.0
+    "@testing-library/dom": ^8.5.0
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@testing-library/user-event": ^13.2.1
@@ -1774,7 +1774,7 @@ __metadata:
     "@material-ui/icons": ^4.11.2
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.0-rc.5
     "@project/common": "workspace:packages/common"
-    "@testing-library/dom": ^8.2.0
+    "@testing-library/dom": ^8.5.0
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@testing-library/user-event": ^13.2.1
@@ -1853,7 +1853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^8.0.0, @testing-library/dom@npm:^8.2.0":
+"@testing-library/dom@npm:^8.0.0":
   version: 8.3.0
   resolution: "@testing-library/dom@npm:8.3.0"
   dependencies:
@@ -1866,6 +1866,22 @@ __metadata:
     lz-string: ^1.4.4
     pretty-format: ^27.0.2
   checksum: ee7318302697def8722ceaa49b0649fbc384c2db3f7a68fbab21068fe03d26531bb4167812560b775f23784b5a4c89ebd901ee97742cdd90ffe430f7f0587ec3
+  languageName: node
+  linkType: hard
+
+"@testing-library/dom@npm:^8.5.0":
+  version: 8.5.0
+  resolution: "@testing-library/dom@npm:8.5.0"
+  dependencies:
+    "@babel/code-frame": ^7.10.4
+    "@babel/runtime": ^7.12.5
+    "@types/aria-query": ^4.2.0
+    aria-query: ^4.2.2
+    chalk: ^4.1.0
+    dom-accessibility-api: ^0.5.6
+    lz-string: ^1.4.4
+    pretty-format: ^27.0.2
+  checksum: fde0e9086de62e92a50e866a3b7d00c05ebdd054f5b044652b80726c82733f50fd290dda99a8aba4a3ff763ea16910c1916f0c8fbadd0a1b48ffdc159eafcb9c
   languageName: node
   linkType: hard
 
