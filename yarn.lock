@@ -1670,7 +1670,7 @@ __metadata:
     favicons: ^6.2.2
     favicons-webpack-plugin: ^5.0.2
     html-webpack-plugin: ^5.3.2
-    jest: ^27.1.0
+    jest: ^27.1.1
     react: ^17.0.2
     react-dom: ^17.0.2
     react-refresh: ^0.10.0
@@ -1712,7 +1712,7 @@ __metadata:
     fastify-jwt: ^3.0.1
     fastify-oauth2: ^4.2.3
     fastify-plugin: ^3.0.0
-    jest: ^27.1.0
+    jest: ^27.1.1
     nodemon: ^2.0.12
     pg: ^8.7.1
     pg-hstore: ^2.3.4
@@ -1739,7 +1739,7 @@ __metadata:
     eslint-plugin-import: ^2.24.2
     eslint-plugin-jest: ^24.4.0
     eslint-plugin-jsx-a11y: ^6.4.1
-    jest: ^27.1.0
+    jest: ^27.1.1
     ts-jest: ^27.0.5
     typescript: ^4.4.2
   languageName: unknown
@@ -1759,7 +1759,7 @@ __metadata:
     eslint-plugin-react: ^7.25.1
     eslint-plugin-react-hooks: ^4.2.0
     husky: ^7.0.2
-    jest: ^27.1.0
+    jest: ^27.1.1
     lint-staged: ^11.1.2
     typescript: ^4.4.2
   languageName: unknown
@@ -1801,7 +1801,7 @@ __metadata:
     favicons: ^6.2.2
     favicons-webpack-plugin: ^5.0.2
     html-webpack-plugin: ^5.3.2
-    jest: ^27.1.0
+    jest: ^27.1.1
     lint-staged: ^11.1.2
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -8094,7 +8094,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^27.1.0":
+"jest@npm:^27.1.1":
   version: 27.1.1
   resolution: "jest@npm:27.1.1"
   dependencies:
