@@ -1652,7 +1652,7 @@ __metadata:
     "@types/node": ^16.7.8
     "@types/react": ^17.0.21
     "@types/react-dom": ^17.0.9
-    "@types/react-router-dom": ^5.1.8
+    "@types/react-router-dom": ^5.1.9
     "@typescript-eslint/eslint-plugin": ^4.30.0
     "@typescript-eslint/parser": ^4.30.0
     axios: ^0.21.1
@@ -1782,7 +1782,7 @@ __metadata:
     "@types/node": ^16.7.8
     "@types/react": ^17.0.21
     "@types/react-dom": ^17.0.9
-    "@types/react-router-dom": ^5.1.8
+    "@types/react-router-dom": ^5.1.9
     "@typescript-eslint/eslint-plugin": ^4.30.0
     "@typescript-eslint/parser": ^4.30.0
     axios: ^0.21.1
@@ -2249,14 +2249,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-router-dom@npm:^5.1.8":
-  version: 5.1.8
-  resolution: "@types/react-router-dom@npm:5.1.8"
+"@types/react-router-dom@npm:^5.1.9":
+  version: 5.1.9
+  resolution: "@types/react-router-dom@npm:5.1.9"
   dependencies:
     "@types/history": "*"
     "@types/react": "*"
     "@types/react-router": "*"
-  checksum: ff4af091f8e076b64f6f3f2af52429772641388393065930880e8931ce881873c2f0dff53bb1e373db5ae6b737fc514db4a1f5daa7d8bf3cf3b3088ce84472fc
+  checksum: 6ff2f10f21124f529e191adce60ad8f1d9a47ee19a0e00f10259e9d39c06ef0ccb8d6d57686b10286fe241bf20c89115c77494b683b0c70de9bddb13b28ee6e1
   languageName: node
   linkType: hard
 
