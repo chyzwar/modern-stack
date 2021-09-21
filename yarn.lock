@@ -1709,7 +1709,7 @@ __metadata:
     eslint-plugin-jest: ^24.4.0
     fastify: ^3.21.3
     fastify-cookie: ^5.3.1
-    fastify-jwt: ^3.0.1
+    fastify-jwt: ^3.1.0
     fastify-oauth2: ^4.2.3
     fastify-plugin: ^3.0.0
     jest: ^27.1.1
@@ -5838,16 +5838,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify-jwt@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "fastify-jwt@npm:3.0.1"
+"fastify-jwt@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "fastify-jwt@npm:3.1.0"
   dependencies:
     "@types/jsonwebtoken": ^8.5.0
     fastify-plugin: ^3.0.0
     http-errors: ^1.8.0
     jsonwebtoken: ^8.5.1
     steed: ^1.1.3
-  checksum: 6e61e0e43a0f17121a4c4041d8bf0bac453a70cf1e6d1a89d94b38e43518af1ce4d9eda8ce6aecee7a31c580aa20738c9523be195d95e930d2fbee696ac6e815
+  checksum: 6c77283f5922c2d477eb04dfb76d7ec3e43fb7a3e3f935c4de5bed521359b74f4b0f971080739660199ea316920887884cb6b1fd18a33112a395d6d1014e98b6
   languageName: node
   linkType: hard
 
