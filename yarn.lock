@@ -1716,7 +1716,7 @@ __metadata:
     nodemon: ^2.0.12
     pg: ^8.7.1
     pg-hstore: ^2.3.4
-    pino: ^6.13.1
+    pino: ^6.13.3
     pino-pretty: ^7.0.0
     pino-syslog: ^1.3.1
     sequelize: ^6.6.5
@@ -10427,7 +10427,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino@npm:^6.13.0, pino@npm:^6.13.1":
+"pino@npm:^6.13.0":
   version: 6.13.2
   resolution: "pino@npm:6.13.2"
   dependencies:
@@ -10441,6 +10441,23 @@ __metadata:
   bin:
     pino: bin.js
   checksum: daed08099630e8fd8970ed95e9145f8cc40e36671b3acd1324a459c1758b93e3dbe8eea7573ccff00e48ebf1afc1dcc612732e92a5e40e47ab8f91ac0a81ad4b
+  languageName: node
+  linkType: hard
+
+"pino@npm:^6.13.3":
+  version: 6.13.3
+  resolution: "pino@npm:6.13.3"
+  dependencies:
+    fast-redact: ^3.0.0
+    fast-safe-stringify: ^2.0.8
+    fastify-warning: ^0.2.0
+    flatstr: ^1.0.12
+    pino-std-serializers: ^3.1.0
+    quick-format-unescaped: ^4.0.3
+    sonic-boom: ^1.0.2
+  bin:
+    pino: bin.js
+  checksum: a580decd47a1c8b32a846ba1cb478087b523636d697bd4c57833d10b3f2b35c7d06739715ad9a291b41caf002b8d1bbf98674bfb3e99989fd41b7d934cca861c
   languageName: node
   linkType: hard
 
