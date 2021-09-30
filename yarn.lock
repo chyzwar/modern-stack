@@ -1665,7 +1665,7 @@ __metadata:
     eslint-plugin-import: ^2.24.2
     eslint-plugin-jest: ^24.4.0
     eslint-plugin-jsx-a11y: ^6.4.1
-    eslint-plugin-react: ^7.25.1
+    eslint-plugin-react: ^7.26.1
     eslint-plugin-react-hooks: ^4.2.0
     favicons: ^6.2.2
     favicons-webpack-plugin: ^5.0.2
@@ -1756,7 +1756,7 @@ __metadata:
     eslint: ^7.32.0
     eslint-plugin-import: ^2.24.2
     eslint-plugin-jest: ^24.4.0
-    eslint-plugin-react: ^7.25.1
+    eslint-plugin-react: ^7.26.1
     eslint-plugin-react-hooks: ^4.2.0
     husky: ^7.0.2
     jest: ^27.1.1
@@ -1796,7 +1796,7 @@ __metadata:
     eslint-plugin-import: ^2.24.2
     eslint-plugin-jest: ^24.4.0
     eslint-plugin-jsx-a11y: ^6.4.1
-    eslint-plugin-react: ^7.25.1
+    eslint-plugin-react: ^7.26.1
     eslint-plugin-react-hooks: ^4.2.0
     favicons: ^6.2.2
     favicons-webpack-plugin: ^5.0.2
@@ -5136,6 +5136,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"es-abstract@npm:^1.18.1":
+  version: 1.18.7
+  resolution: "es-abstract@npm:1.18.7"
+  dependencies:
+    call-bind: ^1.0.2
+    es-to-primitive: ^1.2.1
+    function-bind: ^1.1.1
+    get-intrinsic: ^1.1.1
+    get-symbol-description: ^1.0.0
+    has: ^1.0.3
+    has-symbols: ^1.0.2
+    internal-slot: ^1.0.3
+    is-callable: ^1.2.4
+    is-negative-zero: ^2.0.1
+    is-regex: ^1.1.4
+    is-string: ^1.0.7
+    object-inspect: ^1.11.0
+    object-keys: ^1.1.1
+    object.assign: ^4.1.2
+    string.prototype.trimend: ^1.0.4
+    string.prototype.trimstart: ^1.0.4
+    unbox-primitive: ^1.0.1
+  checksum: ec466f4a236b1f511dc20ddf2518d6192e60c741e0cdd151c6de1dadecbc7af469bf5359c3d33237955f39b177f53349cf73eae196e092e5d12e73b4910c77a7
+  languageName: node
+  linkType: hard
+
 "es-module-lexer@npm:^0.7.1":
   version: 0.7.1
   resolution: "es-module-lexer@npm:0.7.1"
@@ -5409,26 +5435,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.25.1":
-  version: 7.25.1
-  resolution: "eslint-plugin-react@npm:7.25.1"
+"eslint-plugin-react@npm:^7.26.1":
+  version: 7.26.1
+  resolution: "eslint-plugin-react@npm:7.26.1"
   dependencies:
     array-includes: ^3.1.3
     array.prototype.flatmap: ^1.2.4
     doctrine: ^2.1.0
     estraverse: ^5.2.0
-    has: ^1.0.3
     jsx-ast-utils: ^2.4.1 || ^3.0.0
     minimatch: ^3.0.4
     object.entries: ^1.1.4
     object.fromentries: ^2.0.4
+    object.hasown: ^1.0.0
     object.values: ^1.1.4
     prop-types: ^15.7.2
     resolve: ^2.0.0-next.3
+    semver: ^6.3.0
     string.prototype.matchall: ^4.0.5
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
-  checksum: e22ffbb6d336558cab38717c8c6199b72635500b9bd909891ba45865adae5846912a2b3daa355b0c1b1bfe6664b28ee277c14943acc739e703316eff87c1fce4
+  checksum: 856eec868fe45de941f86f5e197a4da1421246bef2dcc88802e78ceedaa067edefd84352483bf595a56054022594f6c3ea93a5fb49aac6830b31d09754ab9237
   languageName: node
   linkType: hard
 
@@ -9750,6 +9777,16 @@ __metadata:
     es-abstract: ^1.18.0-next.2
     has: ^1.0.3
   checksum: 1e8e991c43a463a6389c6ee6935ef3843931fb012c5eed2ec30e3d5cf3760cb853f527723cdc98fb770d9c0cd068449448b03c303f527e7926a97d43daaa5c66
+  languageName: node
+  linkType: hard
+
+"object.hasown@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "object.hasown@npm:1.0.0"
+  dependencies:
+    define-properties: ^1.1.3
+    es-abstract: ^1.18.1
+  checksum: 77c9c3dd744c811ba6e0a687d2dc5c34f4fb64b311cd0e042e9c26d1c87986c1aa5859aa0a552f3b6054abea738d962c0ced2752f859588365f08df3c9e1bd4a
   languageName: node
   linkType: hard
 
