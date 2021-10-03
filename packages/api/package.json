@@ -18,7 +18,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@project/common": "workspace:packages/common",
-    "axios": "^0.21.1",
+    "axios": "^0.22.0",
     "fastify": "^3.22.0",
     "fastify-cookie": "^5.3.1",
     "fastify-jwt": "^3.0.1",
