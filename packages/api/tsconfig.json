@@ -15,8 +15,7 @@
       "jest",
       "pino",
       "node",
-      "validator",
-      "bluebird"
+      "validator"
     ],
   },
   "include": [
