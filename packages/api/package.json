@@ -21,7 +21,7 @@
     "axios": "^0.22.0",
     "fastify": "^3.22.0",
     "fastify-cookie": "^5.3.1",
-    "fastify-jwt": "^3.2.0",
+    "fastify-jwt": "^3.2.1",
     "fastify-oauth2": "^4.2.3",
     "fastify-plugin": "^3.0.0",
     "pg": "^8.7.1",
