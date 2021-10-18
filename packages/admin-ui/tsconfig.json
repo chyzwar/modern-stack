@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
-    "module": "commonjs",
+    "target": "ES2020",
+    "module": "ES2020",
     "moduleResolution": "node",
     "allowJs": true,
     "skipLibCheck": true,
@@ -24,6 +24,19 @@
       "dom.iterable",
       "esnext"
     ],
+    "types": [
+      "jest",
+      "react",
+      "react-dom"
+    ]
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "types": [
+        "node"
+      ]
+    }
   },
   "include": [
     "src"
