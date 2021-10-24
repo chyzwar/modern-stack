@@ -18,7 +18,7 @@ services:
       - "81:80"     
 
   build:
-    image: node:16
+    image: node:17
     volumes:
       - .:/home/node/app
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
@@ -27,7 +27,7 @@ services:
     tty: true
     
   api:
-    image: node:16
+    image: node:17
     env_file: 
       - ./packages/api/.env
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
@@ -44,7 +44,7 @@ services:
     tty: true
 
   ui:
-    image: node:16
+    image: node:17
     env_file: 
       - ./packages/ui/.env
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
@@ -61,7 +61,7 @@ services:
     tty: true
 
   admin-ui:
-    image: node:16
+    image: node:17
     env_file: 
       - ./packages/admin-ui/.env
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
