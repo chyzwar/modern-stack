@@ -1711,7 +1711,7 @@ __metadata:
     "@types/jest": ^27.0.2
     "@types/node": ^16.11.1
     "@types/pino": ^6.3.11
-    "@types/validator": ^13.6.3
+    "@types/validator": ^13.6.6
     "@typescript-eslint/eslint-plugin": ^5.1.0
     "@typescript-eslint/parser": ^5.1.0
     axios: ^0.23.0
@@ -2320,10 +2320,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/validator@npm:^13.6.3":
-  version: 13.6.3
-  resolution: "@types/validator@npm:13.6.3"
-  checksum: b06b684d4d1ff4b59449a974cb8cdd96ccde4660958e541acf66711c8f60026912202e4d924ccd2016ec8bdd4e1f71e8122e5c568deefcdecffc04a73acff460
+"@types/validator@npm:^13.6.6":
+  version: 13.6.6
+  resolution: "@types/validator@npm:13.6.6"
+  checksum: cae90ccbb067640bbed2c233b6393b986529fc9b695a04516708354a5df5419cb0f588e5dd4c8a0c6127402d38d060519b9738ab8aab80f70bc92a6b354a43da
   languageName: node
   linkType: hard
 
