@@ -1734,7 +1734,7 @@ __metadata:
     pino: ^7.0.2
     pino-pretty: ^7.1.0
     pino-syslog: ^2.0.0
-    sequelize: ^6.7.0
+    sequelize: ^6.9.0
     sequelize-cli: ^6.2.0
     ts-jest: ^27.0.7
     ts-node: ^10.3.0
@@ -11552,9 +11552,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sequelize@npm:^6.7.0":
-  version: 6.7.0
-  resolution: "sequelize@npm:6.7.0"
+"sequelize@npm:^6.9.0":
+  version: 6.9.0
+  resolution: "sequelize@npm:6.9.0"
   dependencies:
     debug: ^4.1.1
     dottie: ^2.0.0
@@ -11582,7 +11582,7 @@ resolve@^2.0.0-next.3:
       optional: true
     tedious:
       optional: true
-  checksum: 51b865d2ef2a3ac49bb8269b9e2b95fe600ae5a8c35869ba911a518996aa905c2e11743fa8c0cd5d5dba37575d821f96b2c934ff3d795f2eed37f81896086f56
+  checksum: e2fb0a6cd4a8b8eed254a99e20a700852396fdfd8f1d49e786da40186805ad49c03e088d93fa1e0a40764f8fe2a486e58d74d8c97287a4c9aba3d415d2c90bab
   languageName: node
   linkType: hard
 
