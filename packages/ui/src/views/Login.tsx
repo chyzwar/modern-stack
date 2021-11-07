@@ -11,7 +11,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Copyright(): React.ReactElement {
   return (
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Login(): React.ReactElement {
   const classes = useStyles();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     const { searchParams } = new URL(document.location.toString());
@@ -79,7 +79,7 @@ export default function Login(): React.ReactElement {
         cookie.push('HttpOnly');
       }
       document.cookie = cookie.join('; ');
-      history.push('/');
+      navigate('/');
     }
   });
 

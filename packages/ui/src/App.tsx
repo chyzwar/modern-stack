@@ -2,7 +2,7 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import {
   BrowserRouter,
-  Switch,
+  Routes,
   Route,
 } from 'react-router-dom';
 
@@ -15,14 +15,17 @@ function App(): React.ReactElement {
     <>
       <CssBaseline />
       <BrowserRouter>
-        <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <ProtectedRoute exact path="/">
-            <Home />
-          </ProtectedRoute>
-        </Switch>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route
+            path="/"
+            element={(
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            )}
+          />
+        </Routes>
       </BrowserRouter>
     </>
   );

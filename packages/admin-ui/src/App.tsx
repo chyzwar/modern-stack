@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import {
   BrowserRouter,
-  Switch,
+  Routes,
   Route,
 } from 'react-router-dom';
 import Login from './views/Login';
@@ -9,11 +9,9 @@ import Login from './views/Login';
 function App(): ReactElement {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/login">
-          <Login />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </BrowserRouter>
   );
 }

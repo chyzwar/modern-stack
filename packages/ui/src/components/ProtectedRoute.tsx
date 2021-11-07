@@ -4,37 +4,24 @@ import {
 } from 'react';
 
 import {
-  Route,
-  Redirect,
+  Navigate,
+  useLocation,
 } from 'react-router-dom';
 
-import useAuth from '../hooks/useAuth';
+import useIsAuthenticated from '../hooks/useIsAuthenticated';
 
 interface ProtectedRouteProps{
   children: ReactElement;
-  path: string;
-  exact?: boolean;
 }
 
-const ProtectedRoute: FC<ProtectedRouteProps> = ({ path, children, exact = false }) => {
-  const { isAuthenticated } = useAuth();
+const ProtectedRoute: FC<ProtectedRouteProps> = ({ children }) => {
+  const isAuthenticated = useIsAuthenticated();
+  const from = useLocation();
 
-  return isAuthenticated
-    ? (
-      <Route path={path} exact={exact}>
-        {children}
-      </Route>
-    )
-    : (
-      <Redirect
-        to={{
-          pathname: '/login',
-          state: {
-            path,
-          },
-        }}
-      />
-    );
+  if (!isAuthenticated) {
+    return <Navigate to="/login" state={{ from }} />;
+  }
+  return children;
 };
 
 export default ProtectedRoute;
