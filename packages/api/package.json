@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "API",
   "engines": {
-    "node": "16.x.x",
+    "node": "16.x",
     "yarn": "1.x.x"
   },
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.1",
+    "@types/node": "^16.11.6",
     "@types/pino": "^6.3.11",
     "@types/validator": "^13.6.3",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
