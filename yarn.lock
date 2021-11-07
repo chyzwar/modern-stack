@@ -1666,7 +1666,7 @@ __metadata:
     "@testing-library/user-event": ^13.5.0
     "@types/jest": ^27.0.2
     "@types/node": ^16.11.6
-    "@types/react": ^17.0.30
+    "@types/react": ^17.0.34
     "@types/react-dom": ^17.0.11
     "@types/react-router-dom": ^5.3.1
     "@typescript-eslint/eslint-plugin": ^5.1.0
@@ -1794,7 +1794,7 @@ __metadata:
     "@testing-library/react": ^12.1.2
     "@testing-library/user-event": ^13.5.0
     "@types/jest": ^27.0.2
-    "@types/react": ^17.0.30
+    "@types/react": ^17.0.34
     "@types/react-dom": ^17.0.11
     "@types/react-router-dom": ^5.3.1
     "@typescript-eslint/eslint-plugin": ^5.1.0
@@ -2277,7 +2277,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.30":
+"@types/react@npm:*":
   version: 17.0.30
   resolution: "@types/react@npm:17.0.30"
   dependencies:
@@ -2285,6 +2285,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: e3aaac1b8fda6e3622b75db0bd7d8dc412c2f2b77a00afdd32cae8c71fb0b1ca6926ab1fbe1c536dd51d96c0ba372738993837a8df1637637aaab7b86e421b7f
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^17.0.34":
+  version: 17.0.34
+  resolution: "@types/react@npm:17.0.34"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 16729ad7d50922ccbf8eb93874d7781dc2f1c64edc78134b5edc7154839d41e9fe320eb1c11ad2d1c9bf28b99cb1febda344509c1fda025955a5c2b43c688c8f
   languageName: node
   linkType: hard
 
