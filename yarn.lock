@@ -1669,7 +1669,7 @@ __metadata:
     eslint-config-airbnb-typescript: ^15.0.0
     eslint-plugin-css-modules: ^2.11.0
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-jest: ^25.2.3
+    eslint-plugin-jest: ^25.3.0
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.26.1
     eslint-plugin-react-hooks: ^4.2.0
@@ -1711,7 +1711,7 @@ __metadata:
     eslint-config-airbnb-base: ^14.2.1
     eslint-config-airbnb-typescript: ^15.0.0
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-jest: ^25.2.3
+    eslint-plugin-jest: ^25.3.0
     fastify: ^3.23.0
     fastify-cookie: ^5.3.2
     fastify-jwt: ^3.2.1
@@ -1742,7 +1742,7 @@ __metadata:
     eslint-config-airbnb-base: ^14.2.1
     eslint-config-airbnb-typescript: ^15.0.0
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-jest: ^25.2.3
+    eslint-plugin-jest: ^25.3.0
     eslint-plugin-jsx-a11y: ^6.4.1
     jest: ^27.3.1
     ts-jest: ^27.0.7
@@ -1760,7 +1760,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.3.0
     eslint: ^8.2.0
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-jest: ^25.2.3
+    eslint-plugin-jest: ^25.3.0
     eslint-plugin-react: ^7.26.1
     eslint-plugin-react-hooks: ^4.2.0
     husky: ^7.0.4
@@ -1797,7 +1797,7 @@ __metadata:
     eslint-config-airbnb-typescript: ^15.0.0
     eslint-plugin-css-modules: ^2.11.0
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-jest: ^25.2.3
+    eslint-plugin-jest: ^25.3.0
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.26.1
     eslint-plugin-react-hooks: ^4.2.0
@@ -5340,9 +5340,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^25.2.3":
-  version: 25.2.3
-  resolution: "eslint-plugin-jest@npm:25.2.3"
+"eslint-plugin-jest@npm:^25.3.0":
+  version: 25.3.0
+  resolution: "eslint-plugin-jest@npm:25.3.0"
   dependencies:
     "@typescript-eslint/experimental-utils": ^5.0.0
   peerDependencies:
@@ -5353,7 +5353,7 @@ __metadata:
       optional: true
     jest:
       optional: true
-  checksum: eb6ed233348c735bfb3933947d75f982a0884825b2269518048a236bee49a913b67b7788986b8d4679687658cc4f7cd3d2ef32b128cb3d65b422ddec92c770ab
+  checksum: d801c166f528392fbb0234e34b893e97c24a7be049744f2d23b1702bce6202d5f0760886a591f884ffa82c7e01a2b06134e86da991bfa568ca5a90311e5f452e
   languageName: node
   linkType: hard
 
