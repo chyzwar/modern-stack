@@ -10,25 +10,23 @@ import Login from './views/Login';
 import Home from './views/Home';
 import ProtectedRoute from './components/ProtectedRoute';
 
-function App(): React.ReactElement {
-  return (
-    <>
-      <CssBaseline />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route
-            path="/"
-            element={(
-              <ProtectedRoute>
-                <Home />
-              </ProtectedRoute>
+const App = () => (
+  <>
+    <CssBaseline />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/"
+          element={(
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
             )}
-          />
-        </Routes>
-      </BrowserRouter>
-    </>
-  );
-}
+        />
+      </Routes>
+    </BrowserRouter>
+  </>
+);
 
 export default App;

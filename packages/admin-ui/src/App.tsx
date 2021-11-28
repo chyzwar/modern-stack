@@ -1,4 +1,3 @@
-import { ReactElement } from 'react';
 import {
   BrowserRouter,
   Routes,
@@ -6,7 +5,7 @@ import {
 } from 'react-router-dom';
 import Login from './views/Login';
 
-function App(): ReactElement {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -14,6 +13,6 @@ function App(): ReactElement {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

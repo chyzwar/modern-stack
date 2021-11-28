@@ -5,7 +5,9 @@ module.exports = {
     'airbnb-typescript'
   ],
   rules: {
-    'react/react-in-jsx-scope': 'off'
+    "react/react-in-jsx-scope": 'off',
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+    "arrow-body-style": ["off"]
   },
   parserOptions: {
     project: './tsconfig.json',

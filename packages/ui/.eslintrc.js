@@ -12,6 +12,8 @@ module.exports = {
     browser: true
   },
   rules: {
+    "react/react-in-jsx-scope": 'off',
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
     "react/require-default-props": "off",

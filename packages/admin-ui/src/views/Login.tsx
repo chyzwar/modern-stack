@@ -1,4 +1,3 @@
-import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -13,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
-function Copyright(): React.ReactElement {
+const Copyright = () => {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
@@ -25,7 +24,7 @@ function Copyright(): React.ReactElement {
       .
     </Typography>
   );
-}
+};
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -47,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Login(): React.ReactElement {
+const Login = () => {
   const classes = useStyles();
 
   return (
@@ -115,4 +114,6 @@ export default function Login(): React.ReactElement {
       </Box>
     </Container>
   );
-}
+};
+
+export default Login;

@@ -13,19 +13,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { useNavigate } from 'react-router-dom';
 
-function Copyright(): React.ReactElement {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>
-      {' '}
-      {new Date().getFullYear()}
-      .
-    </Typography>
-  );
-}
+const Copyright = () => (
+  <Typography variant="body2" color="textSecondary" align="center">
+    {'Copyright © '}
+    <Link color="inherit" href="https://material-ui.com/">
+      Your Website
+    </Link>
+    {' '}
+    {new Date().getFullYear()}
+    .
+  </Typography>
+);
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -58,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Login(): React.ReactElement {
+const Login = () => {
   const classes = useStyles();
   const navigate = useNavigate();
 
@@ -173,4 +171,6 @@ export default function Login(): React.ReactElement {
       </Box>
     </Container>
   );
-}
+};
+
+export default Login;
