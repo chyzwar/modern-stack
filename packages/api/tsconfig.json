@@ -13,7 +13,6 @@
     "tsBuildInfoFile": "./build/tsBuildInfoFile.json",
     "types": [
       "jest",
-      "pino",
       "node",
       "validator"
     ],
