@@ -32,7 +32,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.3.0",
     "eslint-config-airbnb": "^19.0.1",
-    "eslint-config-airbnb-typescript": "^16.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.0",
     "eslint-plugin-css-modules": "^2.11.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jest": "^25.3.0",
