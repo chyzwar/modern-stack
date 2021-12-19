@@ -38,7 +38,7 @@ process.on('uncaughtException', (error) => {
 server.listen(
   Number(process.env.API_PORT),
   '0.0.0.0',
-  (error: Error) => {
+  (error: Error | null) => {
     if (error) {
       logger.error(error, 'Failed to start server');
     }
