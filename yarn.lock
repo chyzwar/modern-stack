@@ -1689,11 +1689,11 @@ __metadata:
     react-refresh: ^0.11.0
     react-router-dom: ^6.0.2
     source-map-loader: ^3.0.0
-    ts-jest: ^27.0.7
+    ts-jest: ^27.1.2
     ts-loader: ^9.2.6
     ts-node: ^10.4.0
     typescript: ^4.5.2
-    webpack: ^5.64.4
+    webpack: ^5.65.0
     webpack-bundle-analyzer: ^4.5.0
     webpack-cli: ^4.9.1
     webpack-dev-server: ^4.6.0
@@ -1732,7 +1732,7 @@ __metadata:
     pino-syslog: ^2.0.0
     sequelize: ^6.12.0-alpha.1
     sequelize-cli: ^6.3.0
-    ts-jest: ^27.0.7
+    ts-jest: ^27.1.2
     ts-node: ^10.4.0
     typescript: ^4.5.2
   languageName: unknown
@@ -1751,7 +1751,7 @@ __metadata:
     eslint-plugin-jest: ^25.3.0
     eslint-plugin-jsx-a11y: ^6.5.1
     jest: ^27.3.1
-    ts-jest: ^27.0.7
+    ts-jest: ^27.1.2
     typescript: ^4.5.2
   languageName: unknown
   linkType: soft
@@ -1817,11 +1817,11 @@ __metadata:
     react-refresh: ^0.11.0
     react-router-dom: ^6.0.2
     source-map-loader: ^3.0.0
-    ts-jest: ^27.0.7
+    ts-jest: ^27.1.2
     ts-loader: ^9.2.6
     ts-node: ^10.4.0
     typescript: ^4.5.2
-    webpack: ^5.64.4
+    webpack: ^5.65.0
     webpack-bundle-analyzer: ^4.5.0
     webpack-cli: ^4.9.1
     webpack-dev-server: ^4.6.0
@@ -12503,9 +12503,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^27.0.7":
-  version: 27.0.7
-  resolution: "ts-jest@npm:27.0.7"
+"ts-jest@npm:^27.1.2":
+  version: 27.1.2
+  resolution: "ts-jest@npm:27.1.2"
   dependencies:
     bs-logger: 0.x
     fast-json-stable-stringify: 2.x
@@ -12519,6 +12519,7 @@ resolve@^2.0.0-next.3:
     "@babel/core": ">=7.0.0-beta.0 <8"
     "@types/jest": ^27.0.0
     babel-jest: ">=27.0.0 <28"
+    esbuild: ~0.14.0
     jest: ^27.0.0
     typescript: ">=3.8 <5.0"
   peerDependenciesMeta:
@@ -12528,9 +12529,11 @@ resolve@^2.0.0-next.3:
       optional: true
     babel-jest:
       optional: true
+    esbuild:
+      optional: true
   bin:
     ts-jest: cli.js
-  checksum: 3711361cb5ae54aac547b00f8ad118ec88333c391af4bff0420497e9faa296eace4e8272c627ecbf4be675af9f68c437e4c2ccc5693c6d744796ec7da6dda131
+  checksum: 2e7275f8a3545ec1340b37c458ace9244b5903e86861eb108beffff97d433f296c1254f76a41b573b1fe6245110b21bb62150bb88d55159f1dc7a929886535cb
   languageName: node
   linkType: hard
 
@@ -13063,13 +13066,13 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"watchpack@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "watchpack@npm:2.3.0"
+"watchpack@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "watchpack@npm:2.3.1"
   dependencies:
     glob-to-regexp: ^0.4.1
     graceful-fs: ^4.1.2
-  checksum: 54f577fe311ae6130b43c3202ddc5c66ea8cdc5e0569b6e1dbccf5c0f5f4f8d4d00b7b97f6ae6d53e9361766bf0dc4e6dc7b30e57392948af9795217f6d9d7a7
+  checksum: 70a34f92842d94b5d842980f866d568d7a467de667c96ae5759c759f46587e49265863171f4650bdbafc5f3870a28f2b4453e9e847098ec4b718b38926d47d22
   languageName: node
   linkType: hard
 
@@ -13220,9 +13223,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.64.4":
-  version: 5.64.4
-  resolution: "webpack@npm:5.64.4"
+"webpack@npm:^5.65.0":
+  version: 5.65.0
+  resolution: "webpack@npm:5.65.0"
   dependencies:
     "@types/eslint-scope": ^3.7.0
     "@types/estree": ^0.0.50
@@ -13246,14 +13249,14 @@ resolve@^2.0.0-next.3:
     schema-utils: ^3.1.0
     tapable: ^2.1.1
     terser-webpack-plugin: ^5.1.3
-    watchpack: ^2.3.0
+    watchpack: ^2.3.1
     webpack-sources: ^3.2.2
   peerDependenciesMeta:
     webpack-cli:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 62ac598291374fa5269c80fcd82ad3cbf8e8c3f837c2bf6ea80812812154d9f4d3390c6fdc1ce85323e6fdd46132e3e3db08cde9a1b4d61197879e867c7c1375
+  checksum: 221ab8ccd440cb678269e86689704bbef81cf41393eb266625873e30c6980ffaa055bb1a7d14bf9fc0f5a2e6f03d15d068cbb995bc876757c01a4ca27fd2870c
   languageName: node
   linkType: hard
 
