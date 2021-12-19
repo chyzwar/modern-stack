@@ -7,9 +7,9 @@
     "yarn": "3.x"
   },
   "scripts": {
-    "prestart": "yarn build && yarn db:migrate",
-    "start": "env-cmd nodemon build/server.js | pino-syslog",
-    "start:prod": "env-cmd node build/server.js | pino-syslog",
+    "preStart": "yarn build && yarn db:migrate",
+    "start": "yarn preStart && env-cmd nodemon build/server.js",
+    "start:prod": "env-cmd node build/server.js",
     "build": "tsc --build",
     "build:watch": "tsc --build --watch",
     "db:seed": "env-cmd sequelize db:seed",

@@ -1,8 +1,12 @@
 import pino from 'pino';
 
-const logger = pino({
-  level: process.env.API_LOG_LEVEL,
-  prettyPrint: Boolean(process.env.API_LOG_PRETTY),
-});
-
-export default logger;
+export default process.env.API_LOG_PRETTY
+  ? pino({
+    level: process.env.API_LOG_LEVEL,
+    transport: {
+      target: 'pino-pretty',
+    },
+  })
+  : pino({
+    level: process.env.API_LOG_LEVEL,
+  });
