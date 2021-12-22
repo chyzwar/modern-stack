@@ -19,7 +19,7 @@
   "dependencies": {
     "@project/common": "workspace:packages/common",
     "axios": "^0.24.0",
-    "fastify": "^3.25.0",
+    "fastify": "^3.25.1",
     "fastify-cookie": "^5.4.0",
     "fastify-jwt": "^4.1.1",
     "fastify-oauth2": "^4.4.0",
