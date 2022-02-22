@@ -1,6 +1,7 @@
 import {
   Model,
   DataTypes,
+  CreationAttributes,
 } from 'sequelize';
 import {
   Role,
@@ -9,7 +10,6 @@ import logger from '../logger';
 import sequelize from '../sequelize';
 
 import {
-  Profile,
   Provider,
 } from '../types/Oauth';
 
@@ -38,7 +38,7 @@ class User extends Model {
     };
   }
 
-  static async createFromOAuth(profile: Profile) {
+  static async createFromOAuth(profile: CreationAttributes<User>) {
     const [user, created] = await User.findCreateFind({
       defaults: profile,
       where: {

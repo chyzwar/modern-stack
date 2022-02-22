@@ -71,10 +71,6 @@ const config: Configuration = {
               configFile: "tsconfig.build.json",
             },
           },
-          {
-            loader: "@linaria/webpack-loader",
-            options: {sourceMap: false},
-          },
         ],
       },
     ],
