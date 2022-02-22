@@ -5594,14 +5594,14 @@ __metadata:
   linkType: hard
 
 "find-my-way@npm:^4.5.0":
-  version: 4.5.1
-  resolution: "find-my-way@npm:4.5.1"
+  version: 4.5.0
+  resolution: "find-my-way@npm:4.5.0"
   dependencies:
     fast-decode-uri-component: ^1.0.1
     fast-deep-equal: ^3.1.3
     safe-regex2: ^2.0.0
     semver-store: ^0.3.0
-  checksum: 85b8c07d34a36f0203438e0c0f0cdbfaf5e1c521ed2e56f9250bed846ceb0eea074127fad7f70137d61bed56387047f212969cc0ba5d818ed5e37b3e3606c43f
+  checksum: 65d7d472ed2976207341c2f66cc4061e3992f799a8ff449d8ccee769013d23a539df0746f2cf553be56f1c7cd4fc14c257bc90b4e9dfd77f2066700eb5374103
   languageName: node
   linkType: hard
 
