@@ -1310,7 +1310,7 @@ __metadata:
     pino: ^7.8.0
     pino-pretty: ^7.5.1
     pino-syslog: ^2.0.0
-    sequelize: ^6.16.2
+    sequelize: ^6.19.0
     sequelize-cli: ^6.4.1
     ts-jest: ^27.1.3
     ts-node: ^10.5.0
@@ -6478,10 +6478,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inflection@npm:^1.13.1":
-  version: 1.13.1
-  resolution: "inflection@npm:1.13.1"
-  checksum: 0ae265f710f61320306207501931fe4248dace8e841fb911a33625df68f611bc3736d9f03be5abc5351ae3698c7830e35c400a3a092cd68e93aa3d8cc01cb73a
+"inflection@npm:^1.13.2":
+  version: 1.13.2
+  resolution: "inflection@npm:1.13.2"
+  checksum: e7ad0559384ed7c526813404bde843f8f17941d47625ad60fc3b09e46efde873dd9840818007c6bd4dbe388e6248fa033d5a8c405c5fc62738c51b118a0e940f
   languageName: node
   linkType: hard
 
@@ -10370,14 +10370,15 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sequelize@npm:^6.16.2":
-  version: 6.16.2
-  resolution: "sequelize@npm:6.16.2"
+"sequelize@npm:^6.19.0":
+  version: 6.19.0
+  resolution: "sequelize@npm:6.19.0"
   dependencies:
     "@types/debug": ^4.1.7
+    "@types/validator": ^13.7.1
     debug: ^4.3.3
     dottie: ^2.0.2
-    inflection: ^1.13.1
+    inflection: ^1.13.2
     lodash: ^4.17.21
     moment: ^2.29.1
     moment-timezone: ^0.5.34
@@ -10406,7 +10407,7 @@ resolve@^2.0.0-next.3:
       optional: true
     tedious:
       optional: true
-  checksum: 43799f8bcc9b608fe941d890bae19c62dfb028267baa5facdbed15a74ea1418c8c135d059522a5952d673b74e2399b48e95a9307d25fccf1c2a30703800174a7
+  checksum: e1faa389fe8bf4e58f4781763d313e6a28b5cf8376f9c34ba6a6af9f158a309d8fa30277706bbee004caa8068a5f3030cf1620735a2d9f84a33f204ab2dae2f2
   languageName: node
   linkType: hard
 

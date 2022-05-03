@@ -29,7 +29,7 @@
     "pino": "^7.8.0",
     "pino-pretty": "^7.5.1",
     "pino-syslog": "^2.0.0",
-    "sequelize": "^6.16.2"
+    "sequelize": "^6.19.0"
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",
