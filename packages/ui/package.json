@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.6",
     "@testing-library/dom": "^8.11.3",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
