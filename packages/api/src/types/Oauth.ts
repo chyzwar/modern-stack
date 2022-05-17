@@ -6,7 +6,7 @@ export enum Provider {
   Custom = 'Custom',
 }
 
-export interface Profile{
+export interface Profile {
   provider: Provider;
   providerId: string;
   name: string;
@@ -14,7 +14,7 @@ export interface Profile{
   role: Role
 }
 
-export interface GoogleProfile{
+export interface GoogleProfile {
   name: string,
   email: string;
   sub: string

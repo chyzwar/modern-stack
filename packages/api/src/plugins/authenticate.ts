@@ -1,5 +1,5 @@
 import fp from 'fastify-plugin';
-import fastifyJwt from 'fastify-jwt';
+import fastifyJwt from '@fastify/jwt';
 
 import {
   FastifyReply,

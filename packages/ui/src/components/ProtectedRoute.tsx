@@ -10,7 +10,7 @@ import {
 
 import useIsAuthenticated from '../hooks/useIsAuthenticated';
 
-interface ProtectedRouteProps{
+interface ProtectedRouteProps {
   children: ReactElement;
 }
 

@@ -1,4 +1,4 @@
-import { OAuth2Namespace } from 'fastify-oauth2';
+import { OAuth2Namespace } from '@fastify/oauth2';
 import { preValidationHookHandler } from 'fastify';
 
 declare module 'fastify' {

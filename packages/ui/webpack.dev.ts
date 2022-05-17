@@ -2,7 +2,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
 import type {Configuration} from "webpack";
-import {ProvidePlugin, HotModuleReplacementPlugin} from "webpack";
+import {ProvidePlugin} from "webpack";
 import {resolve} from "path";
 
 
@@ -131,11 +131,6 @@ const config: Configuration & DevServerConfiguration= {
       React:     "react",
       ReactDOM:  "react-dom",
     }),
-    /**
-     * Enable HMR plugin
-     * @see https://webpack.js.org/plugins/hot-module-replacement-plugin/
-     */
-    new HotModuleReplacementPlugin(),
     /**
      * Refresh plugin
      * @see https://github.com/pmmmwh/react-refresh-webpack-plugin

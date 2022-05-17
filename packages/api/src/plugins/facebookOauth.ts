@@ -1,6 +1,6 @@
 import axios from 'axios';
 import fp from 'fastify-plugin';
-import oauthPlugin from 'fastify-oauth2';
+import oauthPlugin from '@fastify/oauth2';
 import { randomBytes } from 'crypto';
 import { FastifyRequest } from 'fastify';
 
