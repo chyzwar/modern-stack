@@ -354,7 +354,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.17.9, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.4.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:7.18.9":
+  version: 7.18.9
+  resolution: "@babel/runtime@npm:7.18.9"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 36dd736baba7164e82b3cc9d43e081f0cb2d05ff867ad39cac515d99546cee75b7f782018b02a3dcf5f2ef3d27f319faa68965fdfec49d4912c60c6002353a2e
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.4.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.17.9
   resolution: "@babel/runtime@npm:7.17.9"
   dependencies:
@@ -1461,7 +1470,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.24.0
     "@typescript-eslint/parser": ^5.24.0
     axios: ^0.27.2
-    axios-hooks: ^3.0.3
+    axios-hooks: ^3.1.5
     babel-loader: ^8.2.5
     clean-webpack-plugin: ^4.0.0
     eslint: ^8.15.0
@@ -2964,17 +2973,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios-hooks@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "axios-hooks@npm:3.0.3"
+"axios-hooks@npm:^3.1.5":
+  version: 3.1.5
+  resolution: "axios-hooks@npm:3.1.5"
   dependencies:
-    "@babel/runtime": 7.17.9
-    dequal: 2.0.2
+    "@babel/runtime": 7.18.9
+    dequal: 2.0.3
     lru-cache: 6.0.0
   peerDependencies:
     axios: ">=0.24.0"
     react: ^16.8.0-0 || ^17.0.0 || ^18.0.0
-  checksum: 9431ab7cf30616727b247dc835d70b62eaf833fbb44eedcd44a2805b2f5792f7e968be9ebda3d761dd34c8160b72d2e3f97f75d6460e831a5cd92b7bbc277622
+  checksum: a37f952e105ee21bae97554b6ce07bc423ccc25302efb35eb9812e01a5dffd888dde75b700dc728d767db14b4dfc6c0e28b9046f9315469cf1293b72301c45f0
   languageName: node
   linkType: hard
 
@@ -4307,10 +4316,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dequal@npm:2.0.2":
-  version: 2.0.2
-  resolution: "dequal@npm:2.0.2"
-  checksum: 86c7a2c59f7b0797ed397c74b5fcdb744e48fc19440b70ad6ac59f57550a96b0faef3f1cfd5760ec5e6d3f7cb101f634f1f80db4e727b1dc8389bf62d977c0a0
+"dequal@npm:2.0.3":
+  version: 2.0.3
+  resolution: "dequal@npm:2.0.3"
+  checksum: 8679b850e1a3d0ebbc46ee780d5df7b478c23f335887464023a631d1b9af051ad4a6595a44220f9ff8ff95a8ddccf019b5ad778a976fd7bbf77383d36f412f90
   languageName: node
   linkType: hard
 
