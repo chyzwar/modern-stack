@@ -1395,7 +1395,7 @@ __metadata:
     pino: ^7.11.0
     pino-pretty: ^7.6.1
     pino-syslog: ^2.0.0
-    sequelize: ^6.19.1
+    sequelize: ^6.25.7
     sequelize-cli: ^6.4.1
     ts-jest: ^28.0.2
     ts-node: ^10.7.0
@@ -10003,10 +10003,10 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"retry-as-promised@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "retry-as-promised@npm:5.0.0"
-  checksum: 4d17e0597f967db0516714f0f2b085e2d1e8ea592450b013a1e0cd41dad74a9c3d1eb3c45351887de4bca1c3ac5f74dd07ef9942a3fb0e4db996a83bb28cb46e
+"retry-as-promised@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "retry-as-promised@npm:6.1.0"
+  checksum: cde3ad5c827d3f51b9161b9453dfd5eb8b8b6c22b6b405f7294eaa1939ef1966f8bd4c8a228ce2d66a24959d1dcc48b113c4c810ecdaddec2968b6d20576329d
   languageName: node
   linkType: hard
 
@@ -10288,9 +10288,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sequelize@npm:^6.19.1":
-  version: 6.19.1
-  resolution: "sequelize@npm:6.19.1"
+"sequelize@npm:^6.25.7":
+  version: 6.25.7
+  resolution: "sequelize@npm:6.25.7"
   dependencies:
     "@types/debug": ^4.1.7
     "@types/validator": ^13.7.1
@@ -10301,7 +10301,7 @@ resolve@^2.0.0-next.3:
     moment: ^2.29.1
     moment-timezone: ^0.5.34
     pg-connection-string: ^2.5.0
-    retry-as-promised: ^5.0.0
+    retry-as-promised: ^6.1.0
     semver: ^7.3.5
     sequelize-pool: ^7.1.0
     toposort-class: ^1.0.1
@@ -10315,6 +10315,8 @@ resolve@^2.0.0-next.3:
       optional: true
     mysql2:
       optional: true
+    oracledb:
+      optional: true
     pg:
       optional: true
     pg-hstore:
@@ -10325,7 +10327,7 @@ resolve@^2.0.0-next.3:
       optional: true
     tedious:
       optional: true
-  checksum: 645db1b9ee8963c3293a911d5ae030bd83769b5ea02762e177228ebbf582fcdd2b327b87ebad74366f0eecb85d9ce7dfbcb5bfb7d87e7383ea4fe1a89b9e9be5
+  checksum: 4932b2420d74a800b51e00a8995b28f44c331baf9a17babf43ceeae9aa676000967134abfeaa943f3bcdef2baa4a5a0bd42286c5c4872c6d1f5936d11d6304cd
   languageName: node
   linkType: hard
 
