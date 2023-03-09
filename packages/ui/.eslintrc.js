@@ -19,7 +19,7 @@ module.exports = {
     "react/require-default-props": "off",
     'react/react-in-jsx-scope': 'off'
   },
-  ignorePatterns: ["jest.config.ts", "jest.setup.ts","webpack.dev.ts", "webpack.prod.ts"],
+  ignorePatterns: ["jest.config.ts", "jest.setup.ts","vite.config.ts"],
   overrides: [
     {
       "files": ["*.js"],

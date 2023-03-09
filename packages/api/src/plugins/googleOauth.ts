@@ -1,24 +1,9 @@
 import axios from 'axios';
 import fp from 'fastify-plugin';
 import oauthPlugin from '@fastify/oauth2';
-import { FastifyRequest } from 'fastify';
-import { randomBytes } from 'crypto';
-
 import { Role } from '@project/common';
 import User from '../models/User';
 import { GoogleProfile, Provider } from '../types/Oauth';
-
-const defaultState = randomBytes(10).toString('hex');
-
-function generateStateFunction(request: FastifyRequest) {
-  return `${request.headers.referer}_${defaultState}`;
-}
-
-function checkStateFunction(state: string, callback: Function) {
-  return state.endsWith(defaultState)
-    ? callback()
-    : callback(new Error('Invalid state'));
-}
 
 const {
   env: {
@@ -44,41 +29,34 @@ const googleOAuth2 = fp(async (fastify) => {
     },
     startRedirectPath: '/api/v1/login/google',
     callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/google/callback`,
-    checkStateFunction,
-    generateStateFunction,
   });
 
   fastify.get('/api/v1/login/google/callback', async function handler(request, reply) {
-    const accessToken = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
+    const { token } = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
 
-    const { data } = await axios.get<GoogleProfile>('https://www.googleapis.com/oauth2/v3/userinfo', {
+    const { data } = await axios.get<GoogleProfile>('https://www.googleapis.com/oauth2/v2/userinfo', {
       headers: {
-        Authorization: `Bearer ${accessToken.access_token}`,
+        Authorization: `Bearer ${token.access_token}`,
       },
     });
 
     const user = await User.createFromOAuth({
       provider: Provider.Google,
-      providerId: data.sub,
-      name: data.name,
+      providerId: data.id,
+      name: data.given_name,
       email: data.email,
       role: Role.Guest,
     });
 
-    const {
-      origin,
-      pathname,
-    } = new URL((request.query as any)?.state.split('_').shift());
-
-    const token = this.jwt.sign(user.toJwt());
+    const jwtToken = this.jwt.sign(user.toJwt());
 
     reply
-      .setCookie('Token', token, {
+      .setCookie('Token', jwtToken, {
         httpOnly: true,
         secure: true,
         sameSite: true,
       })
-      .redirect(`${origin}${pathname}?token=${token}`);
+      .redirect(`/?token=${jwtToken}`);
   });
 });
 

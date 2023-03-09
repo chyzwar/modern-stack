@@ -15,9 +15,12 @@ export interface Profile {
 }
 
 export interface GoogleProfile {
-  name: string,
+  id: string;
+  given_name: string;
+  family_name: string;
+  picture: string;
   email: string;
-  sub: string
+  locale: string
 }
 
 export interface FacebookProfile {

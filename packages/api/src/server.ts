@@ -1,4 +1,5 @@
 import fastify from 'fastify';
+import proxy from '@fastify/http-proxy';
 import authenticate from './plugins/authenticate';
 import logger from './logger';
 import register from './routes/register';
@@ -7,7 +8,6 @@ import facebookOAuth2 from './plugins/facebookOauth';
 import googleOAuth2 from './plugins/googleOauth';
 import cookie from './plugins/cookie';
 import stuff from './routes/stuff';
-
 import { FastifyServer } from './types/Server';
 
 const server: FastifyServer = fastify({
@@ -35,14 +35,14 @@ process.on('uncaughtException', (error) => {
   logger.error({ error }, 'uncaughtException');
 });
 
-server.listen(
-  Number(process.env.API_PORT),
-  '0.0.0.0',
-  (error: Error | null) => {
-    if (error) {
-      logger.error(error, 'Failed to start server');
-    }
-  },
-);
+server.register(proxy, {
+  upstream: 'http://ui:4000',
+  http2: false,
+});
+
+server.listen({
+  host: '0.0.0.0',
+  port: Number(process.env.API_PORT),
+});
 
 export default server;

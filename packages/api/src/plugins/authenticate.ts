@@ -8,7 +8,7 @@ import {
 
 const authenticate = fp(async (fastify) => {
   fastify.register(fastifyJwt, {
-    secret: 'supersecret-12345',
+    secret: 'supersecret-12345asasasasa',
     cookie: {
       cookieName: 'Token',
       signed: false,

@@ -141,7 +141,7 @@ const Login = () => {
             </Button>
           </a>
 
-          <a className={classes.link} href="/api/v1/login/google">
+          <a className={classes.link} rel="noopener noreferrer" href="/api/v1/login/google">
             <Button
               fullWidth
               variant="contained"

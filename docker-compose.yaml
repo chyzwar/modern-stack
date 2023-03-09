@@ -18,7 +18,7 @@ services:
       - "81:80"     
 
   build:
-    image: node:16
+    image: node:18
     volumes:
       - .:/home/node/app
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
@@ -27,7 +27,7 @@ services:
     tty: true
     
   api:
-    image: node:16
+    image: node:18
     env_file: 
       - ./packages/api/.env
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
@@ -44,7 +44,7 @@ services:
     tty: true
 
   ui:
-    image: node:16
+    image: node:18
     env_file: 
       - ./packages/ui/.env
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
@@ -61,7 +61,7 @@ services:
     tty: true
 
   admin-ui:
-    image: node:16
+    image: node:18
     env_file: 
       - ./packages/admin-ui/.env
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
@@ -76,16 +76,3 @@ services:
     command: yarn start
     stdin_open: true
     tty: true
-
-  nginx:
-    image: nginx:1.21
-    depends_on: 
-      - postgres
-      - admin-ui
-      - ui
-      - api
-    ports: 
-      - "80:80"
-      - "443:443"
-    volumes:
-      - .local/nginx.conf:/etc/nginx/nginx.conf
