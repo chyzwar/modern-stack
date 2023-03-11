@@ -12,6 +12,7 @@
     {"path": "./packages/api"},
     {"path": "./packages/common"},
     {"path": "./packages/ui"},
+    {"path": "./packages/runner"},
     {"path": "./packages/admin-ui"}
   ]
 }

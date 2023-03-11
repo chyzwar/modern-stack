@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`runner should load configuration form runner.config.js 1`] = `Array []`;

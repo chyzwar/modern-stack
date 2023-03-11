@@ -193,6 +193,7 @@ exports[`renders learn react link 1`] = `
         <a
           class="makeStyles-link-5"
           href="/api/v1/login/google"
+          rel="noopener noreferrer"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-google-7 MuiButton-containedPrimary MuiButton-fullWidth"
@@ -248,7 +249,7 @@ exports[`renders learn react link 1`] = `
         >
           Your Website
         </a>
-         2022.
+         2023.
       </p>
     </div>
   </main>

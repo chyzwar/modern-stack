@@ -1,5 +1,7 @@
 import fastify from 'fastify';
 import proxy from '@fastify/http-proxy';
+import staticFiles from '@fastify/static';
+import { join } from 'path';
 import authenticate from './plugins/authenticate';
 import logger from './logger';
 import register from './routes/register';
@@ -35,10 +37,17 @@ process.on('uncaughtException', (error) => {
   logger.error({ error }, 'uncaughtException');
 });
 
-server.register(proxy, {
-  upstream: 'http://ui:4000',
-  http2: false,
-});
+if (process.env.NODE_ENV === 'development') {
+  server.register(proxy, {
+    upstream: 'http://ui:4000',
+    http2: false,
+  });
+} else {
+  server.register(staticFiles, {
+    root: join(__dirname, 'public'),
+    prefix: '/',
+  });
+}
 
 server.listen({
   host: '0.0.0.0',

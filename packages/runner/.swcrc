@@ -1,0 +1,12 @@
+{
+  "jsc": {
+    "target": "es2022",
+    "parser": {
+      "syntax": "typescript",
+      "strict": true,
+      "strictMode": true,
+      "lazy": false,
+      "noInterop": true
+    }
+  }
+}
