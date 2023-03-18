@@ -1,4 +1,4 @@
-import type {Config} from '@jest/types';
+import type {Config} from "@jest/types";
 
 /**
  * Use jest with ts-jest to transform
@@ -8,7 +8,7 @@ import type {Config} from '@jest/types';
  */
 const config: Config.InitialOptions = {
   testEnvironment: "jsdom",
-  rootDir: 'src',
+  rootDir: "src",
   testMatch: ["**/__tests__/**/*.ts?(x)", "**/?(*.)+(spec|test).ts?(x)"],
   setupFilesAfterEnv: ["../jest.setup.ts"],
   transform: {

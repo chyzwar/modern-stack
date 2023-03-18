@@ -5,7 +5,7 @@ import staticFiles from "@fastify/static";
 import {join} from "path";
 
 const statics = fp(async(server) => {
-  server.register(staticFiles, {
+  await server.register(staticFiles, {
     root: join(__dirname, "public"),
     prefix: "/",
   });

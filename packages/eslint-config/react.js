@@ -1,5 +1,4 @@
 const findUp = require("find-up");
-
 const eslint = require("./rules/eslint");
 const jest = require("./rules/jest");
 const typescript = require("./rules/typescript");
@@ -8,9 +7,8 @@ const esm = require("./rules/esm");
 module.exports = {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2019,
+    "ecmaVersion": 2022,
     "sourceType": "module",
-    "extraFileExtensions": [".mjs", ".cjs"],
     "project": [
       "./tsconfig.json",
       findUp.sync("tsconfig.eslint.json"),

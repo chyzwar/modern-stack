@@ -10,7 +10,7 @@ import Login from "./views/Login";
 import Home from "./views/Home";
 import ProtectedRoute from "./components/ProtectedRoute";
 
-const App = () => 
+const App = (): JSX.Element => 
   <>
     <CssBaseline />
     <BrowserRouter>

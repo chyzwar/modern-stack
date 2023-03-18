@@ -1,9 +1,9 @@
 
-import { defineConfig } from 'vite'
+import {defineConfig} from "vite";
 import react from "@vitejs/plugin-react-swc";
-import dns from 'dns'
+import dns from "dns";
 
-dns.setDefaultResultOrder('verbatim')
+dns.setDefaultResultOrder("verbatim");
 
 export default defineConfig({
   clearScreen: false,
@@ -11,8 +11,8 @@ export default defineConfig({
     port: 4000,
     host: true,
     hmr: {
-      port: 4000
-    }
+      port: 4000,
+    },
   },
   plugins: [react()], 
-})
+});

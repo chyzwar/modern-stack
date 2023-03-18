@@ -63,11 +63,10 @@ module.exports = {
   "@typescript-eslint/quotes": ["error", "double"],
 
   /**
+   * Lets discuss this on PR
    * @see https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
    */
-  "@typescript-eslint/no-magic-numbers": ["error", {
-    "ignore": [0, 1, 2],
-  }],
+  "@typescript-eslint/no-magic-numbers": ["off"],
 
   /**
    * Promise callbacks make sense

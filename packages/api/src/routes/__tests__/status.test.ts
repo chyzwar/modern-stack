@@ -12,7 +12,7 @@ describe("GET `/status` route", () => {
   afterAll(async() => fastify.close());
 
   it("should respond with status connected true", (done) => {
-    // @ts-expect-error
+    // @ts-expect-error TODO: test look into better way
     sequelize.authenticate = jest.fn().mockResolvedValueOnce();
 
     fastify.inject({
@@ -32,7 +32,7 @@ describe("GET `/status` route", () => {
   });
 
   it("should respond with status error message for db", (done) => {
-    // @ts-expect-error
+    // @ts-expect-error TODO: test look into better way
     sequelize.authenticate = jest.fn().mockRejectedValueOnce(new Error("Failed to auth"));
 
     fastify.inject({

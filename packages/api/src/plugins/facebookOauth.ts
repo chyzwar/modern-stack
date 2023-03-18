@@ -18,7 +18,7 @@ const {
 } = process;
 
 const facebookOAuth2 = fp(async(fastify) => {
-  fastify.register(fastifyOauth2, {
+  await fastify.register(fastifyOauth2, {
     name: "facebookOAuth2",
     scope: ["email"],
     credentials: {

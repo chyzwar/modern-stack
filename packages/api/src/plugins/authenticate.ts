@@ -7,7 +7,7 @@ import type {
 } from "fastify";
 
 const authenticate = fp(async(fastify) => {
-  fastify.register(fastifyJwt, {
+  await fastify.register(fastifyJwt, {
     secret: "supersecret-12345asasasasa",
     cookie: {
       cookieName: "Token",

@@ -1,6 +1,6 @@
-import type {Config} from '@jest/types';
+import type {Config} from "@jest/types";
 
-process.env.NODE_OPTIONS="--experimental-vm-modules";
+process.env.NODE_OPTIONS = "--experimental-vm-modules";
 
 const config: Config.InitialOptions = {
   verbose: false,

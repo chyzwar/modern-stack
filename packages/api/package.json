@@ -14,7 +14,7 @@
     "build": "tsc --build",
     "build:watch": "tsc --build --watch",
     "db:seed": "env-cmd sequelize db:seed",
-    "db:migrate": "env-cmd sequelize db:migrate"
+    "db:migrate": "env-cmd sequelize db:migrate --config config/config.cjs"
   },
   "license": "UNLICENSED",
   "dependencies": {
