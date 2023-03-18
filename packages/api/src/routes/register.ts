@@ -14,7 +14,7 @@ const register = (server: FastifyServer): void => {
       },
     },
     handler(request, reply) {
-      reply.send({hello: "world"});
+      return reply.send({hello: "world"});
     },
   };
 

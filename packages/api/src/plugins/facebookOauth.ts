@@ -53,7 +53,7 @@ const facebookOAuth2 = fp(async(fastify) => {
     });
     const token = this.jwt.sign(user.toJwt());
 
-    reply.redirect(`/?token=${token}`);
+    void reply.redirect(`/?token=${token}`);
   });
 });
 

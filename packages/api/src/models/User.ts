@@ -1,5 +1,3 @@
-import type {
-  CreationAttributes} from "sequelize";
 import {
   Model,
   DataTypes,
@@ -39,7 +37,7 @@ class User extends Model {
     };
   }
 
-  public static async createFromOAuth(profile: CreationAttributes<User>): Promise<User> {
+  public static async createFromOAuth(profile: Partial<User>): Promise<User> {
     const [user, created] = await User.findCreateFind({
       defaults: profile,
       where: {

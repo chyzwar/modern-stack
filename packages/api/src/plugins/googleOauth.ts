@@ -51,7 +51,7 @@ const googleOAuth2 = fp(async(fastify) => {
 
     const jwtToken = this.jwt.sign(user.toJwt());
 
-    reply
+    void reply
       .setCookie("Token", jwtToken, {
         httpOnly: true,
         secure: true,

@@ -20,7 +20,7 @@ const authenticate = fp(async(fastify) => {
       await request.jwtVerify();
     }
     catch (err) {
-      reply.send(err);
+      void reply.send(err);
     }
   });
 });

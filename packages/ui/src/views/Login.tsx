@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Login = () => {
+const Login = (): JSX.Element => {
   const classes = useStyles();
   const navigate = useNavigate();
 
