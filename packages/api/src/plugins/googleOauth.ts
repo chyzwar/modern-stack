@@ -18,7 +18,7 @@ const {
 } = process;
 
 const googleOAuth2 = fp(async(fastify) => {
-  fastify.register(fastifyOauth2, {
+  await fastify.register(fastifyOauth2, {
     name: "googleOAuth2",
     scope: ["email profile openid"],
     credentials: {
@@ -32,7 +32,7 @@ const googleOAuth2 = fp(async(fastify) => {
     callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/google/callback`,
   });
 
-  fastify.get("/api/v1/login/google/callback", async function handler(request, reply) {
+  fastify.get("/api/v1/login/google/callback", async function handler(this, request, reply) {
     const {token} = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
 
     const {data} = await axios.get<GoogleProfile>("https://www.googleapis.com/oauth2/v2/userinfo", {

@@ -25,12 +25,13 @@ module.exports = {
   "plugins": [
     "@typescript-eslint",
     "jest",
+    "react-hooks",
   ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/all",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
   ],
   "rules": {
     ...eslint,

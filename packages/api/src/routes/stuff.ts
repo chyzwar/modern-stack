@@ -1,7 +1,7 @@
 import type {RouteShorthandOptionsWithHandler} from "fastify";
 import type {FastifyServer} from "../types/Server.js";
 
-const stuff = async(fastify: FastifyServer): Promise<void> => {
+const stuff = (fastify: FastifyServer): void => {
   const route: RouteShorthandOptionsWithHandler = {
     preValidation: [fastify.authenticate],
     schema: {

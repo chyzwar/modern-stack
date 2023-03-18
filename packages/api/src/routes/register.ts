@@ -1,7 +1,7 @@
 import type {RouteShorthandOptionsWithHandler} from "fastify";
 import type {FastifyServer} from "../types/Server.js";
 
-const register = async(server: FastifyServer): Promise<void> => {
+const register = (server: FastifyServer): void => {
   const route: RouteShorthandOptionsWithHandler = {
     schema: {
       response: {

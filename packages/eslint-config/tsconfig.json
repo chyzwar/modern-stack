@@ -27,6 +27,7 @@
   },
   "files": [
     "node.js",
+    "react.js"
   ],
   "include": [
     "rules/**.js"

@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Login from "./views/Login";
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
     <BrowserRouter>
       <Routes>

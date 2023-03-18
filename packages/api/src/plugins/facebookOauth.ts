@@ -32,7 +32,7 @@ const facebookOAuth2 = fp(async(fastify) => {
     callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/facebook/callback`,
   });
 
-  fastify.get("/api/v1/login/facebook/callback", async function handler(request, reply) {
+  fastify.get("/api/v1/login/facebook/callback", async function handler(this, request, reply) {
     const accessToken = await this.facebookOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
 
     const {data} = await axios.get<FacebookProfile>("https://graph.facebook.com/v6.0/me", {

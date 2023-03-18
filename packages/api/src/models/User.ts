@@ -39,7 +39,7 @@ class User extends Model {
     };
   }
 
-  public static async createFromOAuth(profile: CreationAttributes<User>): User {
+  public static async createFromOAuth(profile: CreationAttributes<User>): Promise<User> {
     const [user, created] = await User.findCreateFind({
       defaults: profile,
       where: {

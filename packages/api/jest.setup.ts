@@ -1,7 +1,7 @@
-const path = require("path");
+import {config} from "dotenv";
+import {join} from "path";
 
-require("dotenv")
-  .config({path: path.join(__dirname, ".env")});
+config({path: join(__dirname, ".env")});
 
 process.env.API_LOG_LEVEL = "silent";
 process.env.API_PORT = "0";

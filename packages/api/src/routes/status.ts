@@ -3,7 +3,7 @@ import type {FastifyServer} from "../types/Server.js";
 import sequelize from "../sequelize.js";
 import logger from "../logger.js";
 
-const status = async(server: FastifyServer): Promise<void> => {
+const status = (server: FastifyServer): void => {
   const route: RouteShorthandOptionsWithHandler = {
     schema: {
       response: {
