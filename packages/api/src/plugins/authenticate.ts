@@ -1,24 +1,25 @@
-import fp from 'fastify-plugin';
-import fastifyJwt from '@fastify/jwt';
+import fp from "fastify-plugin";
+import fastifyJwt from "@fastify/jwt";
 
-import {
+import type {
   FastifyReply,
   FastifyRequest,
-} from 'fastify';
+} from "fastify";
 
-const authenticate = fp(async (fastify) => {
+const authenticate = fp(async(fastify) => {
   fastify.register(fastifyJwt, {
-    secret: 'supersecret-12345asasasasa',
+    secret: "supersecret-12345asasasasa",
     cookie: {
-      cookieName: 'Token',
+      cookieName: "Token",
       signed: false,
     },
   });
 
-  fastify.decorate('authenticate', async (request: FastifyRequest, reply: FastifyReply) => {
+  fastify.decorate("authenticate", async(request: FastifyRequest, reply: FastifyReply) => {
     try {
       await request.jwtVerify();
-    } catch (err) {
+    }
+    catch (err) {
       reply.send(err);
     }
   });

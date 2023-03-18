@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "moduleResolution": "nodenext",
+    "module": "ES2022",
     "target": "ES2022",
     "strict": true,
     "sourceMap": true,
@@ -13,7 +14,6 @@
     "skipLibCheck": true,
     "tsBuildInfoFile": "./build/tsBuildInfoFile.json",
     "types": [
-      "jest",
       "node",
       "validator"
     ],

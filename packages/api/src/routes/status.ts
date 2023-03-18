@@ -1,21 +1,21 @@
-import { RouteShorthandOptionsWithHandler } from 'fastify';
-import { FastifyServer } from '../types/Server';
-import sequelize from '../sequelize';
-import logger from '../logger';
+import type {RouteShorthandOptionsWithHandler} from "fastify";
+import type {FastifyServer} from "../types/Server.js";
+import sequelize from "../sequelize.js";
+import logger from "../logger.js";
 
-const status = async (server: FastifyServer): Promise<void> => {
+const status = async(server: FastifyServer): Promise<void> => {
   const route: RouteShorthandOptionsWithHandler = {
     schema: {
       response: {
         200: {
-          type: 'object',
+          type: "object",
           properties: {
-            uptime: { type: 'number' },
+            uptime: {type: "number"},
             db: {
-              type: 'object',
+              type: "object",
               properties: {
                 connected: {
-                  type: 'boolean',
+                  type: "boolean",
                 },
               },
             },
@@ -23,12 +23,13 @@ const status = async (server: FastifyServer): Promise<void> => {
         },
       },
     },
-    handler: async (request, reply) => {
+    handler: async(request, reply) => {
       let connected: boolean | string = true;
       try {
         await sequelize.authenticate();
-      } catch (error) {
-        logger.error({ error }, 'Failed to connect db');
+      }
+      catch (error) {
+        logger.error({error}, "Failed to connect db");
         connected = false;
       }
 
@@ -40,7 +41,7 @@ const status = async (server: FastifyServer): Promise<void> => {
       });
     },
   };
-  server.get('/status', route);
+  server.get("/status", route);
 };
 
 export default status;

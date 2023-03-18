@@ -1,0 +1,25 @@
+{
+  "name": "@project/eslint-config",
+  "version": "0.2.0",
+  "author": "chyzwar",
+  "license": "UNLICENSED",
+  "main": "./node.js",
+  "engines": {
+    "node": "18.x.x",
+    "yarn": "3.x.x"
+  },
+  "description": "Eslint Typescript Config",
+  "keywords": [
+    "eslint"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "find-up": "^6.3.0"
+  },
+  "peerDependencies": {
+    "eslint": "8.x.x"
+  }
+}

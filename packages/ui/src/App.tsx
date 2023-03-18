@@ -1,16 +1,16 @@
-import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+
+import CssBaseline from "@material-ui/core/CssBaseline";
 import {
   BrowserRouter,
   Routes,
   Route,
-} from 'react-router-dom';
+} from "react-router-dom";
 
-import Login from './views/Login';
-import Home from './views/Home';
-import ProtectedRoute from './components/ProtectedRoute';
+import Login from "./views/Login";
+import Home from "./views/Home";
+import ProtectedRoute from "./components/ProtectedRoute";
 
-const App = () => (
+const App = () => 
   <>
     <CssBaseline />
     <BrowserRouter>
@@ -22,11 +22,11 @@ const App = () => (
             <ProtectedRoute>
               <Home />
             </ProtectedRoute>
-            )}
+          )}
         />
       </Routes>
     </BrowserRouter>
   </>
-);
+;
 
 export default App;

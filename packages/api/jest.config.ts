@@ -11,7 +11,12 @@ const config: Config.InitialOptions = {
   rootDir: 'src',
   testMatch: ["**/__tests__/**/*.ts?(x)", "**/?(*.)+(spec|test).ts?(x)"],
   setupFiles: ['../jest.setup.ts'],
-  preset: 'ts-jest',
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+  },
+  transform: {
+    "^.+\\.(t|j)sx?$": "@swc/jest",
+  },
 };
 
 export default config;

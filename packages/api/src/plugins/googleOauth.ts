@@ -1,9 +1,10 @@
-import axios from 'axios';
-import fp from 'fastify-plugin';
-import oauthPlugin from '@fastify/oauth2';
-import { Role } from '@project/common';
-import User from '../models/User';
-import { GoogleProfile, Provider } from '../types/Oauth';
+import axios from "axios";
+import fp from "fastify-plugin";
+import {fastifyOauth2} from "@fastify/oauth2";
+import {Role} from "@project/common";
+import User from "../models/User.js";
+import type {GoogleProfile} from "../types/Oauth.js";
+import {Provider} from "../types/Oauth.js";
 
 const {
   env: {
@@ -16,25 +17,25 @@ const {
   },
 } = process;
 
-const googleOAuth2 = fp(async (fastify) => {
-  fastify.register(oauthPlugin, {
-    name: 'googleOAuth2',
-    scope: ['email profile openid'],
+const googleOAuth2 = fp(async(fastify) => {
+  fastify.register(fastifyOauth2, {
+    name: "googleOAuth2",
+    scope: ["email profile openid"],
     credentials: {
       client: {
         id: GOOGLE_ID,
         secret: GOOGLE_SECRET,
       },
-      auth: oauthPlugin.GOOGLE_CONFIGURATION,
+      auth: fastifyOauth2.GOOGLE_CONFIGURATION,
     },
-    startRedirectPath: '/api/v1/login/google',
+    startRedirectPath: "/api/v1/login/google",
     callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/google/callback`,
   });
 
-  fastify.get('/api/v1/login/google/callback', async function handler(request, reply) {
-    const { token } = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
+  fastify.get("/api/v1/login/google/callback", async function handler(request, reply) {
+    const {token} = await this.googleOAuth2.getAccessTokenFromAuthorizationCodeFlow(request);
 
-    const { data } = await axios.get<GoogleProfile>('https://www.googleapis.com/oauth2/v2/userinfo', {
+    const {data} = await axios.get<GoogleProfile>("https://www.googleapis.com/oauth2/v2/userinfo", {
       headers: {
         Authorization: `Bearer ${token.access_token}`,
       },
@@ -51,7 +52,7 @@ const googleOAuth2 = fp(async (fastify) => {
     const jwtToken = this.jwt.sign(user.toJwt());
 
     reply
-      .setCookie('Token', jwtToken, {
+      .setCookie("Token", jwtToken, {
         httpOnly: true,
         secure: true,
         sameSite: true,

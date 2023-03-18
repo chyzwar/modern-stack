@@ -1,21 +1,22 @@
+import type {
+  CreationAttributes} from "sequelize";
 import {
   Model,
   DataTypes,
-  CreationAttributes,
-} from 'sequelize';
+} from "sequelize";
 import {
   Role,
-} from '@project/common';
-import logger from '../logger';
-import sequelize from '../sequelize';
+} from "@project/common";
+import logger from "../logger.js";
+import sequelize from "../sequelize.js";
 
-import {
+import type {
   Provider,
-} from '../types/Oauth';
+} from "../types/Oauth.js";
 
-import {
+import type {
   JWTPayload,
-} from '../types/Jwt';
+} from "../types/Jwt.js";
 
 class User extends Model {
   public id!: number;
@@ -34,7 +35,7 @@ class User extends Model {
 
   public toJwt(): JWTPayload {
     return {
-      name: this.get('name'),
+      name: this.get("name"),
     };
   }
 
@@ -47,9 +48,10 @@ class User extends Model {
       },
     });
     if (created) {
-      logger.info('New user created');
-    } else {
-      logger.info('User already exists');
+      logger.info("New user created");
+    }
+    else {
+      logger.info("User already exists");
     }
     return user;
   }
@@ -89,23 +91,23 @@ User.init({
     allowNull: false,
   },
   providerId: {
-    field: 'provider_id',
+    field: "provider_id",
     type: new DataTypes.STRING(255),
     allowNull: false,
   },
   createdAt: {
-    field: 'created_at',
+    field: "created_at",
     type: new DataTypes.DATE(),
     allowNull: false,
   },
   updatedAt: {
-    field: 'updated_at',
+    field: "updated_at",
     type: new DataTypes.DATE(),
     allowNull: false,
   },
 }, {
   timestamps: true,
-  tableName: 'users',
+  tableName: "users",
   sequelize,
 });
 

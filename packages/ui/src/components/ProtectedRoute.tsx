@@ -1,25 +1,25 @@
-import {
+import type {
   FC,
   ReactElement,
-} from 'react';
+} from "react";
 
 import {
   Navigate,
   useLocation,
-} from 'react-router-dom';
+} from "react-router-dom";
 
-import useIsAuthenticated from '../hooks/useIsAuthenticated';
+import useIsAuthenticated from "../hooks/useIsAuthenticated";
 
 interface ProtectedRouteProps {
   children: ReactElement;
 }
 
-const ProtectedRoute: FC<ProtectedRouteProps> = ({ children }) => {
+const ProtectedRoute: FC<ProtectedRouteProps> = ({children}) => {
   const isAuthenticated = useIsAuthenticated();
   const from = useLocation();
 
   if (!isAuthenticated) {
-    return <Navigate to="/login" state={{ from }} />;
+    return <Navigate to="/login" state={{from}} />;
   }
   return children;
 };

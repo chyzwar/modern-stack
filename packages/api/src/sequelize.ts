@@ -1,4 +1,5 @@
-import { Sequelize, Options } from 'sequelize';
+import type {Options} from "sequelize";
+import {Sequelize} from "sequelize";
 
 const options: Options = {
   host: process.env.POSTGRES_HOST,
@@ -6,7 +7,7 @@ const options: Options = {
   username: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
-  dialect: 'postgres',
+  dialect: "postgres",
   retry: {
     max: 10,
   },

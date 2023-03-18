@@ -12,4 +12,5 @@ node_modules
 .idea
 
 # Build Files #
+dist
 lib

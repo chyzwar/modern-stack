@@ -1,9 +1,9 @@
-import { Role } from '@project/common';
+import type {Role} from "@project/common";
 
 export enum Provider {
-  Google = 'Google',
-  Facebook = 'Facebook',
-  Custom = 'Custom',
+  Google = "Google",
+  Facebook = "Facebook",
+  Custom = "Custom",
 }
 
 export interface Profile {
@@ -11,7 +11,7 @@ export interface Profile {
   providerId: string;
   name: string;
   email: string;
-  role: Role
+  role: Role;
 }
 
 export interface GoogleProfile {
@@ -20,11 +20,11 @@ export interface GoogleProfile {
   family_name: string;
   picture: string;
   email: string;
-  locale: string
+  locale: string;
 }
 
 export interface FacebookProfile {
-  name: string,
+  name: string;
   email: string;
-  id: string
+  id: string;
 }

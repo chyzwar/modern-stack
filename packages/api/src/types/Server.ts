@@ -1,9 +1,9 @@
-import {
+import type {
   FastifyInstance,
-} from 'fastify';
+} from "fastify";
 
-import {
+import type {
   Server,
-} from 'http';
+} from "http";
 
-export type FastifyServer = FastifyInstance<Server>;
+export type FastifyServer = FastifyInstance;
