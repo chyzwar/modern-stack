@@ -1,27 +1,7 @@
 
 module.exports = {
-  "extends": [
-    'airbnb',
-    'airbnb-typescript'
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2019,
-    "sourceType": "module",
-    "tsconfigRootDir": __dirname,
-    "project": [
-      "./tsconfig.json",
-    ]
+  extends: "@project/eslint-config/node",
+  parserOptions: {
+    tsconfigRootDir: __dirname,
   },
-  "env": {
-    "browser": false,
-    "node": true,
-    "jest": true
-  },
-  "overrides": [
-    {
-      "files": ["*.js"],
-      "rules": {}
-    }
-  ]
 };

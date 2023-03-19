@@ -29,10 +29,8 @@
     "fastify": "^4.14.1",
     "fastify-plugin": "^4.5.0",
     "pg": "^8.10.0",
-    "pg-hstore": "^2.3.4",
     "pino": "^8.11.0",
     "pino-pretty": "^10.0.0",
-    "pino-syslog": "^3.0.0",
     "sequelize": "^6.29.3"
   },
   "devDependencies": {

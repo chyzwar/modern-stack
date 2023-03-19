@@ -39,8 +39,6 @@ try {
   await server.register(status, {prefix: "/api/v1"});
   await server.register(stuff, {prefix: "/api/v1"});
   
-  
-  
   if (process.env.NODE_ENV === "development") {
     await server.register(localProxy);
   }
@@ -54,6 +52,7 @@ try {
   }); 
 }
 catch (e) {
+  console.log(e);
   logger.error(e, "Failed to init server");
   process.exit(1);
 }
