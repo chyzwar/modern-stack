@@ -46,6 +46,7 @@ const googleOAuth2 = fp(async(fastify) => {
       providerId: data.id,
       name: data.given_name,
       email: data.email,
+      // @ts-expect-error TODO: 
       role: Role.Guest,
     });
 

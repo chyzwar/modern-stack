@@ -3,7 +3,7 @@ import type {FastifyServer} from "../types/Server.js";
 import sequelize from "../sequelize.js";
 import logger from "../logger.js";
 
-const status = (server: FastifyServer): void => {
+const status = (server: FastifyServer, opt: unknown, done: Function): void => {
   const route: RouteShorthandOptionsWithHandler = {
     schema: {
       response: {
@@ -42,6 +42,7 @@ const status = (server: FastifyServer): void => {
     },
   };
   server.get("/status", route);
+  done();
 };
 
 export default status;

@@ -1,7 +1,7 @@
 import type {RouteShorthandOptionsWithHandler} from "fastify";
 import type {FastifyServer} from "../types/Server.js";
 
-const register = (server: FastifyServer): void => {
+const register = (server: FastifyServer, opt: unknown, done: Function): void => {
   const route: RouteShorthandOptionsWithHandler = {
     schema: {
       response: {
@@ -19,6 +19,7 @@ const register = (server: FastifyServer): void => {
   };
 
   server.get("/register", route);
+  done();
 };
 
 export default register;

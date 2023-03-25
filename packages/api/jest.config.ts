@@ -12,6 +12,9 @@ const config: Config.InitialOptions = {
   extensionsToTreatAsEsm: [".ts", ".tsx"],
   setupFiles: ["../jest.setup.ts"],
   moduleNameMapper: {
+    // https://github.com/nodejs/undici/issues/1878
+    "^(\\.{1,2}/.*/llhttp\\.wasm\\.js)$": "$1",
+    // https://kulshekhar.github.io/ts-jest/docs/guides/esm-support
     "^(\\.{1,2}/.*)\\.js$": "$1",
   },
   transform: {

@@ -49,6 +49,7 @@ const facebookOAuth2 = fp(async(fastify) => {
       providerId: data.id,
       name: data.name,
       email: data.email,
+      // @ts-expect-error TODO:
       role: Role.Guest,
     });
     const token = this.jwt.sign(user.toJwt());

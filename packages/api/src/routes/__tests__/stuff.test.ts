@@ -1,21 +1,17 @@
 import {
   expect,
   describe,
-  afterAll,
   it,
 } from "@jest/globals";
-import fastify from "../../server.js";
+import {createServer} from "../../server.js";
 
 describe("GET `/status` route", () => {
-  afterAll(async() => fastify.close());
-
-  it("should respond with 401 if not authenticated", (done) => {
-    fastify.inject({
+  it("should respond with 401 if not authenticated", async() => {
+    const server = await createServer();
+    const response = await server.inject({
       method: "GET",
       url: "/api/v1/stuff",
-    }, (err, response) => {
-      expect(response.statusCode).toBe(401);
-      done();
     });
+    expect(response.statusCode).toBe(401);
   });
 });
