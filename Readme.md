@@ -18,7 +18,7 @@ This project require number of tools available.
 
 Repo provides an init script that will bootstrap baseline env files
 It will check if the user has docker and docker-compose installed.
-For OAuth to work, google and facebook configs need to update in packages/api .env
+For OAuth to work, google and facebook configs need to updated in packages/api .env
 
 Clone repository
 
@@ -39,7 +39,7 @@ Start project
 yarn start
 ```
 
-You can now visit: http://localhost:80
+You can now visit: http://localhost:3000
 
 Setup local domains resolution(optional)
 This is useful for CSP and reflect prod deployment better than running on localhost
