@@ -930,12 +930,13 @@ __metadata:
   linkType: hard
 
 "@fastify/oauth2@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "@fastify/oauth2@npm:7.0.1"
+  version: 7.2.2
+  resolution: "@fastify/oauth2@npm:7.2.2"
   dependencies:
+    "@fastify/cookie": ^8.3.0
     fastify-plugin: ^4.0.0
     simple-oauth2: ^5.0.0
-  checksum: 7da572f3a6bdeb884af766065b17986c00c44ac31fa3a79110074afea0225cacc9884f3392ed669fb4af35ad9b73c8716f86808a53bc68497741e1a78d8256cb
+  checksum: 309af9b481ec7ce7f9c51319f114dd620ed70347aeffb98a6921483b922d534cf68d667a188cdb1f924acd4f5245d836016081337b11446d7c1d03376f0ec19f
   languageName: node
   linkType: hard
 
