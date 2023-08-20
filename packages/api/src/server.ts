@@ -8,8 +8,6 @@ import googleOAuth2 from "./plugins/googleOauth.js";
 import cookie from "./plugins/cookie.js";
 import stuff from "./routes/stuff.js";
 import type {FastifyServer} from "./types/Server.js";
-import localProxy from "./plugins/localProxy.js";
-import staticFiles from "./plugins/staticFiles.js";
 
 export const createServer = async(): Promise<FastifyServer> => {
   const server: FastifyServer = fastify({
@@ -24,7 +22,6 @@ export const createServer = async(): Promise<FastifyServer> => {
     await server.register(cookie);
     await server.register(authenticate);
     await server.register(facebookOAuth2);
-
     await server.register(googleOAuth2);
 
 
@@ -34,13 +31,6 @@ export const createServer = async(): Promise<FastifyServer> => {
     await server.register(register, {prefix: "/api/v1"});
     await server.register(status, {prefix: "/api/v1"});
     await server.register(stuff, {prefix: "/api/v1"});
-
-    if (process.env.NODE_ENV === "development") {
-      await server.register(localProxy);
-    }
-    else {
-      await server.register(staticFiles);
-    }
   
     server.after((err: Error | undefined) => {
       if (err) {

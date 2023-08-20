@@ -5,6 +5,8 @@ services:
     image: postgres
     env_file: 
       - ./packages/api/.env
+    labels:
+      - "traefik.enable=false"
     ports:
       - "5434:5432"
 
@@ -14,6 +16,8 @@ services:
       - postgres
     env_file: 
       - ./packages/api/.env
+    labels:
+      - "traefik.enable=false"
     ports:
       - "81:80"     
 
@@ -24,6 +28,8 @@ services:
     user: "${DOCKER_USER}:${DOCKER_GROUP}"
     working_dir: '/home/node/app'
     command: yarn build:watch --preserveWatchOutput
+    labels:
+      - "traefik.enable=false"
     tty: true
     
   api:
@@ -37,6 +43,11 @@ services:
     ports:
       - "3000:3000"
       - "9231:9231"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api.rule=Host(`${PROJECT_DOMAIN}`) && PathPrefix(`/api`)"
+      - "traefik.http.services.api.loadbalancer.server.port=3000"
+      - "traefik.http.routers.api.entrypoints=web"
     volumes:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/api'
@@ -53,6 +64,11 @@ services:
       - build
     ports:
       - "4000:4000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ui.rule=Host(`${PROJECT_DOMAIN}`)"
+      - "traefik.http.services.ui.loadbalancer.server.port=4000"
+      - "traefik.http.routers.ui.entrypoints=web"
     volumes:
       - .:/home/node/app
     working_dir: '/home/node/app/packages/ui'
@@ -76,3 +92,19 @@ services:
     command: yarn start
     stdin_open: true
     tty: true
+
+  reverse-proxy:
+    image: traefik:v2.10
+    command: 
+      - "--api.insecure=true"
+      - "--providers.docker"
+      - "--api.dashboard=true"
+      - "--api.debug=true"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    labels:
+      - "traefik.enable=false" 

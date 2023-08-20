@@ -12,7 +12,6 @@ const {
     GOOGLE_SECRET,
 
     API_HOST,
-    API_PORT,
     API_PROTOCOL,
   },
 } = process;
@@ -29,7 +28,7 @@ const googleOAuth2 = fp(async(fastify) => {
       auth: fastifyOauth2.GOOGLE_CONFIGURATION,
     },
     startRedirectPath: "/api/v1/login/google",
-    callbackUri: `${API_PROTOCOL}://${API_HOST}:${API_PORT}/api/v1/login/google/callback`,
+    callbackUri: `${API_PROTOCOL}://${API_HOST}/api/v1/login/google/callback`,
   });
 
   fastify.get("/api/v1/login/google/callback", async function handler(this, request, reply) {
