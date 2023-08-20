@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "main": "./node.js",
   "engines": {
-    "node": "18.x.x",
+    "node": "18.x",
     "yarn": "3.x.x"
   },
   "description": "Eslint Typescript Config",
