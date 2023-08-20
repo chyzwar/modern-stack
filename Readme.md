@@ -39,18 +39,7 @@ Start project
 yarn start
 ```
 
-You can now visit: http://localhost:3000
-
-Setup local domains resolution(optional)
-This is useful for CSP and reflect prod deployment better than running on localhost
-
-Update /etc/host
-
-```
-127.0.0.1 project.com
-127.0.0.1 local.project.com
-127.0.0.1 admin.project.com
-```
+You can now visit: http://project.localhost
 
 Setup auth provider(optional)
 

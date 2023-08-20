@@ -3,6 +3,7 @@
 if [ ! -f .env ]; then
   echo "DOCKER_USER=$(id -u)" >> .env
   echo "DOCKER_GROUP=$(id -g)" >> .env
+  echo "PROJECT_DOMAIN=project.localhost" >> .env
 fi
 
 cd ./packages/api || exit
