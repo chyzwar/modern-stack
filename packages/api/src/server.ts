@@ -1,3 +1,4 @@
+import type {FastifyBaseLogger} from "fastify";
 import fastify from "fastify";
 import authenticate from "./plugins/authenticate.js";
 import logger from "./logger.js";
@@ -11,7 +12,7 @@ import type {FastifyServer} from "./types/Server.js";
 
 export const createServer = async(): Promise<FastifyServer> => {
   const server: FastifyServer = fastify({
-    logger,
+    logger: logger as FastifyBaseLogger,
   });
 
   try {
