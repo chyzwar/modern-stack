@@ -11,6 +11,7 @@ export default defineConfig({
     port: 4000,
     host: true,
     hmr: {
+      host: "localhost",
       port: 4000,
     },
   },

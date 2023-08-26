@@ -88,16 +88,21 @@ services:
       - "5000:5000"
     volumes:
       - .:/home/node/app
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.admin-ui.rule=Host(`${PROJECT_DOMAIN}`) && PathPrefix(`/admin-ui`)"
+      - "traefik.http.services.admin-ui.loadbalancer.server.port=5000"
+      - "traefik.http.routers.admin-ui.entrypoints=web"
     working_dir: '/home/node/app/packages/admin-ui'
     command: yarn start
     stdin_open: true
     tty: true
 
   reverse-proxy:
-    image: traefik:v2.10
+    image: traefik:v3.0
     command: 
-      - "--api.insecure=true"
       - "--providers.docker"
+      - "--api.insecure=true"
       - "--api.dashboard=true"
       - "--api.debug=true"
       - "--entrypoints.web.address=:80"

@@ -9,11 +9,9 @@ export default defineConfig({
   server: {
     port: 5000,
     host: true,
-    proxy: {
-      "/api": {
-        target: "http://0.0.0.0:4000",
-        changeOrigin: true,
-      },
+    hmr: {
+      host: "localhost",
+      port: 5000,
     },
   },
   plugins: [react()], 

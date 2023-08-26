@@ -9,7 +9,7 @@ const App = (): JSX.Element => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/admin-ui/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );
