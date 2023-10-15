@@ -1,6 +1,6 @@
 
 module.exports = {
-  extends: "@project/eslint-config",
+  extends: "@chyzwar/eslint-config/node",
   parserOptions: {
     sourceType: "module",
     ecmaFeatures: {

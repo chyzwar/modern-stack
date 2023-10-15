@@ -1,17 +1,21 @@
-
 # dependencies
-/node_modules
+node_modules
+.yarn/cache
+.yarn/install-state.gz
 
 # testing
-/coverage
+coverage
 
-# production
-/build
-/lib
+# build
+lib
+build
+buildInfo.json
 
 # misc
 .env
+.eslintcache
 
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

@@ -1,63 +1,37 @@
-import React from "react";
-import Avatar from "@material-ui/core/Avatar";
-import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
-import Link from "@material-ui/core/Link";
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import Typography from "@material-ui/core/Typography";
-import {makeStyles} from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
+import * as React from "react";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
 import {useNavigate} from "react-router-dom";
 
-const Copyright = (): JSX.Element => 
-  <Typography variant="body2" color="textSecondary" align="center">
-    {"Copyright © "}
-    <Link color="inherit" href="https://material-ui.com/">
-      Your Website
-    </Link>
-    {" "}
-    {new Date().getFullYear()}
-    .
-  </Typography>
-;
+function Copyright(): React.ReactElement {
+  return (
+    <Typography variant="body2" color="text.secondary" align="center" sx={{mt: 8, mb: 4}}>
+      {"Copyright © "}
+      <Link color="inherit" href="https://mui.com/">
+        Your Website
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
+  );
+}
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: "100%",
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-  link: {
-    textDecoration: "none",
-  },
-  facebook: {
-    margin: theme.spacing(0, 0, 2),
-    backgroundColor: "#3b5998",
-  },
-  google: {
-    margin: theme.spacing(0, 0, 2),
-    backgroundColor: "#de5246",
-  },
-}));
 
-const Login = (): JSX.Element => {
-  const classes = useStyles();
+export default function Login(): React.ReactElement {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+    event.preventDefault();
+  };
+
   const navigate = useNavigate();
 
   React.useEffect(() => {
@@ -82,19 +56,25 @@ const Login = (): JSX.Element => {
   });
 
   return (
-    <Container component="main" maxWidth="xs">
 
-      <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <Box
+        sx={{
+          marginTop: 8,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Avatar sx={{m: 1, bgcolor: "secondary.main"}}>
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+            Sign in
         </Typography>
-
-        <form className={classes.form} noValidate>
+        <Box component="form" onSubmit={handleSubmit} noValidate sx={{mt: 1}}>
           <TextField
-            variant="outlined"
             margin="normal"
             required
             fullWidth
@@ -105,7 +85,6 @@ const Login = (): JSX.Element => {
             autoFocus
           />
           <TextField
-            variant="outlined"
             margin="normal"
             required
             fullWidth
@@ -119,58 +98,52 @@ const Login = (): JSX.Element => {
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"
           />
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign In
-          </Button>
-          or
 
-          <a className={classes.link} href="/api/v1/login/facebook">
+          <a href="/api/v1/login/facebook">
             <Button
               fullWidth
               variant="contained"
               color="primary"
-              className={classes.facebook}
+              href="/api/v1/login/facebook"
+              sx={{backgroundColor: "#3b5998"}}
             >
               Facebook
             </Button>
           </a>
 
-          <a className={classes.link} rel="noopener noreferrer" href="/api/v1/login/google">
+          <a rel="noopener noreferrer" href="/api/v1/login/google">
             <Button
               fullWidth
               variant="contained"
               color="primary"
-              className={classes.google}
+              sx={{backgroundColor: "#de5246"}}
             >
               Google
             </Button>
           </a>
-
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            sx={{mt: 3, mb: 2}}
+          >
+              Sign In
+          </Button>
           <Grid container>
             <Grid item xs>
-              <Link href="/password" variant="body2">
-                Forgot password?
+              <Link href="#" variant="body2">
+                  Forgot password?
               </Link>
             </Grid>
             <Grid item>
-              <Link href="/register" variant="body2">
-                Don&apos;t have an account? Sign Up
+              <Link href="#" variant="body2">
+                {"Don't have an account? Sign Up"}
               </Link>
             </Grid>
           </Grid>
-        </form>
-      </div>
-      <Box mt={8}>
-        <Copyright />
+        </Box>
       </Box>
+      <Copyright  />
     </Container>
   );
-};
-
-export default Login;
+}

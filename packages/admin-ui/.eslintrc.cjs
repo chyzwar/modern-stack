@@ -1,6 +1,6 @@
 
 module.exports = {
-  extends: "@project/eslint-config/node",
+  extends: "@chyzwar/eslint-config/react",
   parserOptions: {
     tsconfigRootDir: __dirname,
   },

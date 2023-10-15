@@ -1,7 +1,7 @@
 import type {RouteShorthandOptionsWithHandler} from "fastify";
 import type {FastifyServer} from "../types/Server.js";
 
-const stuff = (fastify: FastifyServer, opts: unknown, done: Function): void => {
+const stuff = (fastify: FastifyServer, _: unknown, done: Function): void => {
   const route: RouteShorthandOptionsWithHandler = {
     preValidation: [fastify.authenticate],
     schema: {
@@ -19,7 +19,7 @@ const stuff = (fastify: FastifyServer, opts: unknown, done: Function): void => {
         },
       },
     },
-    handler: async(request, reply) => reply.send([
+    handler: async(_request, reply) => reply.send([
       {name: "Test1"},
       {name: "Test2"},
     ]),

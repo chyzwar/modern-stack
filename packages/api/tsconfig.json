@@ -1,27 +1,14 @@
 {
+  "extends": "@chyzwar/tsconfig/api.json", 
   "compilerOptions": {
-    "moduleResolution": "nodenext",
-    "module": "ES2022",
-    "target": "ES2022",
-    "strict": true,
-    "sourceMap": true,
-    "outDir": "./build",
-    "esModuleInterop": true,
-    "incremental": true,
-    "composite": true,
-    "pretty": true,
+    "outDir": "build",
     "rootDir": "src",
-    "skipLibCheck": true,
-    "tsBuildInfoFile": "./build/tsBuildInfoFile.json",
-    "types": [
-      "node",
-      "validator"
-    ],
+    "tsBuildInfoFile": "./build/buildInfo.json"
   },
   "include": [
-    "src"
+    "src/**/*"
   ], 
   "references": [
-    { "path" : "../common"}
+    {"path": "../common"}
   ]
 }

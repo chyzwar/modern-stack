@@ -3,7 +3,7 @@ import type {FastifyServer} from "../types/Server.js";
 import sequelize from "../sequelize.js";
 import logger from "../logger.js";
 
-const status = (server: FastifyServer, opt: unknown, done: Function): void => {
+const status = (server: FastifyServer, _: unknown, done: Function): void => {
   const route: RouteShorthandOptionsWithHandler = {
     schema: {
       response: {
@@ -23,7 +23,7 @@ const status = (server: FastifyServer, opt: unknown, done: Function): void => {
         },
       },
     },
-    handler: async(request, reply) => {
+    handler: async(_request, reply) => {
       let connected: boolean | string = true;
       try {
         await sequelize.authenticate();

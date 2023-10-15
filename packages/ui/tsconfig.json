@@ -1,23 +1,10 @@
 {
+  "extends": "@chyzwar/tsconfig/bundler.json", 
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ES2020",
-    "moduleResolution": "bundler",
-    "allowJs": true,
+    "outDir": "build",
+    "rootDir": "src",
+    "tsBuildInfoFile": "./build/buildInfo.json",
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "isolatedModules": true,
-    "emitDeclarationOnly": true,
-    "jsx": "react-jsx",
-    "composite": true,
-    "incremental": true,
-    "outDir": "./lib",
-    "rootDir": "./src",
-    "tsBuildInfoFile": "./build/tsBuildInfoFile.json",
     "lib": [
       "dom",
       "dom.iterable",
@@ -39,5 +26,8 @@
   },
   "include": [
     "src"
+  ], 
+  "references": [
+    {"path": "../common/tsconfig.json"}
   ]
 }
