@@ -20,6 +20,6 @@
     "find-up": "^6.3.0"
   },
   "peerDependencies": {
-    "eslint": "8.x.x"
+    "eslint": "8.x"
   }
 }
