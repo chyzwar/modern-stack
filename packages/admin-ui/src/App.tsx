@@ -6,7 +6,6 @@ import {
 import Login from "./views/Login";
 import {ThemeProvider, createTheme} from "@mui/material";
 
-
 const defaultTheme = createTheme();
 
 const App = (): JSX.Element => {

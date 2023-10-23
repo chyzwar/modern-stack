@@ -1,7 +1,7 @@
 import * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import CssBaseline from "@mui/material/CssBaseline";
+
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
@@ -27,7 +27,7 @@ function Copyright(): React.ReactElement {
 }
 
 
-export default function Login(): React.ReactElement {
+function Login(): React.ReactElement {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
   };
@@ -56,9 +56,7 @@ export default function Login(): React.ReactElement {
   });
 
   return (
-
     <Container component="main" maxWidth="xs">
-      <CssBaseline />
       <Box
         sx={{
           marginTop: 8,
@@ -99,19 +97,18 @@ export default function Login(): React.ReactElement {
             label="Remember me"
           />
 
-          <a href="/api/v1/login/facebook">
+          <a rel='noopener noreferrer' href="/api/v1/login/facebook">
             <Button
               fullWidth
               variant="contained"
               color="primary"
-              href="/api/v1/login/facebook"
               sx={{backgroundColor: "#3b5998"}}
             >
               Facebook
             </Button>
           </a>
 
-          <a rel="noopener noreferrer" href="/api/v1/login/google">
+          <a rel='noopener noreferrer' href="/api/v1/login/google">
             <Button
               fullWidth
               variant="contained"
@@ -147,3 +144,5 @@ export default function Login(): React.ReactElement {
     </Container>
   );
 }
+
+export default Login;

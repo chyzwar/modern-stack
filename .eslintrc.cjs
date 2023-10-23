@@ -10,7 +10,6 @@ module.exports = {
     project: [
       "./tsconfig.eslint.json",
       "./packages/*/tsconfig.json",
-      "./packages/*/vite.config.ts",
     ],
     tsconfigRootDir: __dirname,
   },
