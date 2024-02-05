@@ -16,8 +16,8 @@
   "devDependencies": {
     "@chyzwar/eslint-config": "^0.2.14",
     "@chyzwar/tsconfig": "^0.2.14",
-    "@typescript-eslint/eslint-plugin": "^6.8.0",
-    "@typescript-eslint/parser": "^6.8.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.52.0",
     "jest": "^29.7.0",
     "typescript": "^5.2.2"
