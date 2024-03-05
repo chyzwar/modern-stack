@@ -40,5 +40,5 @@
   "lint-staged": {
     "*.{js,ts,tsx}": "yarn lint:fix"
   },
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@3.8.1"
 }
