@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Shared types",
   "engines": {
-    "node": "18.x",
+    "node": "20.x",
     "yarn": "3.x"
   },
   "type": "module",
