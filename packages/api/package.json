@@ -30,7 +30,7 @@
     "fastify": "^4.24.3",
     "fastify-plugin": "^4.5.1",
     "pg": "^8.11.3",
-    "pino": "^8.16.0",
+    "pino": "^8.21.0",
     "pino-pretty": "^10.2.3",
     "sequelize": "^6.33.0"
   },
