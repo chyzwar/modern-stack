@@ -4,7 +4,7 @@
   "description": "Shared types",
   "engines": {
     "node": "18.x",
-    "yarn": "3.x"
+    "yarn": "3.8.6"
   },
   "type": "module",
   "main": "./lib/index.js",
