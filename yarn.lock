@@ -9035,8 +9035,8 @@ __metadata:
   linkType: hard
 
 "sequelize@npm:^6.33.0":
-  version: 6.33.0
-  resolution: "sequelize@npm:6.33.0"
+  version: 6.37.8
+  resolution: "sequelize@npm:6.37.8"
   dependencies:
     "@types/debug": ^4.1.8
     "@types/validator": ^13.7.17
@@ -9073,7 +9073,7 @@ __metadata:
       optional: true
     tedious:
       optional: true
-  checksum: 16bb4423f749137ce155e4a104332716be8ba529e74c379f9316c9ab53210a3169e464ee46b1b21465a1b9c6c9cc4311a3203980ea8a7d9a3b102b1c63a45159
+  checksum: 8a733c7ee2df11f6bf852a496ee118c3d812d34e7cf3dc94c34bdb26c8fd3ef862a042ce568c7d9d2529676cf43f5e40dd786cad27b88e7518ca8fdb5fd525be
   languageName: node
   linkType: hard
 
