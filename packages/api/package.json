@@ -27,7 +27,7 @@
     "@fastify/static": "^6.11.2",
     "@project/common": "workspace:packages/common",
     "axios": "^1.5.1",
-    "fastify": "^4.24.3",
+    "fastify": "^5.0.0",
     "fastify-plugin": "^4.5.1",
     "pg": "^8.11.3",
     "pino": "^8.16.0",
