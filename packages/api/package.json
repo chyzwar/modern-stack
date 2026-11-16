@@ -48,7 +48,7 @@
     "env-cmd": "^10.1.0",
     "eslint": "^8.52.0",
     "nodemon": "^3.0.1",
-    "sequelize-cli": "^6.6.1",
+    "sequelize-cli": "^6.6.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
